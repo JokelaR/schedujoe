@@ -25,13 +25,13 @@ li {
 }
 
 .loved {
-    list-style-type: '😀';
+    list-style-type: '😀 ';
 }
 .hated {
-    list-style-type: '😡';
+    list-style-type: '😡 ';
 }
 .mixed {
-    list-style-type: '😕'
+    list-style-type: '😕 '
 }
 
 #future > ul > li:first-child {
