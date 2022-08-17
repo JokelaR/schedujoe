@@ -6,6 +6,7 @@ body {
     max-width: 800px;
     margin: auto;
     font-family: 'Bebas Neue', monospace;
+    padding: 0px 4rem;
 }
 
 h1 {
