@@ -14,55 +14,71 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Joseph Anderson Voting Game Stream Schedule</h1>
+        <h1>Joseph Anderson Stream Schedule</h1>
+        <div id="legend">
+            <p>Legend:</p>
+            <div class="example votingGame"></div>
+            <p>Voting Game</p>
+            <div class="example adHoc"></div>
+            <p>Ad hoc</p>
+            <div class="example seasonal"></div>
+            <p>Seasonal</p>
+            <div class="example dropped"></div>
+            <p>dropped</p>
+        </div>
+        <h1>Current game</h1>
+        <div id="present">
+            <ul>
+                <li id="LifeIsStrange" class="seasonal"><p class="textOverlay">Life is Strange</p></li>
+            </ul>
+        </div>
+        <h1>Future games</h1>
         <div id="future">
             <ul>
-                <li id="HypnospaceOutlaw">Hypnospace Outlaw</li>
-                <li id="HalfLife1">Half-Life 1</li>
-                <li id="HalfLife2">Half-Life 2</li>
-                <li id="HalfLife2Episode1">Half-Life 2: Episode 1</li>
-                <li id="HalfLife2Episode2">Half-Life 2: Episode 2</li>
-                <li id="DeadlyPremonition">Deadly Premonition</li>
-                <li id="GravityRush">Gravity Rush</li>
-                <li id="ThirteenSentinels">13 Sentinels</li>
-                <li id="MetalGearSolid1">Metal Gear Solid 1</li>
-                <li id="MetalGearSolid2SonsofLiberty">Metal Gear Solid 2: Sons of Liberty</li>
-                <li id="MetalGearSolid3SnakeEater">Metal Gear Solid 3: Snake Eater</li>
-                <li id="MetalGearSolid4GunsofthePatriots">Metal Gear Solid 4: Guns of the Patriots</li>
-                <li id="MetalGearSolidPeaceWalker" class="unsure">Metal Gear Solid: Peace Walker</li>
-                <li id="MetalGearSolidVGroundZeroes">Metal Gear Solid V: Ground Zeroes</li>
-                <li id="MetalGearSolidVPhantomPain">Metal Gear Solid V: Phantom Pain</li>
-                <li id="RabiRibi">Rabi-Ribi</li>
-                <li id="Dujanah">Dujanah</li>
-                <li id="AISomniumFiles">AI Somnium Files</li>
-                <li id="PaperMarioTTYD">Paper Mario TTYD</li>
-                <li id="VA11HallA">VA-11 Hall-A</li>
-                <li id="CryptoftheNecrodancer">Crypt of the Necrodancer</li>
-                <li id="FireEmblemThreeHouses">Fire Emblem Three Houses</li>
-                <li id="Killer7">Killer7</li>
-                <li id="AceCombat7SkiesUnknown">Ace Combat 7: Skies Unknown</li>
-                <li id="NieRReplicantver122474487139">NieR Replicant ver.1.22474487139...</li>
-                <li id="TheVoid">The Void</li>
-                <li id="LegacyofKainSoulReaver">Legacy of Kain: Soul Reaver </li>
-            </ul>
+                <li id="HypnospaceOutlaw"><p class="textOverlay">Hypnospace Outlaw</p></li>
+                <li id="HalfLife1"><p class="textOverlay">Half-Life 1</p></li>
+                <li id="HalfLife2"><p class="textOverlay">Half-Life 2</p></li>
+                <li id="HalfLife2Episode1"><p class="textOverlay">Half-Life 2: Episode 1</p></li>
+                <li id="HalfLife2Episode2"><p class="textOverlay">Half-Life 2: Episode 2</p></li>
+                <li id="DeadlyPremonition"><p class="textOverlay">Deadly Premonition</p></li>
+                <li id="GravityRush"><p class="textOverlay">Gravity Rush</p></li>
+                <li id="ThirteenSentinels"><p class="textOverlay">13 Sentinels</p></li>
+                <li id="MetalGearSolid1"><p class="textOverlay">Metal Gear Solid 1</p></li>
+                <li id="MetalGearSolid2SonsofLiberty"><p class="textOverlay">Metal Gear Solid 2: Sons of Liberty</p></li>
+                <li id="MetalGearSolid3SnakeEater"><p class="textOverlay">Metal Gear Solid 3: Snake Eater</p></li>
+                <li id="MetalGearSolid4GunsofthePatriots"><p class="textOverlay">Metal Gear Solid 4: Guns of the Patriots</p></li>
+                <li id="MetalGearSolidPeaceWalker" class="unsure"><p class="textOverlay">Metal Gear Solid: Peace Walker</p></li>
+                <li id="MetalGearSolidVGroundZeroes"><p class="textOverlay">Metal Gear Solid V: Ground Zeroes</p></li>
+                <li id="MetalGearSolidVPhantomPain"><p class="textOverlay">Metal Gear Solid V: Phantom Pain</p></li>
+                <li id="RabiRibi"><p class="textOverlay">Rabi-Ribi</p></li>
+                <li id="Dujanah"><p class="textOverlay">Dujanah</p></li>
+                <li id="AISomniumFiles"><p class="textOverlay">AI Somnium Files</p></li>
+                <li id="PaperMarioTTYD"><p class="textOverlay">Paper Mario TTYD</p></li>
+                <li id="VA11HallA"><p class="textOverlay">VA-11 Hall-A</p></li>
+                <li id="CryptoftheNecrodancer"><p class="textOverlay">Crypt of the Necrodancer</p></li>
+                <li id="FireEmblemThreeHouses"><p class="textOverlay">Fire Emblem Three Houses</p></li>
+                <li id="Killer7"><p class="textOverlay">Killer7</p></li>
+                <li id="AceCombat7SkiesUnknown"><p class="textOverlay">Ace Combat 7: Skies Unknown</p></li>
+                <li id="NieRReplicantver122474487139"><p class="textOverlay">NieR Replicant ver.1.22474487139...</p></li>
+                <li id="TheVoid"><p class="textOverlay">The Void</p></li>
+                <li id="LegacyofKainSoulReaver"><p class="textOverlay">Legacy of Kain: Soul Reaver</p></li>            </ul>
         </div>
         <h1>Past games</h1>
         <div id="past">
             <ul>
-                <li id="GodOfWarRagnarok" class="mixed">God of War Ragnarök</li>
-                <li id="ZeroEscapeZeroTimeDilemma" class="mixed">Zero Escape: Zero Time Dilemma</li>
-                <li id="ZeroEscapeVirtuesLastReward" class="hated">Zero Escape: Virtue's Last Reward</li>
-                <li id="ZeroEscapeNineHoursNinePersonsNineDoors" class="loved">Zero Escape: Nine Hours, Nine Persons, Nine Doors</li>
-                <li id="Wandersong" class="mixed">Wandersong</li>
-                <li id="Persona4Golden" class="loved">Persona 4 Golden</li>
-                <li id="SteinsGate" class="hated dropped">Steins;Gate</li>
+                <li id="GodOfWarRagnarok" class="mixed adHoc"><p class="textOverlay">God of War Ragnarök</p></li>
+                <li id="NeonWhite" class="skip adHoc"><p class="textOverlay">Neon White</p></li>
+                <li id="ZeroEscapeZeroTimeDilemma" class="mixed"><p class="textOverlay">Zero Escape: Zero Time Dilemma</p></li>
+                <li id="ZeroEscapeVirtuesLastReward" class="hated"><p class="textOverlay">Zero Escape: Virtue's Last Reward</p></li>
+                <li id="ZeroEscapeNineHoursNinePersonsNineDoors" class="loved"><p class="textOverlay">Zero Escape: Nine Hours, Nine Persons, Nine Doors</p></li>
+                <li id="Wandersong" class="mixed"><p class="textOverlay">Wandersong</p></li>
+                <li id="Persona4Golden" class="loved adHoc"><p class="textOverlay">Persona 4 Golden</p></li>
+                <li id="SteinsGate" class="hated dropped"><p class="textOverlay">Steins;Gate</p></li>
             </ul>
         </div>
-        <h1>Off-schedule variety</h1>
-        <div id="other">
-            <ul>
-                <li id="NeonWhite">Neon White</li>
-            </ul>
-        </div>
+        <footer>
+            <p>This website covers games joe has played since the end of the voting game™️, starting with Steins;Gate</p>
+            <p>last updated on 18.12.2022</p>
+        </footer>
     </body>
 </html>

@@ -8,20 +8,33 @@ body {
     font-family: 'Bebas Neue', monospace;
     padding: 0px 4rem;
 }
+footer {
+    padding: 2rem 2rem;
+    background-color: rgba(0,0,0,0.25)
+}
 
+p {
+    font-size: 2rem;
+    margin: 0px 0.5rem;
+}
 h1 {
     font-size: 4rem;
 }
 li {
-    border: solid 1px white;
+    border: solid 2px white;
     border-radius: 0.25rem;
-    padding: 3rem;
-    padding-left: 1rem;
     font-size: 2rem;
     margin: 1rem auto;
     list-style: outside none;
     background-size: cover !important;
     background-position: left !important;
+}
+li p {
+    padding: 2.5rem;
+    margin: 0px;
+    height: 100%;
+    width: fit-content;
+    background-color: rgba(0,0,0,0.25);
 }
 
 .loved {
@@ -33,10 +46,43 @@ li {
 .mixed {
     list-style-type: '😕 '
 }
+.skip {
+    list-style-type: '〰️ '
+}
 
 #future > ul > li:first-child {
     list-style-type: 'Next Up '
 }
+
+#legend {
+    display:flex;
+    flex-wrap:wrap
+}
+
+#legend .example {
+    display:inline-block;
+    border: 2px solid white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.adHoc{
+    border-color:rgb(10, 168, 5) !important;
+}
+.seasonal {
+    border-color:rgb(168, 5, 127) !important;
+}
+.dropped {
+    background-color: white;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 38%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 65%, rgba(0,0,0,0.5) 65%);
+}
+.dropped p {
+    background: repeating-linear-gradient(-45deg, #00000050, #00000050 1rem, #ffffff00 1rem, #ffffff00 2rem);
+    width: calc(100% - 5rem);
+}
+
 
 
 #GodOfWarRagnarok {
@@ -178,4 +224,8 @@ li {
 #NeonWhite 
 {
     background: url("img/neon.jpg");
+}
+#LifeIsStrange
+{
+    background: url("img/lifeisstrange.jpg");
 }
