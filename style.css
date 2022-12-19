@@ -246,3 +246,19 @@ li p {
 {
     background: url("img/lifeisstrangebts.jpg");
 }
+#Stray 
+{
+    background: url("img/stray.jpg");
+    background-position: bottom !important;
+}
+
+
+
+@media (max-width: 540px) {
+    body {
+        padding: 0px 1rem;
+    }
+    #future > ul > li:first-child {
+        list-style-type: '🔜'
+    }
+}
