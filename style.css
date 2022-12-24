@@ -52,6 +52,9 @@ li p {
 .hated {
     list-style-type: '😡 ';
 }
+.atrocious {
+    list-style-type: '🤬 ';
+}
 .mixed {
     list-style-type: '😕 '
 }
