@@ -258,7 +258,10 @@ li p {
 {
     background: url("img/captainspirit.jpg");
 }
-
+#ResidentEvilVillage
+{
+    background: url("img/residentevilvillage.jpg");
+}
 
 
 @media (max-width: 540px) {
