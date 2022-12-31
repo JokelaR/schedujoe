@@ -262,6 +262,9 @@ li p {
 {
     background: url("img/residentevilvillage.jpg");
 }
+#LifeIsStrangeTrueColors {
+    background: url("img/lifeisstrangetruecolors.jpg");
+}
 
 
 @media (max-width: 540px) {
