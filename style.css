@@ -271,6 +271,9 @@ li p {
 #LifeIsStrangeTrueColors {
     background: url("img/lifeisstrangetruecolors.jpg");
 }
+#MineHaunt {
+    background: url("img/minehaunt.png");
+}
 
 
 @media (max-width: 540px) {
