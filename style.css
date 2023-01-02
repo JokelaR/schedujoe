@@ -273,6 +273,11 @@ li p {
 }
 #MineHaunt {
     background: url("img/minehaunt.png");
+    image-rendering: pixelated;
+}
+#Arkanoid {
+    background: url("img/arkanoid.png");
+    image-rendering: pixelated;
 }
 
 
