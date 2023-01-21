@@ -311,3 +311,9 @@ button {
         list-style-type: '🔜'
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
