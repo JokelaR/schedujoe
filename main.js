@@ -3,3 +3,13 @@ function toggleHidden(elementIDs) {
         document.getElementById(elementID).classList.toggle('hidden');
     });
 }
+
+function toggleCollapsed(sourceElement) {
+    if(sourceElement.textContent == 'See More') {
+        sourceElement.textContent = 'See Less';
+    }
+    else {
+        sourceElement.textContent = 'See More';
+    }
+    sourceElement.parentElement.classList.toggle('collapsed');
+}

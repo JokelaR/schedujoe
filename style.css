@@ -87,6 +87,7 @@ li p {
     border-color:rgb(168, 5, 127) !important;
 }
 .dropped {
+    border-color: rgba(0, 0, 0, 0.33) !important;
     background-color: white;
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.5) 38%, rgba(255,255,255,0) 38%, rgba(255,255,255,0) 65%, rgba(0,0,0,0.5) 65%);
 }
@@ -107,6 +108,18 @@ p[onclick^=toggleHidden] {
     cursor: pointer;
 }
 
+.collapsed li:nth-child(n+7) {
+    display: none;
+}
+.collapsed li:nth-child(6) {
+    border-bottom-style: dotted;
+}
+
+button {
+    margin: auto;
+    font-size: 2rem;
+    display: block;
+}
 
 #GodOfWarRagnarok {
     background: url("img/godofwar.jpg")
