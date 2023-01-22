@@ -119,6 +119,13 @@ button {
     margin: auto;
     font-size: 2rem;
     display: block;
+    background-color: #1e2023;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+}
+button:hover {
+    background-color: #2e3033; 
 }
 
 #GodOfWarRagnarok {
