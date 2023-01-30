@@ -308,6 +308,9 @@ button:hover {
     background: url("img/arkanoid.png");
     image-rendering: pixelated;
 }
+#DeadSpace {
+    background: url("img/deadspace.jpg");
+}
 
 
 @media (max-width: 540px) {
