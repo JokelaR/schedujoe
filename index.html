@@ -13,7 +13,7 @@
         <meta content="#43B581" data-react-helmet="true" name="theme-color" />
         <link rel="shortcut icon" href="/img/thumb.png" type="image/png">
         <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="hypnospace.css">
+        <link rel="stylesheet" disabled="true" id="hypnospaceStyle" href="hypnospace.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -32,13 +32,12 @@
         <h1>Current game</h1>
         <div id="present">
             <ul>
-                <li id="HypnospaceOutlaw"><p class="textOverlay">Hypnospace Outlaw</p></li>
+                <li id="HalfLife1"><p class="textOverlay">Half-Life 1</p></li>
             </ul>
         </div>
         <h1>Future games</h1>
         <div id="future">
             <ul class="collapsed">
-                <li id="HalfLife1"><p class="textOverlay">Half-Life 1</p></li>
                 <li id="HalfLife2"><p class="textOverlay">Half-Life 2</p></li>
                 <li id="HalfLife2Episode1"><p class="textOverlay">Half-Life 2: Episode 1</p></li>
                 <li id="HalfLife2Episode2"><p class="textOverlay">Half-Life 2: Episode 2</p></li>
@@ -70,6 +69,7 @@
         <h1>Past games</h1>
         <div id="past">
             <ul class="collapsed">
+                <li id="HypnospaceOutlaw" class="loved"><p onclick="toggleHypnospace()" class="textOverlay">Hypnospace Outlaw</p></li>
                 <li id="DeadSpace" class="skip adHoc"><p class="textOverlay">Dead Space Remake</p></li>
                 <li id="AISomniumFiles" class="loved"><p class="textOverlay">AI Somnium Files</p></li>
                 <li id="LifeIsStrangeTrueColors" class="seasonal mixed"><p class="textOverlay" onclick="toggleHidden(['MineHaunt', 'Arkanoid'])">Life is Strange: True Colors</p></li>

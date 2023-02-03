@@ -104,7 +104,7 @@ li p {
 .hidden {
     display: none; 
 }
-p[onclick^=toggleHidden] {
+p[onclick] {
     cursor: pointer;
 }
 
