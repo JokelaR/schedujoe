@@ -314,6 +314,12 @@ button:hover {
 #BlackMesa {
     background: url("img/blackmesa.jpg");
 }
+#OpposingForce {
+    background: url("img/opposingforce.jpg");
+}
+#BlueShift {
+    background: url("img/blueshift.jpg");
+}
 
 
 @media (max-width: 540px) {
