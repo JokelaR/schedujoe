@@ -56,10 +56,13 @@ li p {
     list-style-type: '🤬 ';
 }
 .mixed {
-    list-style-type: '😕 '
+    list-style-type: '😕 ';
 }
 .skip {
-    list-style-type: '〰️ '
+    list-style-type: '〰️ ';
+}
+.trolley {
+    list-style-type: '🛒 ';
 }
 
 #future > ul > li:first-child {
