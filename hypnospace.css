@@ -31,3 +31,6 @@ li {
 .skip {
     list-style-image: url('hypnospace/x.png')
 }
+.trolley {
+    list-style-image: url('hypnospace/cart.png')
+}
