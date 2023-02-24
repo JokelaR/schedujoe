@@ -323,7 +323,9 @@ button:hover {
 #BlueShift {
     background: url("img/blueshift.jpg");
 }
-
+#HuntDownTheFreeman {
+    background: url("img/huntdownthefreeman.jpg");
+}
 
 @media (max-width: 540px) {
     body {
