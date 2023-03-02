@@ -111,7 +111,7 @@ p[onclick] {
     cursor: pointer;
 }
 
-.collapsed li:nth-child(n+7) {
+.collapsed li:nth-child(n+9) {
     display: none;
 }
 .collapsed li:nth-child(6) {
