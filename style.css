@@ -76,8 +76,8 @@ li p {
     flex-wrap:wrap
 }
 
-#legend .example {
-    display:inline-block;
+.example {
+    display: inline-block;
     border: 2px solid white;
     width: 1.5rem;
     height: 1.5rem;
@@ -87,9 +87,15 @@ li p {
 
 .adHoc{
     border-color:rgb(10, 168, 5) !important;
+    border-style: double;
 }
 .seasonal {
     border-color:rgb(168, 5, 127) !important;
+    border-style: dotted;
+}
+.filler {
+    border-color: rgb(8, 129, 241) !important;
+    border-style: dashed;
 }
 .dropped {
     background-color: white;
@@ -114,9 +120,6 @@ p[onclick] {
 
 .collapsed li:nth-child(n+9) {
     display: none;
-}
-.collapsed li:nth-child(6) {
-    border-bottom-style: dotted;
 }
 
 button {
