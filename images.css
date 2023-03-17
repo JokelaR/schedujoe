@@ -199,5 +199,5 @@
 #PizzaTower {
     background: url("img/pizzatower.jpg");
     image-rendering: pixelated;
-    background-position: bottom !important;
+    background-position: bottom -20px center !important;
 }
