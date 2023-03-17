@@ -194,5 +194,10 @@
     background: url("img/forspoken.jpg");
 }
 #GodOfWarRagnarok {
-    background: url("img/godofwar.jpg")
+    background: url("img/godofwar.jpg");
+}
+#PizzaTower {
+    background: url("img/pizzatower.jpg");
+    image-rendering: pixelated;
+    background-position: bottom !important;
 }
