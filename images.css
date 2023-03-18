@@ -198,6 +198,11 @@
 }
 #PizzaTower {
     background: url("img/pizzatower.jpg");
-    image-rendering: pixelated;
     background-position: bottom -20px center !important;
+}
+
+@media (max-width: 540px) {
+    #PizzaTower {
+        background-position: bottom -10px center !important;;
+    }
 }
