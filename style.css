@@ -141,6 +141,17 @@ button:hover {
     #future > ul > li:first-child {
         list-style-type: '🔜'
     }
+    p:not(.textOverlay) {
+        font-size: 1.5rem !important;
+        margin: 0px 0.5rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        margin-bottom: 0px;
+        font-size: 2rem !important;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
