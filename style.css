@@ -40,6 +40,11 @@ li {
     background-size: cover !important;
     background-position: left !important;
 }
+.card {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
 li p {
     padding: 2.5rem;
     margin: 0px;
@@ -48,24 +53,38 @@ li p {
     background-color: rgba(0, 0, 0, 0.33);
 }
 
-.loved {
-    list-style-type: '😀 ';
+.videoLinks {
+    margin-right: 1rem;
+    display: flex;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.75));
 }
-.hated {
-    list-style-type: '😡 ';
+.videoLinks a {
+    height:100%; 
+    display: flex;
+    align-items: center;
+    filter: saturate(0%) brightness(20);
+    text-decoration: none;;
 }
-.atrocious {
-    list-style-type: '🤬 ';
+.videoLinks img {
+    height: 2rem;
+    padding: 0.5rem;
 }
-.mixed {
-    list-style-type: '😕 ';
+a[title*="Unofficial"]:after {
+    content: "*";
+    position: absolute;
+    right: 0;
+    box-shadow: 1px 1xp 1xp rgba(0, 0, 0, 0.33);
 }
-.skip {
-    list-style-type: '〰️ ';
+.videoLinks a:hover {
+    filter: saturate(100%);
 }
-.trolley {
-    list-style-type: '🛒 ';
-}
+
+.loved {list-style-type: '😀 ';}
+.hated {list-style-type: '😡 ';}
+.atrocious {list-style-type: '🤬 ';}
+.mixed {list-style-type: '😕 ';}
+.skip {list-style-type: '〰️ ';}
+.trolley {list-style-type: '🛒 ';}
 
 #future > ul > li:first-child {
     list-style-type: 'Next Up '
