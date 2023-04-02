@@ -200,6 +200,10 @@
     background: url("img/pizzatower.jpg");
     background-position: bottom -20px center !important;
 }
+#Umineko {
+    background: url("img/umineko.jpg");
+    background-position: top -19px center !important;
+}
 
 @media (max-width: 540px) {
     #PizzaTower {
