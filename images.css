@@ -204,6 +204,9 @@
     background: url("img/umineko.jpg");
     background-position: top -19px center !important;
 }
+#AtomicHeart {
+    background: url("img/atomicheart.jpg");
+}
 
 @media (max-width: 540px) {
     #PizzaTower {
