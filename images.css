@@ -207,6 +207,9 @@
 #AtomicHeart {
     background: url("img/atomicheart.jpg");
 }
+#ResidentEvil4 {
+    background: url("img/residentevil4.jpg");
+}
 
 @media (max-width: 540px) {
     #PizzaTower {
