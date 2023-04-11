@@ -210,6 +210,12 @@
 #ResidentEvil4 {
     background: url("img/residentevil4.jpg");
 }
+#GravityRush2 {
+    background: url("img/gravityrush2.jpg");
+}
+#JediSurvivor {
+    background: url("img/jedisurvivor.jpg");
+}
 
 @media (max-width: 540px) {
     #PizzaTower {
