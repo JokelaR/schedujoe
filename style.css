@@ -73,7 +73,6 @@ a[title*="Unofficial"]:after {
     content: "*";
     position: absolute;
     right: 0;
-    box-shadow: 1px 1xp 1xp rgba(0, 0, 0, 0.33);
 }
 .videoLinks a:hover {
     filter: saturate(100%);
