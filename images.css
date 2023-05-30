@@ -1,3 +1,45 @@
+#HiFiRush {
+    background: url("img/hifirush.jpg");
+}
+#GravityRush
+{
+    background: url("img/gr.jpg");
+}
+#PizzaTower {
+    background: url("img/pizzatower.jpg");
+    background-position: bottom -20px center !important;
+}
+#AtomicHeart {
+    background: url("img/atomicheart.jpg");
+}
+#MetalGearSolid1
+{
+    background: url("img/mgs1.jpg");
+}
+#MetalGearSolid2SonsofLiberty
+{
+    background: url("img/mgs2.jpg");
+}
+#MetalGearSolid3SnakeEater
+{
+    background: url("img/mgs3.jpg");
+}
+#MetalGearSolid4GunsofthePatriots
+{
+    background: url("img/mgs4.jpg");
+}
+#MetalGearSolidPeaceWalker
+{
+    background: url("img/mgspw.jpg");
+}
+#MetalGearSolidVGroundZeroes
+{
+    background: url("img/mgsgz.jpg");
+}
+#MetalGearSolidVPhantomPain
+{
+    background: url("img/mgspp.jpg");
+}
 #ZeroEscapeZeroTimeDilemma
 {
     background: url("img/ztd.jpg");
@@ -47,41 +89,9 @@
 {
     background: url("img/dp.jpg");
 }
-#GravityRush
-{
-    background: url("img/gr.jpg");
-}
 #ThirteenSentinels
 {
     background: url("img/13s.jpg");
-}
-#MetalGearSolid1
-{
-    background: url("img/mgs1.jpg");
-}
-#MetalGearSolid2SonsofLiberty
-{
-    background: url("img/mgs2.jpg");
-}
-#MetalGearSolid3SnakeEater
-{
-    background: url("img/mgs3.jpg");
-}
-#MetalGearSolid4GunsofthePatriots
-{
-    background: url("img/mgs4.jpg");
-}
-#MetalGearSolidPeaceWalker
-{
-    background: url("img/mgspw.jpg");
-}
-#MetalGearSolidVGroundZeroes
-{
-    background: url("img/mgsgz.jpg");
-}
-#MetalGearSolidVPhantomPain
-{
-    background: url("img/mgspp.jpg");
 }
 #RabiRibi
 {
@@ -196,16 +206,9 @@
 #GodOfWarRagnarok {
     background: url("img/godofwar.jpg");
 }
-#PizzaTower {
-    background: url("img/pizzatower.jpg");
-    background-position: bottom -20px center !important;
-}
 #Umineko {
     background: url("img/umineko.jpg");
     background-position: top -19px center !important;
-}
-#AtomicHeart {
-    background: url("img/atomicheart.jpg");
 }
 #ResidentEvil4 {
     background: url("img/residentevil4.jpg");
