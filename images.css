@@ -219,6 +219,9 @@
 #JediSurvivor {
     background: url("img/jedisurvivor.jpg");
 }
+#TearsOfTheKingdom {
+    background: url("img/tearsofthekingdom.png");
+}
 
 @media (max-width: 540px) {
     #PizzaTower {
