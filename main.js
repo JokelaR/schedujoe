@@ -1,5 +1,5 @@
 const hypnospaceStyle = document.getElementById("hypnospaceStyle");
-const umineko = document.getElementById("Umineko");
+const umineko = document.getElementById("uminekoSecret");
 let umiCounter = 1;
 
 function toggleHidden(elementIDs) {
