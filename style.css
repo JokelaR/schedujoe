@@ -138,6 +138,15 @@ p[onclick] {
 .collapsed li:nth-child(n+9) {
     display: none;
 }
+.collapsed:not(.short) button:nth-child(-n + 9) {
+    display: none;
+}
+.collapsed.short li:nth-child(n+4) {
+    display: none;
+}
+.collapsed.short button:nth-child(-n + 4) {
+    display: none;
+}
 
 button {
     margin: auto;
@@ -166,6 +175,14 @@ button:hover {
     font-size: 2rem;
     padding: 0px;
     margin: 0px 0px -10px 3rem;
+}
+.textOverlay {
+    display:flex;
+    flex-direction: column;
+}
+.releaseDate {
+    font-size: 1.2rem;
+    margin-bottom: -1rem;
 }
 
 @media (max-width: 540px) {

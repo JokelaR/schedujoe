@@ -237,6 +237,25 @@
 #TearsOfTheKingdom {
     background: url("img/tearsofthekingdom.png");
 }
+#LiesOfP {
+    background: url("img/liesofp.jpg");
+}
+#Eternights {
+    background: url("img/eternights.jpg");
+}
+#AlanWake2 {
+    background: url("img/alanwake2.jpg");
+}
+#Starfield {
+    background: url("img/starfield.jpg");
+}
+#ApolloJustice {
+    background: url("img/apollojustice.png");
+}
+#BabySteps {
+    background: url("img/babysteps.jpg");
+}
+
 
 @media (max-width: 540px) {
     #PizzaTower {
