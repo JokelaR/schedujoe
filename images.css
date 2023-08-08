@@ -255,6 +255,9 @@
 #BabySteps {
     background: url("img/babysteps.jpg");
 }
+#ArmoredCore6 {
+    background: url("img/armoredcore6.jpg");
+}
 
 
 @media (max-width: 540px) {
