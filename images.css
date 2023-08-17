@@ -258,7 +258,9 @@
 #ArmoredCore6 {
     background: url("img/armoredcore6.jpg");
 }
-
+#Inscryption {
+    background: url("img/inscryption.jpg");
+}
 
 @media (max-width: 540px) {
     #PizzaTower {
