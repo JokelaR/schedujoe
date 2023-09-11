@@ -93,6 +93,10 @@ li p {
     color: rgb(180, 180, 180);
     background-color: rgba(255, 153, 0, 0.15);
 }
+#weekSchedule div[title="Very unlikely"] {
+    color: rgb(180, 180, 180);
+    background-color: rgba(255, 0, 0, 0.15);
+}
 #weekSchedule div[title="No stream"] {
     color: rgb(180, 180, 180);
     background-color: rgba(0, 0, 0, 0.5);
