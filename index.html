@@ -7,7 +7,7 @@
         <title>Schedujoe - The Joseph Schedule</title>
         <meta name="description" content="The (non-)authoritative source for the next planned Joseph Anderson stream games.">
         <meta content="Joseph Anderson Stream Schedule" property="og:title" />
-        <meta content="What (not when) is the next Joe Stream?" property="og:description" />
+        <meta content="What (not *exactly* when) is the next Joe Stream?" property="og:description" />
         <meta content="https://schedujoe.bulder.fi" property="og:url" />
         <meta content="https://schedujoe.bulder.fi/img/thumb.png" property="og:imgage"/>
         <meta name="twitter:image" content="https://schedujoe.bulder.fi/img/thumb.png">
@@ -23,19 +23,25 @@
     </head>
     <body>
         <h1>Joseph Anderson Stream Schedule</h1>
-        <div id="legend">
-            <p>Legend:</p>
-            <div class="example votingGame"></div>
-            <p>Voted</p>
-            <div class="example adHoc"></div>
-            <p>Ad Hoc</p>
-            <div class="example seasonal" onClick="incrementUmineko();"></div>
-            <p>Seasonal</p>
-            <div class="example filler"></div>
-            <p>Planned</p>
-            <div class="example dropped"></div>
-            <p>Dropped</p>
+
+        <span style="font-size: 1.25rem;">Stream probabilities - Updated 11.9.2023</span>
+        <div id="scheduleContainer">
+            <div id="weekSchedule">
+                <div title="Likely">TUE</div>
+                <div title="Likely">WED</div>
+                <div title="Likely">THU</div>
+                <div title="Likely">FRI</div>
+                <div title="Likely">SAT</div>
+                <div title="No stream">SUN</div>
+                <div title="Unlikely">MON</div>
+            </div>
+            <div id="dateRange">
+                <p class="undernote">4. Sept</p>
+                <p class="undernote">11. Sept</p>
+            </div>    
         </div>
+        
+
         <h2>Current games</h2>
         <p>These are the current games Joe is streaming. </p>
         <div id="present">
@@ -51,6 +57,21 @@
                 </div>
             </div>
         </div>
+
+        <div id="legend">
+            <p>Legend:</p>
+            <div class="example votingGame"></div>
+            <p>Voted</p>
+            <div class="example adHoc"></div>
+            <p>Ad Hoc</p>
+            <div class="example seasonal" onClick="incrementUmineko();"></div>
+            <p>Seasonal</p>
+            <div class="example filler"></div>
+            <p>Planned</p>
+            <div class="example dropped"></div>
+            <p>Dropped</p>
+        </div>
+        
         <h2>Future games</h2>
         <p>These are the Mainstream™ games that will be played next in order (Metal Gear series is delayed until October)</p>
         <div id="future">
@@ -519,7 +540,6 @@
         <footer>
             <p>This website covers games Joe has played since the end of the voting game™, starting with Steins;Gate</p>
             <p>Website by Bulder#8965, Joe pointing icon by Kryptic#0008, other assets sourced from SteamDB and/or respective games.</p>
-            <p>last updated on 9.9.2023</p>
             <a href="https://github.com/Buldev/schedujoe">Hosted on Github Pages</a>
         </footer>
     </body>

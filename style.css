@@ -26,6 +26,7 @@ p {
 }
 h1 {
     font-size: 4rem;
+    margin-bottom: 0px;
 }
 h2 {
     margin-bottom: 0px;
@@ -51,6 +52,61 @@ li p {
     height: 100%;
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.33);
+}
+
+#scheduleContainer {
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+#weekSchedule {
+    display: flex;
+    position: relative;
+    left: 0px;
+    min-width: 660px;
+}
+#weekSchedule div {
+    font-size: 2rem;
+    padding: 1rem;
+    border: solid white 2px;
+    border-right: none;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
+    cursor: help;
+    min-width: 60px;
+}
+#weekSchedule div:first-child {
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+#weekSchedule div:last-child {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border: solid white 2px;
+}
+
+#weekSchedule div[title="Likely"] {
+    background-color: rgba(0, 255, 42, 0.15);
+}
+#weekSchedule div[title="Unlikely"] {
+    color: rgb(180, 180, 180);
+    background-color: rgba(255, 153, 0, 0.15);
+}
+#weekSchedule div[title="No stream"] {
+    color: rgb(180, 180, 180);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#dateRange {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0px;
+    min-width: 660px;
+
+}
+#dateRange p {
+    font-size: 1rem !important;
+    margin: 0px !important;
 }
 
 .videoLinks {
