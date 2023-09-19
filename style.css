@@ -89,6 +89,9 @@ li p {
 #weekSchedule div[title="Likely"] {
     background-color: rgba(0, 255, 42, 0.15);
 }
+#weekSchedule div[title="Possible"] {
+    background-color: rgba(200, 255, 0, 0.15);
+}
 #weekSchedule div[title="Unlikely"] {
     color: rgb(180, 180, 180);
     background-color: rgba(255, 153, 0, 0.15);
