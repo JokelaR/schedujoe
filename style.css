@@ -154,7 +154,11 @@ a[title*="Unofficial"]:after {
 
 #legend {
     display:flex;
-    flex-wrap:wrap
+    flex-wrap:wrap;
+}
+#legend span {
+    font-size: 2rem;
+    margin-right: 1rem;
 }
 
 .example {
@@ -164,6 +168,8 @@ a[title*="Unofficial"]:after {
     height: 1.5rem;
     border-radius: 100%;
     flex-shrink: 0;
+    position:relative;
+    top: 0.2rem;
 }
 
 .adHoc{

@@ -24,20 +24,19 @@
     <body>
         <h1>Joseph Anderson Stream Schedule</h1>
 
-        <span style="font-size: 1.25rem;">Stream probabilities - Updated 25.9.2023</span>
+        <span style="font-size: 1.25rem;">Stream probabilities - Updated 26.9.2023</span>
         <div id="scheduleContainer">
             <div id="weekSchedule">
-                <div title="Likely">TUE</div>
-                <div title="Likely">WED</div>
-                <div title="Likely">THU</div>
-                <div title="Likely">FRI</div>
-                <div title="Likely">SAT</div>
-                <div title="Likely">SUN</div>
-                <div title="Likely">MON</div>
+                <div title="Possible">Tue</div>
+                <div title="Possible">Wed</div>
+                <div title="Very unlikely">Thu</div>
+                <div title="No stream">...</div>
+                <div title="Likely" style="flex-grow: 99">Mid-to-late October</div>
+
             </div>
             <div id="dateRange">
-                <p class="undernote">19. Sept</p>
-                <p class="undernote">25. Sept</p>
+                <p class="undernote">26. Sept</p>
+                <p class="undernote">Sometime in October</p>
             </div>    
         </div>
         
@@ -45,7 +44,7 @@
         <p>These are the current games Joe is streaming. </p>
         <div id="present">
             <ul>
-                <li id="LiesOfP" class="filler"><p class="textOverlay">Lies of P</p></li>
+                <li id="" class="adHoc"><p class="textOverlay">Lies of P new game+ and fanart</p></li>
             </ul>
             <div class="horizontal-pair">
                 <div id="uminekoSecret" class="hidden">
@@ -57,18 +56,30 @@
             </div>
         </div>
 
+        <p>Legend</p>
         <div id="legend">
-            <p>Legend:</p>
-            <div class="example votingGame"></div>
-            <p>Voted</p>
-            <div class="example adHoc"></div>
-            <p>Ad Hoc</p>
-            <div class="example seasonal" onClick="incrementUmineko();"></div>
-            <p>Seasonal</p>
-            <div class="example filler"></div>
-            <p>Planned</p>
-            <div class="example dropped"></div>
-            <p>Dropped</p>
+            <div>
+                <div class="example votingGame"></div>
+                <span>Voted</span>
+            </div>
+            <div>
+                <div class="example adHoc"></div>
+                <span>Ad Hoc</span>
+            </div>
+            <div>
+                <div class="example seasonal" onClick="incrementUmineko();"></div>
+                <span>Seasonal</span>
+            </div>
+            <div>
+                <div class="example filler"></div>
+                <span>Planned</span>
+            </div>
+            <div>
+                <div class="example dropped"></div>
+                <span>Dropped</span>
+            </div>
+
+            
         </div>
         
         <h2>Future games</h2>
@@ -112,6 +123,15 @@
         <p>Note that the ratings are based off of the vibes Joe gives off, and not direct ratings he gives out. Subjectivity is implied.</p>
         <div id="past">
             <ul class="collapsed">
+                <li id="LiesOfP" class="filler loved">
+                    <div class="card"><p class="textOverlay">Lies of P</p>
+                        <div class="videoLinks">
+                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsaHQT41Qcm4iob5sGA4r45" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
+                            <a href="https://peertube.nodja.com/w/p/8UTa92ajTLt6SLVpeDMZBw" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
+                        </div>
+                    </div>
+                </li>
+
                 <li id="Starfield" class="filler mixed">
                     <div class="card"><p class="textOverlay">Starfield</p>
                         <div class="videoLinks">
