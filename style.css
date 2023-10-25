@@ -140,6 +140,9 @@ a[title*="Unofficial"]:after {
 .videoLinks a:hover {
     filter: saturate(100%);
 }
+.videoLinks a[href=""] {
+    display: none;
+}
 
 .loved {list-style-type: '😀 ';}
 .hated {list-style-type: '😡 ';}
