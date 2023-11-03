@@ -8,6 +8,15 @@
     background: url("img/alanwake.jpg");
     background-position: top !important;
 }
+#SlayThePrincess {
+    background: url("img/slaytheprincess.jpg");
+}
+#MarioWonder {
+    background: url("img/mariowonder.png");
+}
+#BaldursGate3 {
+    background: url("img/baldursgate.jpg");
+}
 #Twelveminutes {
     background: url("img/12minutes.jpg");
 }
