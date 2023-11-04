@@ -17,34 +17,9 @@
 #BaldursGate3 {
     background: url("img/baldursgate.jpg");
 }
-#Twelveminutes {
-    background: url("img/12minutes.jpg");
-}
-#GhostTrick {
-    background: url("img/ghosttrick.png");
-}
-#FinalFantasy16 {
-    background: url("img/ff16.jpg");
-}
-#AmnesiaBunker {
-    background: url("img/amnesiabunker.jpg");
-}
-#Gollum {
-    background: url("img/gollum.jpg");
-}
-#HiFiRush {
-    background: url("img/hifirush.jpg");
-}
-#GravityRush
-{
-    background: url("img/gr.jpg");
-}
 #PizzaTower {
     background: url("img/pizzatower.jpg");
     background-position: bottom -10px center !important;
-}
-#AtomicHeart {
-    background: url("img/atomicheart.jpg");
 }
 #MetalGearSolid1
 {
@@ -73,75 +48,6 @@
 #MetalGearSolidVPhantomPain
 {
     background: url("img/mgspp.jpg");
-}
-#ZeroEscapeZeroTimeDilemma
-{
-    background: url("img/ztd.jpg");
-}
-#ZeroEscapeVirtuesLastReward
-{
-    background: url("img/vlr.jpg");
-}
-#ZeroEscapeNineHoursNinePersonsNineDoors
-{
-    background: url("img/999.jpg");
-}
-#Wandersong
-{
-    background: url("img/wandersong.jpg");
-}
-#Persona4Golden
-{
-    background: url("img/persona 4.jpg");
-}
-#SteinsGate
-{
-    background: url("img/steinsGate.jpg");
-}
-#HypnospaceOutlaw
-{
-    background: url("img/Hypnospace_Outlaw.jpg");
-    image-rendering: pixelated;
-}
-#HalfLife1
-{
-    background: url("img/hl1.jpg");
-}
-#HalfLife2
-{
-    background: url("img/hl2.jpg");
-}
-#HalfLife2Episode1
-{
-    background: url("img/hl2e1.jpg");
-}
-#HalfLife2Episode2
-{
-    background: url("img/hl2e2.jpg");
-}
-#DeadlyPremonition
-{
-    background: url("img/dp.jpg");
-}
-#ThirteenSentinels
-{
-    background: url("img/13s.jpg");
-}
-#RabiRibi
-{
-    background: url("img/rabiribi.jpg");
-}
-#Dujanah
-{
-    background: url("img/dujanah.jpg");
-}
-#AISomniumFiles
-{
-    background: url("img/aisomnium.jpg");
-}
-#AISomniumFiles2
-{
-    background: url("img/aisomnium2.jpg");
 }
 #PaperMarioTTYD
 {
@@ -179,83 +85,6 @@
 {
     background: url("img/kain.jpg");
 }
-#NeonWhite 
-{
-    background: url("img/neon.jpg");
-}
-#LifeIsStrange
-{
-    background: url("img/lifeisstrange.jpg");
-}
-#LifeIsStrange2
-{
-    background: url("img/lifeisstrange2.jpg");
-}
-#LifeIsStrangeBTS
-{
-    background: url("img/lifeisstrangebts.jpg");
-}
-#Stray 
-{
-    background: url("img/stray.jpg");
-    background-position: bottom !important;
-}
-#CaptainSpirit
-{
-    background: url("img/captainspirit.jpg");
-}
-#ResidentEvilVillage
-{
-    background: url("img/residentevilvillage.jpg");
-}
-#LifeIsStrangeTrueColors {
-    background: url("img/lifeisstrangetruecolors.jpg");
-}
-#MineHaunt {
-    background: url("img/minehaunt.png");
-    image-rendering: pixelated;
-}
-#Arkanoid {
-    background: url("img/arkanoid.png");
-    image-rendering: pixelated;
-}
-#DeadSpace {
-    background: url("img/deadspace.jpg");
-}
-#BlackMesa {
-    background: url("img/blackmesa.jpg");
-}
-#OpposingForce {
-    background: url("img/opposingforce.jpg");
-}
-#BlueShift {
-    background: url("img/blueshift.jpg");
-}
-#HuntDownTheFreeman {
-    background: url("img/huntdownthefreeman.jpg");
-}
-#Forspoken {
-    background: url("img/forspoken.jpg");
-}
-#GodOfWarRagnarok {
-    background: url("img/godofwar.jpg");
-}
-#Umineko {
-    background: url("img/umineko.jpg");
-    background-position: top -19px center !important;
-}
-#ResidentEvil4 {
-    background: url("img/residentevil4.jpg");
-}
-#GravityRush2 {
-    background: url("img/gravityrush2.jpg");
-}
-#JediSurvivor {
-    background: url("img/jedisurvivor.jpg");
-}
-#TearsOfTheKingdom {
-    background: url("img/tearsofthekingdom.png");
-}
 #LiesOfP {
     background: url("img/liesofp.jpg");
 }
@@ -276,9 +105,6 @@
 }
 #ArmoredCore6 {
     background: url("img/armoredcore6.jpg");
-}
-#Inscryption {
-    background: url("img/inscryption.jpg");
 }
 
 @media (max-width: 540px) {
