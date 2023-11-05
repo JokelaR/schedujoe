@@ -54,6 +54,13 @@ li p {
     background-color: rgba(0, 0, 0, 0.33);
 }
 
+li.divider {
+    border: none;
+    border-radius: 0px;
+    border-bottom: dashed;
+    text-align:center;
+}
+
 #scheduleContainer {
     overflow-x: auto;
     overflow-y:hidden;
