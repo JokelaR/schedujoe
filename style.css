@@ -263,6 +263,57 @@ button:hover {
     font-size: 1.2rem;
     margin-bottom: -1rem;
 }
+.no-underline {
+    text-decoration: none;
+}
+
+#promoBanner {
+    position: relative;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(202, 131, 0);
+    background-color: rgb(48, 20, 0);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    transition: all 0.2s;
+    background-image: url('img/jadseya-banner-background.webp');
+    animation: 10s infinite linear jadseya-scroll; 
+    box-shadow:
+        0 0px 0px rgba(0, 0, 0, 0.035),
+        0 0px 0px rgba(0, 0, 0, 0.049),
+        0 3px 5.5px rgba(0, 0, 0, 0.06),
+        0 10px 15px rgba(0, 0, 0, 0.07)
+    ;
+}
+#promoBanner:hover {
+    transform: translateY(-0.15rem);
+    color: rgb(255, 183, 0);
+    box-shadow:
+        0 2.5px 0px rgb(255, 183, 1),
+        0 6px 4px rgba(255, 184, 4, 0.288),
+        0 6px 7.4px rgba(255, 184, 4, 0.188),
+        0 15px 20px rgba(255, 184, 4, 0.088)
+    ;
+}
+#promoBanner:active {
+    transform: none;
+    box-shadow:
+        0 0.5px 0px rgb(255, 183, 1),
+        0 1px 4px rgba(255, 184, 4, 0.288),
+        0 3px 5.5px rgba(0, 0, 0, 0.06),
+        0 10px 15px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+@keyframes jadseya-scroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -128px 256px;
+    }
+}
 
 @media (max-width: 540px) {
     body {
@@ -281,6 +332,9 @@ button:hover {
     h2 {
         margin-bottom: 0px;
         font-size: 2rem !important;
+    }
+    #promoBanner {
+        font-size: 1.75rem;
     }
 }
 
