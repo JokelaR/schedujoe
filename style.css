@@ -306,6 +306,14 @@ button:hover {
     ;
 }
 
+#jadseya {
+    background-image: url('img/jadseya-banner-background.webp');
+    animation: 10s infinite linear jadseya-scroll; 
+    background-size: unset !important;
+    background-position: unset !important;
+    background-color: rgb(48, 20, 0);
+}
+
 @keyframes jadseya-scroll {
     from {
         background-position: 0 0;
