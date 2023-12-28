@@ -208,7 +208,7 @@ a[title*="Unofficial"]:after {
     padding: 0.25rem 2.5rem !important;
 }
 .hidden {
-    display: none; 
+    display: none !important; 
 }
 p[onclick] {
     cursor: pointer;
@@ -275,10 +275,9 @@ button:hover {
     color: rgb(202, 131, 0);
     background-color: rgb(48, 20, 0);
     border-radius: 0.25rem;
+    border: 0.1rem rgb(202, 131, 0) solid;
     padding: 1rem;
     transition: all 0.2s;
-    background-image: url('img/jadseya-banner-background.webp');
-    animation: 10s infinite linear jadseya-scroll; 
     box-shadow:
         0 0px 0px rgba(0, 0, 0, 0.035),
         0 0px 0px rgba(0, 0, 0, 0.049),
@@ -308,9 +307,9 @@ button:hover {
 
 #jadseya {
     background-image: url('img/jadseya-banner-background.webp');
-    animation: 10s infinite linear jadseya-scroll; 
+    animation: 20s infinite linear jadseya-scroll; 
     background-size: unset !important;
-    background-position: unset !important;
+    background-position: unset;
     background-color: rgb(48, 20, 0);
 }
 
@@ -349,5 +348,11 @@ button:hover {
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #jadseya {
+        animation: none !important; 
     }
 }
