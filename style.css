@@ -40,6 +40,7 @@ li {
     list-style: outside none;
     background-size: cover !important;
     background-position: left !important;
+    backdrop-filter: blur(3px);
 }
 .card {
     display: flex;
@@ -189,7 +190,7 @@ a[title*="Unofficial"]:after {
     border-color:rgb(168, 5, 127) !important;
     border-style: dotted;
 }
-.filler {
+.planned {
     border-color: rgb(8, 129, 241) !important;
     border-style: dashed;
 }
