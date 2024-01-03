@@ -210,6 +210,7 @@ a[title*="Unofficial"]:after {
 }
 .hidden {
     display: none !important; 
+    background: none !important;
 }
 p[onclick] {
     cursor: pointer;
