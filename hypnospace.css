@@ -4,15 +4,24 @@ body {
     font-weight: bold;
 }
 
-li {
-    border: inset 8px white !important;
+li:not(.divider) {
+    outline-style: inset !important;
+    outline-width: 5px !important;
     border-radius: 0px !important;
+}
+
+.divider {
+    border-bottom: double !important;
+}
+
+* {
+    backdrop-filter: none !important;
 }
 
 #legend .example {
     border-radius: 0% !important;
-    border-width: 4px !important;
-    border-style: inset !important;
+    outline-width: 4px !important;
+    outline-style: inset;
 }
 
 
