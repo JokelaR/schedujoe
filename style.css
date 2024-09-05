@@ -33,6 +33,8 @@ h2 {
     font-size: 3rem;
 }
 li {
+    height: 124px;
+
     border: solid 2px white;
     border-radius: 0.25rem;
     font-size: 2rem;
@@ -44,11 +46,12 @@ li {
 }
 .card {
     display: flex;
+    height: 100%;
     align-items: stretch;
     justify-content: space-between;
 }
 li p {
-    padding: 2.5rem;
+    /* padding: 2.5rem; */
     margin: 0px;
     height: 100%;
     width: fit-content;
@@ -56,6 +59,7 @@ li p {
 }
 
 li.divider {
+    height: unset;
     border: none;
     border-radius: 0px;
     border-bottom: dashed;
@@ -198,15 +202,14 @@ a[title*="Unofficial"]:after {
     background-color: white;
     background: repeating-linear-gradient(-45deg, #00000050, #00000050 1rem, #ff000027 1rem, #ff000027 2rem);
 }
-.dropped p {
+.dropped .card {
     background: repeating-linear-gradient(-45deg, #00000050, #00000050 1rem, #ff000027 1rem, #ff000027 2rem);
-    width: calc(100% - 5rem);
 }
 .indent {
     margin-left: 3rem;
 }
-.thin p {
-    padding: 0.25rem 2.5rem !important;
+.thin {
+    height: 1.5em;
 }
 .hidden {
     display: none !important; 
@@ -258,9 +261,13 @@ button:hover {
     margin: 0px 0px -10px 3rem;
 }
 .textOverlay {
-    display:flex;
+    display: flex;
+    justify-content: center;
+    padding: 0px 1rem;
+    backdrop-filter: blur(2px);
     flex-direction: column;
 }
+
 .releaseDate {
     font-size: 1.2rem;
     margin-bottom: -1rem;
