@@ -26,7 +26,7 @@
 }
 #PizzaTower {
     background: url("img/pizzatower.jpg");
-    background-position: bottom -10px center !important;
+    background-position: bottom -24px center !important;
 }
 #MetalGearSolid1
 {
@@ -290,13 +290,4 @@
 }
 #AtomicHeart {
     background: url("img/atomicheart.jpg");
-}
-
-
-
-
-@media (max-width: 540px) {
-    #PizzaTower {
-        background-position: bottom -10px center !important;;
-    }
 }

@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: #37393E;
+    --bg-color: #37393e;
+    background-color: var(--bg-color);
     color: white;
     max-width: 800px;
     margin: auto;
@@ -35,7 +36,7 @@ h2 {
 li {
     height: 124px;
 
-    border: solid 2px white;
+    outline: solid 2px white;
     border-radius: 0.25rem;
     font-size: 2rem;
     margin: 1rem auto;
@@ -51,19 +52,16 @@ li {
     justify-content: space-between;
 }
 li p {
-    /* padding: 2.5rem; */
     margin: 0px;
-    height: 100%;
     width: fit-content;
-    background-color: rgba(0, 0, 0, 0.33);
 }
 
 li.divider {
     height: unset;
-    border: none;
+    outline: none;
     border-radius: 0px;
     border-bottom: dashed;
-    text-align:center;
+    text-align: center;
 }
 
 #scheduleContainer {
@@ -178,25 +176,25 @@ a[title*="Unofficial"]:after {
 
 .example {
     display: inline-block;
-    border: 2px solid white;
+    outline: 2px solid white;
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100%;
-    flex-shrink: 0;
     position:relative;
     top: 0.2rem;
+    margin: 0.2rem;
 }
 
 .adHoc{
-    border-color:rgb(10, 168, 5) !important;
+    outline-color:rgb(10, 168, 5) !important;
 }
 .seasonal {
-    border-color:rgb(168, 5, 127) !important;
-    border-style: dotted;
+    outline-color:rgb(168, 5, 127) !important;
+    outline-style: dotted;
 }
 .planned {
-    border-color: rgb(8, 129, 241) !important;
-    border-style: dashed;
+    outline-color: rgb(8, 129, 241) !important;
+    outline-style: dashed;
 }
 .dropped {
     background-color: white;
@@ -209,7 +207,8 @@ a[title*="Unofficial"]:after {
     margin-left: 3rem;
 }
 .thin {
-    height: 1.5em;
+    height: fit-content;
+    min-height: 1.25rem;
 }
 .hidden {
     display: none !important; 
@@ -266,6 +265,10 @@ button:hover {
     padding: 0px 1rem;
     backdrop-filter: blur(2px);
     flex-direction: column;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.33);
+
 }
 
 .releaseDate {
