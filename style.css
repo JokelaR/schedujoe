@@ -41,8 +41,8 @@ li {
     font-size: 2rem;
     margin: 1rem auto;
     list-style: outside none;
-    background-size: cover !important;
-    background-position: left !important;
+    background-size: cover;
+    background-position: center;
     backdrop-filter: blur(3px);
 }
 .card {
@@ -186,14 +186,14 @@ a[title*="Unofficial"]:after {
 }
 
 .adHoc{
-    outline-color:rgb(10, 168, 5) !important;
+    outline-color:rgb(10, 168, 5);
 }
 .seasonal {
-    outline-color:rgb(168, 5, 127) !important;
+    outline-color:rgb(168, 5, 127);
     outline-style: dotted;
 }
 .planned {
-    outline-color: rgb(8, 129, 241) !important;
+    outline-color: rgb(8, 129, 241);
     outline-style: dashed;
 }
 .dropped {
@@ -297,7 +297,7 @@ button:hover {
         0 10px 15px rgba(0, 0, 0, 0.07)
     ;
 }
-#promoBanner:hover {
+.promoBanner:hover {
     transform: translateY(-0.15rem);
     color: rgb(255, 183, 0);
     box-shadow:
@@ -307,22 +307,12 @@ button:hover {
         0 15px 20px rgba(255, 184, 4, 0.088)
     ;
 }
-#promoBanner:active {
-    transform: none;
-    box-shadow:
-        0 0.5px 0px rgb(255, 183, 1),
-        0 1px 4px rgba(255, 184, 4, 0.288),
-        0 3px 5.5px rgba(0, 0, 0, 0.06),
-        0 10px 15px rgba(0, 0, 0, 0.07)
-    ;
-}
 
 #jadseya {
     background-image: url('img/jadseya-banner-background.webp');
     animation: 20s infinite linear jadseya-scroll; 
-    background-size: unset !important;
-    background-position: unset;
-    background-color: rgb(48, 20, 0);
+    background-size: unset;
+    background-color: rgb(39, 17, 0);
 }
 
 @keyframes jadseya-scroll {
