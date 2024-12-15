@@ -1,0 +1,260 @@
+from datetime import datetime
+
+from chunk_types import Game, Schedule, Status
+
+
+html_start = """
+<!DOCTYPE html>
+<html lang="en">
+"""
+
+head = """
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Schedujoe - The Joseph Schedule</title>
+        <meta name="description" content="The (non-)authoritative source for the next planned Joseph Anderson stream games.">
+        <meta content="Joseph Anderson Stream Schedule" property="og:title" />
+        <meta content="What (not *exactly* when) is the next Joe Stream?" property="og:description" />
+        <meta content="https://schedujoe.bulder.fi" property="og:url" />
+        <meta content="https://schedujoe.bulder.fi/img/thumb.png" property="og:imgage"/>
+        <meta name="twitter:image" content="https://schedujoe.bulder.fi/img/thumb.png">
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <link rel="shortcut icon" href="/img/thumb.png" type="image/png">
+        <link rel="preload" href="normalize.css" as="style">
+        <link rel="preload" href="style.css" as="style">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="images.css">
+    </head>
+"""
+
+def schedule_html(schedule: tuple[str, Status]) -> str:
+    return f'<div title="{schedule[1].value}">{schedule[0]}</div>\n'
+
+def body_start(schedule: Schedule) -> str:
+    return f"""
+        <body>
+            <h1>Joseph Anderson Stream Schedule</h1>
+
+            <span style="font-size: 1.25rem;">Stream probabilities - Updated {datetime.now().strftime('%d.%m.%y')}</span>
+            <div id="scheduleContainer">
+                <div id="weekSchedule">
+                    {
+                        "".join(
+                            [schedule_html(day)
+                            for day in schedule.days]
+                        )
+                    }
+                </div>
+                <div id="dateRange" {'class="hidden"' if schedule.hide_date else ""}>
+                    <p class="undernote">{schedule.start}</p>
+                    <p class="undernote">{schedule.end}</p>
+                </div>    
+            </div>
+    """
+
+def video_links(game: Game) -> str:
+    if game.youtube or game.peertube:
+        string = '<div class="videoLinks">'
+        if game.youtube:
+            string += f'<a href="{game.youtube}" title="YouTube{" (Unofficial)" if game.unofficial_vod else ""}"><img src="img/youtube-fill.svg"></a>'
+        if game.peertube:
+            string += f'<a href="{game.peertube}" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>'
+        string += '</div>'
+    else:
+        string = ""
+    return string
+
+def logo(game: Game) -> str:
+    if game.steam_id and not game.small_card and not game.ignore_logo:
+        return f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" alt="{game.name} logo" class="gameLogo">'
+    else:
+        return game.name
+    return ""
+
+def background_image(game: Game) -> str|None:
+    url = None
+    if game.steam_id:
+        url = f'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/library_hero.jpg'
+    #override for custom images regardless of steam banner
+    if game.image:
+        url = f'img/{game.image}'
+    if url:
+        return f"""style="background-image: url('{url}')\""""
+
+def game_card(game: Game) -> str:
+    if game.is_divider:
+        return f'<li class="divider">{game.name}</li>'
+
+    card_classes = []
+    if game.rating:
+        card_classes.append(game.rating.value)
+    if game.small_card:
+        card_classes.append("thin")
+    if game.reason:
+        card_classes.append(game.reason.value)
+    if game.starts_hidden:
+        card_classes.append("hidden")
+    if game.is_nested:
+        card_classes.append("indent")
+
+    # jadseya override
+    if game.customID and game.customID == "jadseya":
+        card_classes.append("promoBanner")
+
+    if game.nested:
+        nest = f"""onclick="toggleHidden([{", ".join([f"'{game}'" for game in game.nested])}])\""""
+
+
+    card_class = " ".join(card_classes)
+
+    return f"""
+        <li {f'id="{game.customID}"' if game.customID else ""} class="{card_class}" {background_image(game)}>
+            <div class="card">
+                <div class="textOverlay" {nest if game.nested else ""}>{logo(game)}{f'<span class="releaseDate">{game.release_date}</span>' if game.release_date else ""}</div>
+                {video_links(game)}
+            </div>
+        </li>
+    """
+
+def current_games(games: list[Game]) -> str:
+    return f"""
+        <h2>Current games</h2>
+        <p>These are the current games Joe is streaming. </p>
+        <div id="present">
+            <ul>
+                {
+                    "".join(
+                        [game_card(game)
+                        for game in games]
+                    )
+                }
+            </ul>
+            <div class="horizontal-pair">
+                <div id="uminekoSecret" class="hidden">
+                    <h3>Leap Days</h3>
+                    <ul>
+                        <li id="Umineko" class="thin">
+                            <div class="card">
+                                <p class="textOverlay">Umineko</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p>Legend</p>
+            <div id="legend">
+                <div>
+                    <div class="example votingGame"></div>
+                    <span>Voted</span>
+                </div>
+                <div>
+                    <div class="example adHoc"></div>
+                    <span>Ad Hoc</span>
+                </div>
+                <div>
+                    <div class="example seasonal" onClick="incrementUmineko();"></div>
+                    <span>Seasonal</span>
+                </div>
+                <div>
+                    <div class="example planned"></div>
+                    <span>Planned</span>
+                </div>
+                <div>
+                    <div class="example dropped"></div>
+                    <span>Dropped</span>
+                </div>
+            </div>
+    """
+
+def future_games(games: list[Game]) -> str:
+    return f"""
+        <h2>Future games</h2>
+        <p>These are the Mainstream™ games that will be played roughly in order</p>
+        <div id="future">
+            <ul class="collapsed">
+                {
+                    "".join(
+                        [game_card(game)
+                        for game in games]
+                    )
+                }
+                <button onclick="toggleCollapsed(this)">See More</button>
+            </ul>
+        </div>
+    """
+
+def lock_it_in(games: list[Game]) -> str:
+    return f"""
+        <h2>Lock It In!</h2>
+        <p>These are games that Joe has said he wants to play as they come out. (Dates are for release, not necessarily for when he'll stream them)</p>
+        <div id="lockItIn">
+            <ul class="collapsed short">
+                {
+                    "".join(
+                        [game_card(game)
+                        for game in games]
+                    )
+                }
+                <button onclick="toggleCollapsed(this)">See More</button>
+            </ul>
+        </div>
+    """
+
+def past_games(games: list[Game]) -> str:
+    return f"""
+        <h2>Past games</h2>
+        <p>These are the voted (and more) games Joe has finished, rated on a four point scale (😀😕😡🤬).</p>
+        <p>Note that the ratings are based off of the vibes Joe gives off, and not direct ratings he gives out. Subjectivity is implied.</p>
+        <div id="past">
+            <ul class="collapsed">
+                {
+                    "".join(
+                        [game_card(game)
+                        for game in games]
+                    )
+                }
+                <li class="thin"><p class="textOverlay">
+                    <a href="https://docs.google.com/spreadsheets/d/1ITQm2xYrVj7sycFsjwPSe8bbCFu3OJmPSGtzm3ZImRE/" title="Spreadsheet for comprehensive stream history">
+                        Ancient history
+                    </a>
+                </li>
+                <button onclick="toggleCollapsed(this)">See More</button>
+            </ul>
+        </div>
+    """
+
+def unordered_planned(games: list[Game]) -> str:
+    return f"""
+        <h2>Unordered planned games</h2>
+        <p>These games will probably be played in some order, at some point.</p>
+        <div>
+            <ul>
+                {
+                    "".join(
+                        [game_card(game)
+                        for game in games]
+                    )
+                }
+            </ul>
+        </div>
+    """
+
+def body_end() -> str:
+    return """
+            <footer>
+                <p>This website covers games Joe has played since the end of the voting game™, starting with Steins;Gate</p>
+                <p>Website by Bulder, Joe pointing icon by jelly386, other assets sourced from SteamDB and/or respective games.</p>
+                <a href="https://github.com/JokelaR/schedujoe">Hosted on Github Pages</a>
+            </footer>
+        </body>
+        <link rel="stylesheet" disabled="true" id="hypnospaceStyle" href="hypnospace.css">
+        <script src="main.js"></script>
+    </html>
+    """

@@ -35,7 +35,6 @@ h2 {
 }
 li {
     height: 124px;
-
     outline: solid 2px white;
     border-radius: 0.25rem;
     font-size: 2rem;
@@ -48,8 +47,6 @@ li {
 .card {
     display: flex;
     height: 100%;
-    align-items: stretch;
-    justify-content: space-between;
 }
 li p {
     margin: 0px;
@@ -130,6 +127,8 @@ li.divider {
     margin-right: 1rem;
     display: flex;
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.75));
+    flex-grow: 1;
+    justify-content: end;
 }
 .videoLinks a {
     height:100%; 
@@ -154,15 +153,22 @@ a[title*="Unofficial"]:after {
     display: none;
 }
 
-.loved {list-style-type: '😀 ';}
-.hated {list-style-type: '😡 ';}
-.atrocious {list-style-type: '🤬 ';}
-.mixed {list-style-type: '😕 ';}
-.skip {list-style-type: '〰️ ';}
-.trolley {list-style-type: '🛒 ';}
+.loved::before {content: '😀 ';}
+.hated::before {content: '😡 ';}
+.atrocious::before {content: '🤬 ';}
+.mixed::before {content: '😕 ';}
+.skip::before {content: '〰️ ';}
+.trolley::before {content: '🛒 ';}
 
-#future > ul > li:first-child {
-    list-style-type: 'Next Up '
+li::before {
+    left: -3rem;
+    top: calc(50% - 1rem);
+    position: absolute;
+}
+
+#future li:first-child::before {
+    content: 'Next Up ';
+    left: -6rem;
 }
 
 #legend {
@@ -268,12 +274,29 @@ button:hover {
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     background-color: rgba(0, 0, 0, 0.33);
-
+}
+.textOverlay:has(img) {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    backdrop-filter: none;
+    background-color: transparent;
+}
+.gameLogo {
+    height: 100%;
+    max-width: min(24rem, 50vw);
+    width: fit-content;
+    object-fit: contain;
+    margin: 1rem;
 }
 
 .releaseDate {
     font-size: 1.2rem;
-    margin-bottom: -1rem;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0.3rem;
+    width: max-content;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: -1rem;
+    top: 1rem;
 }
 .no-underline {
     text-decoration: none;
@@ -328,8 +351,9 @@ button:hover {
     body {
         padding: 0px 1rem;
     }
-    #future > ul > li:first-child {
-        list-style-type: '🔜'
+    #future > ul > li:first-child::before {
+        content: '🔜';
+        left: -3rem;
     }
     p:not(.textOverlay) {
         font-size: 1.5rem !important;

@@ -1,827 +1,1369 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Schedujoe - The Joseph Schedule</title>
-        <meta name="description" content="The (non-)authoritative source for the next planned Joseph Anderson stream games.">
-        <meta content="Joseph Anderson Stream Schedule" property="og:title" />
-        <meta content="What (not *exactly* when) is the next Joe Stream?" property="og:description" />
-        <meta content="https://schedujoe.bulder.fi" property="og:url" />
-        <meta content="https://schedujoe.bulder.fi/img/thumb.png" property="og:imgage"/>
-        <meta name="twitter:image" content="https://schedujoe.bulder.fi/img/thumb.png">
-        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
-        <link rel="shortcut icon" href="/img/thumb.png" type="image/png">
-        <link rel="preload" href="normalize.css" as="style">
-        <link rel="preload" href="style.css" as="style">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue" rel="stylesheet">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="images.css">
-    </head>
-    <body>
-        <h1>Joseph Anderson Stream Schedule</h1>
-
-        <span style="font-size: 1.25rem;">Stream probabilities - Updated 05.09.2024</span>
-        <div id="scheduleContainer">
-            <div id="weekSchedule">
-                <div title="No stream">???</div>
-            </div>
-            <div id="dateRange" class="hidden">
-                <p class="undernote">7. December</p>
-                <p class="undernote">29. December</p>
-            </div>    
-        </div>
-    
-        <h2>Current games</h2>
-        <p>These are the current games Joe is streaming. </p>
-        <div id="present">
-            <ul>
-                <li id="" class="">
-                    <div class="card">
-                        <p class="textOverlay">Joe Break 2 - Still JOEWOL</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="horizontal-pair">
-                <div id="uminekoSecret" class="hidden">
-                    <h3>Leap Days</h3>
-                    <ul>
-                        <li id="Umineko" class="thin">
-                            <div class="card">
-                                <p class="textOverlay">Umineko</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <p>Legend</p>
-        <div id="legend">
-            <div>
-                <div class="example votingGame"></div>
-                <span>Voted</span>
-            </div>
-            <div>
-                <div class="example adHoc"></div>
-                <span>Ad Hoc</span>
-            </div>
-            <div>
-                <div class="example seasonal" onClick="incrementUmineko();"></div>
-                <span>Seasonal</span>
-            </div>
-            <div>
-                <div class="example planned"></div>
-                <span>Planned</span>
-            </div>
-            <div>
-                <div class="example dropped"></div>
-                <span>Dropped</span>
-            </div>
-
-            
-        </div>
-        
-        <h2>Future games</h2>
-        <p>These are the Mainstream™ games that will be played roughly in order (Note: The only sure thing is that BG3 is the next "proper" stream.)</p>
-        <div id="future">
-            <ul class="collapsed">
-                <li id="BaldursGate3" class="adHoc">
-                    <div class="card">
-                        <p class="textOverlay">Baldur's Gate 3 (Not to completion)</p>
-                    </div>
-                </li>
-                <li id="Pentiment" class="planned">
-                    <div class="card">
-                        <p class="textOverlay">Pentiment</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolid1">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolid2SonsofLiberty">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid 2: Sons of Liberty</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolid3SnakeEater">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid 3: Snake Eater</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolid4GunsofthePatriots">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid 4: Guns of the Patriots</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolidPeaceWalker" class="unsure">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid: Peace Walker</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolidVGroundZeroes">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid V: Ground Zeroes</p>
-                    </div>
-                </li>
-                <li id="MetalGearSolidVPhantomPain">
-                    <div class="card">
-                        <p class="textOverlay">Metal Gear Solid V: Phantom Pain</p>
-                    </div>
-                </li>
-                <li id="PaperMarioTTYD">
-                    <div class="card">
-                        <p class="textOverlay">Paper Mario: The Thousand Year Door</p>
-                    </div>
-                </li>
-                <li id="CryptoftheNecrodancer">
-                    <div class="card">
-                        <p class="textOverlay">Crypt of the Necrodancer</p>
-                    </div>
-                </li>
-                <li id="FireEmblemThreeHouses">
-                    <div class="card">
-                        <p class="textOverlay">Fire Emblem Three Houses</p>
-                    </div>
-                </li>
-                <li id="Killer7">
-                    <div class="card">
-                        <p class="textOverlay">Killer7</p>
-                    </div>
-                </li>
-                <li id="AceCombat7SkiesUnknown">
-                    <div class="card">
-                        <p class="textOverlay">Ace Combat 7: Skies Unknown</p>
-                    </div>
-                </li>
-                <li id="NieRReplicantver122474487139">
-                    <div class="card">
-                        <p class="textOverlay">NieR Replicant ver.1.22474487139...</p>
-                    </div>
-                </li>
-                <li id="TheVoid">
-                    <div class="card">
-                        <p class="textOverlay">The Void</p>
-                    </div>
-                </li>
-                <li id="LegacyofKainSoulReaver">
-                    <div class="card">
-                        <p class="textOverlay">Legacy of Kain: Soul Reaver</p>
-                    </div>
-                </li>
-                <button onclick="toggleCollapsed(this)">See More</button>           
-            </ul>
-        </div>
-        <h2>Lock It In!</h2>
-        <p>These are games that Joe has said he wants to play as they come out. (Dates are for release, not necessarily for when he'll stream them)</p>
-        <div id="lockItIn">
-            <ul class="collapsed short">
-                <li id="Persona3Reload" class="">
-                    <div class="card">
-                        <p class="textOverlay">Persona 3 Reload<span class="releaseDate">February 2nd 2024</span></p>
-                    </div>
-                </li>
-                <li id="ApolloJustice">
-                    <div class="card">
-                        <p class="textOverlay">Apollo Justice Trilogy<span class="releaseDate">Early 2024</span></p>
-                    </div>
-                </li>
-                <li id="BabySteps">
-                    <div class="card">
-                        <p class="textOverlay">Baby Steps<span class="releaseDate">2024</span></p>
-                    </div>
-                </li>
-                <li id="StarWarsOutlaws">
-                    <div class="card">
-                        <p class="textOverlay">Star Wars Outlaws<span class="releaseDate">2024</span></p>
-                    </div>
-                </li>
-                <li id="PonyIsland2">
-                    <div class="card">
-                        <p class="textOverlay">Pony Island 2<span class="releaseDate">????</span></p>
-                    </div>
-                </li>
-                <button onclick="toggleCollapsed(this)">See More</button>           
-            </ul>
-        </div>
-        <h2>Past games</h2>
-        <p>These are the voted (and more) games Joe has finished, rated on a four point scale (😀😕😡🤬).</p>
-        <p>Note that the ratings are based off of the vibes Joe gives off, and not direct ratings he gives out. Subjectivity is implied.</p>
-        <div id="past">
-            <ul class="collapsed">
-                <li class="divider">2024</li>
-                <li id="Umineko" class="seasonal mixed">
-                    <div class="card">
-                        <p class="textOverlay">Umineko</p>
-                        <div class="videoLinks">
-                            <a href="" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="divider">2023</li>
-                <li id="jadseya" class="loved seasonal promoBanner">
-                    <div class="card">
-                        <p class="textOverlay">JADSEYA Awards Stream</p>
-                        <div class="videoLinks">
-                            <a href="https://jadseya.com/2023/results" title="Results"><img src="img/jadseya-icon.png" alt="Results"></a>
-                            <a href="https://peertube.nodja.com/w/1GNG9GFiN2jkTy2QafFMJE" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="VA11HallA" class="mixed">
-                    <div class="card">
-                        <p class="textOverlay">VA-11 Hall-A</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYs-HXvLm--LlMf6_mhE5zVq" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/efy2USYLLsHWmHPLja82ho" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="SlayThePrincess" class="adHoc planned loved">
-                    <div class="card">
-                        <p class="textOverlay">Slay the Princess</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvvd82XUgqdK9z_XWqfhA6_" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/oUnwTuFmQPDAq7bhB7xjhF" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AlanWake2" class="adHoc planned loved">
-                    <div class="card"><p class="textOverlay">Alan Wake 2</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvz4m3kmFkJ_eVHrF66zsWc" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP?playlistPosition=5" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AlanWake" class="adHoc loved">
-                    <div class="card"><p class="textOverlay">Alan Wake</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvCXhuIKjTaTbqmYOGo6dPj" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AlanWakeAmerican" class="mixed thin adHoc indent">
-                    <div class="card">
-                        <p class="textOverlay">Alan Wake: American Nightmare</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/DBc9eMiJFJ4" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP?playlistPosition=4" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ControlAWE" class="mixed thin adHoc indent">
-                    <div class="card">
-                        <p class="textOverlay">Control: AWE (DLC)</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/DBc9eMiJFJ4?t=17177" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/9QvZ1HqrHyZnNtA4wsr3ZB?start=4h50m23s" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="MarioWonder" class="adHoc skip">
-                    <div class="card"><p class="textOverlay">Super Mario Bros Wonder</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=i_UNkFiGw0M" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/ge4Vk8A4yCT8cbNQCz5LAs" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="LiesOfP" class="planned loved">
-                    <div class="card"><p class="textOverlay">Lies of P</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsaHQT41Qcm4iob5sGA4r45" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/8UTa92ajTLt6SLVpeDMZBw" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Starfield" class="planned mixed">
-                    <div class="card"><p class="textOverlay">Starfield</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjViqevncFeU0z3V7GamWoIsB" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/6hbbNJqj6CkwEYTDXvSqiN" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ArmoredCore6" class="planned mixed">
-                    <div class="card"><p class="textOverlay">Armored Core 6</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvdLr7M9pPg6M9lcdINNwVC" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/xyHR9DM6GiyvD4WU5NbBbN" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Inscryption" class="adHoc loved">
-                    <div class="card"><p class="textOverlay">Inscryption</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVgFkoWFcWy_MfxseG_lqzhd" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/tg9SBNBDwU91rA13piCCqX" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AISomniumFiles2" class="adHoc mixed">
-                    <div class="card"><p class="textOverlay">AI: THE SOMNIUM FILES - nirvanA Initiative</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYs3PYEXM2zS-Sykl1F6L6BN" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/uegmMj2cTBwz3kqPJ4CQSS" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Twelveminutes" class="adHoc hated">
-                    <div class="card"><p class="textOverlay">Twelve Minutes</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=-BQzU3mZkkI" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/mZBMjFgGcsEoJEDXay4tkE" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Dujanah" class="loved">
-                    <div class="card"><p class="textOverlay">Dujanah</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=DrKg819HZCU" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/8bPK9Kvm2XPxVSbqkNFthR" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="RabiRibi" class="loved">
-                    <div class="card"><p class="textOverlay">Rabi-Ribi</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvvzhIsh8GCbfIKM5EaY7jF" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/fJRyEMD8MHYjecWNY5FZBu" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="GhostTrick" class="adHoc loved">
-                    <div class="card"><p class="textOverlay">Ghost Trick: Phantom Detective</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjViOd7vw-8kdXjoP04zDwUm9" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/qqEeHAcv8KuvjoeXNm6zVu" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="FinalFantasy16" class="adHoc mixed">
-                    <div class="card"><p class="textOverlay">Final Fantasy 16</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYt1qOfs31CVh15hyG9IOv1w" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/3jhxV9vspFs9b8mNoAwz6D" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="GravityRush2" class="adHoc mixed">
-                    <div class="card"><p class="textOverlay">Gravity Rush 2</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYuAd1GkWUX4UrzjjZCdJKgD" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/8ryNVT5EksDDPwT9Hfbyk3" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AmnesiaBunker" class="adHoc mixed">
-                    <div class="card"><p class="textOverlay">Amnesia: The Bunker</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=LQbQi9_UAR0" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/w97aNUTA2uP6cgsR75b6MD" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Gollum" class="adHoc hated">
-                    <div class="card"><p class="textOverlay">The Lord of the Rings: Gollum</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVi5Z0qbRCHNkY03vcHxJV8v" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/avBsMzS6MM4toB4G2PFNzN" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HiFiRush" class="adHoc loved">
-                    <div class="card"><p class="textOverlay">Hi-Fi RUSH</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVge_fL3wyzcqZjPVEAt7dns" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/k82KpEWfk5pDBr3mKrLwxe" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="TearsOfTheKingdom" class="adHoc skip">
-                    <div class="card"><p class="textOverlay">Legend of Zelda: Tears of the Kingdom</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=ciFe_yqRIfY&list=PLtvGR9rxLjVhFxWNYjeUjP2rc3MAmLWLA" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/damJ3N5w2ZsQBqEfA8oU76" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="JediSurvivor" class="adHoc loved">
-                    <div class="card"><p class="textOverlay">Jedi: Survivor</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVit_46zrDXcoZb9AerkmzGG" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/tBp6EWPvnX49eWZ7y934V9" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ResidentEvil4" class="adHoc loved">
-                    <div class="card">
-                        <p class="textOverlay">Resident Evil 4 Remake</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVgKCbY9_pop2_Y5LVuqbJH7" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/uQvpz7ENpJSWB93oRCBkCR" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AtomicHeart" class="adHoc skip">
-                    <div class="card">
-                        <p class="textOverlay">Atomic Heart</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=KMd_98rJiYI&list=PLIUsXWF1inYvUwxZN89URnZ0lde4_-mPF&index=1" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/5Y7swHhoDBMQsFH1tAgNqn" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ThirteenSentinels" class="loved">
-                    <div class="card">
-                        <p class="textOverlay">13 Sentinels</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYveflhZCYtbkxsETI-zkq-0" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/7Fd5g4hsRy5ugercr3yjSB" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Forspoken" class="adHoc mixed">
-                    <div class="card">
-                        <p class="textOverlay">Forspoken</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYuYbk5YGccE5jQKWKgyAF_i" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/71axtKabZsprBY9z8J9iPQ" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="GravityRush" class="mixed">
-                    <div class="card">
-                        <p class="textOverlay">Gravity Rush</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYv9rBZqGQBu6tGl5RvxbmLH" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/xm8EqXCg4rQHYWg3PTFiRy" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="DeadlyPremonition" class="loved">
-                    <div class="card">
-                        <p class="textOverlay">Deadly Premonition</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYtEdn8dVVrP01r3Q7EReYXT" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/rK9ozC1difNdHUukBqd5K9" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="BlackMesa" class="adHoc loved">
-                    <div class="card">
-                        <p class="textOverlay">Black Mesa</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/7Yef-BSk48U" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=13" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HuntDownTheFreeman" class="adHoc hated">
-                    <div class="card">
-                        <p class="textOverlay">Hunt Down The Freeman</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/voFOaLDBk3k" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/5cg7hfNNEJDqo2xkXB8Xoa" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HalfLife2" class="trolley">
-                    <div class="card">
-                        <p class="textOverlay">Half-Life 2</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=5" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HalfLife2Episode1" class="mixed thin indent">
-                    <div class="card">
-                        <p class="textOverlay">Half-Life 2: Episode 1</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/zSFT9Udxz2g?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C&t=12584" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/rSUJKQ6QJpzr4u8vmQojA8?start=3h29m44s" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HalfLife2Episode2" class="loved thin indent">
-                    <div class="card">
-                        <p class="textOverlay">Half-Life 2: Episode 2</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/GU4kXXksahI?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C&t=5286" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/aEzMBHheDyWJdTX7k1rDeX?start=1h28m6s" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HalfLife1" class="mixed">
-                    <div class="card">
-                        <p class="textOverlay">Half-Life 1</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="OpposingForce" class="thin mixed indent">
-                    <div class="card">
-                        <p class="textOverlay">Half-Life: Opposing Force</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/dRA1kIPbY9Y?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY&t=8198" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=3" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="BlueShift" class="thin hated indent">
-                    <div class="card">
-                        <p class="textOverlay">Half-Life: Blue Shift</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/2BrQpwi-2XM?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY&t=11070" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/eHocwGYgSn3YjdSrjZCJwF?start=3h4m32s" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="HypnospaceOutlaw" class="loved">
-                    <div class="card">
-                        <p class="textOverlay" onclick="toggleHypnospace()" >Hypnospace Outlaw</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsCGg97AhZAD0GxJ7AFFSsF" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/3g6C8j9PEsrRQP7rL8Sjky" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="DeadSpace" class="skip adHoc">
-                    <div class="card">
-                        <p class="textOverlay">Dead Space Remake</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvGjLfejDxw1pgxkV7OJCi7" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/sjB7T65z2PFbiQUuG6SbSQ" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="AISomniumFiles" class="loved">
-                    <div class="card">
-                        <p class="textOverlay">AI Somnium Files</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYuYqyEVXydIYTo7NniH16hs" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/fVvbYsSXthUXRZ9yZrMbbp" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="LifeIsStrangeTrueColors" class="seasonal mixed">
-                    <div class="card">
-                        <p class="textOverlay" onclick="toggleHidden(['MineHaunt', 'Arkanoid'])">Life is Strange: True Colors</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYu1bitjPiXHnqjbyEonXoHF" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=13" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="MineHaunt" class="hidden thin seasonal loved indent">
-                    <div class="card">
-                        <p class="textOverlay">Mine Haunt</p>
-                    </div>
-                </li>
-                <li id="Arkanoid" class="hidden thin seasonal hated indent">
-                    <div class="card">
-                        <p class="textOverlay">Arkanoid</p>
-                    </div>
-                </li>
-                <li class="divider">2022</li>
-                <li id="LifeIsStrange2" class="hated seasonal">
-                    <div class="card">
-                        <p class="textOverlay">Life is Strange 2</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/lcMi0oUfghs?list=PLIUsXWF1inYtFbazIzUhJpwpf4m4Qsngd&t=7130" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=9" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>    
-                <li id="CaptainSpirit" class="mixed seasonal">
-                    <div class="card">
-                        <p class="textOverlay">The Awesome Adventures of Captain Spirit</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/watch?v=lcMi0oUfghs&list=PLIUsXWF1inYtFbazIzUhJpwpf4m4Qsngd" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=9" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li> 
-                <li id="LifeIsStrangeBTS" class="atrocious seasonal">
-                    <div class="card">
-                        <p class="textOverlay">Life is Strange: Before the Storm</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsIbIBOkdYEj4ri_WJcJDIV" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=6" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="LifeIsStrange" class="loved seasonal">
-                    <div class="card">
-                        <p class="textOverlay">Life is Strange</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsBHjdDFPP5mKfD-8hFgnyk" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Stray" class="skip adHoc">
-                    <div class="card">
-                        <p class="textOverlay">Stray</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/w6pzH0ts_s4" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="NodjaTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/j7wc7wAR4cKvNA6kVf7HiF" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="GodOfWarRagnarok" class="mixed adHoc">
-                    <div class="card">
-                        <p class="textOverlay">God of War Ragnarök</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVgDCDgHv5XXK36LmyVFRORO" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/ceYsfxt4ucDAfonprsMnti" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="NeonWhite" class="skip adHoc">
-                    <div class="card">
-                        <p class="textOverlay">Neon White</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYufwF6Rh5dDDQ4wQILhBeHv" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/7TUAijxCCTHaQ2GmbcTcRi" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ZeroEscapeZeroTimeDilemma" class="mixed">
-                    <div class="card">
-                        <p class="textOverlay">Zero Escape: Zero Time Dilemma</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvUA9KH9wdgDvsbw0flqN51" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/9Fb13bkGyyotEjAQUDUfnh" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ZeroEscapeVirtuesLastReward" class="hated">
-                    <div class="card">
-                        <p class="textOverlay">Zero Escape: Virtue's Last Reward</p>
-                        <div class="videoLinks">
-                            <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvAGk5X5Cg7duEf39Y97p5X" title="YouTube (Unofficial)"><img src="img/youtube-fill.svg" alt="YouTube (Unofficial)"></a>
-                            <a href="https://peertube.nodja.com/w/p/jGNwQkPpY1o6ecLGY5QhFU" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ZeroEscapeNineHoursNinePersonsNineDoors" class="loved">
-                    <div class="card">
-                        <p class="textOverlay">Zero Escape: Nine Hours, Nine Persons, Nine Doors</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/xfbKZDhG8Wc" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/5bybRd9u6XVhvqkqoEtyJe" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="Wandersong" class="mixed">
-                    <div class="card">
-                        <p class="textOverlay">Wandersong</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/Wf1BDf1loS4" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/4XzQVVSim7NUv5PiXtA82m" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="ResidentEvilVillage" class="mixed adHoc">
-                    <div class="card">
-                        <p class="textOverlay">Resident Evil Village</p>
-                        <div class="videoLinks">
-                            <a href="https://youtu.be/it7hOwWdC3Q" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-                            <a href="https://peertube.nodja.com/w/p/ozBMSqngjBofAxBQn9useN" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="divider">2021</li>
-                <li id="Persona4Golden" class="loved">
-                    <div class="card">
-                        <p class="textOverlay">Persona 4 Golden</p>
-                        <div class="videoLinks">
-                            <a href="https://peertube.nodja.com/w/p/tHS7eCjQjYbyLpVqdGKHAg" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li id="SteinsGate" class="hated dropped">
-                    <div class="card">
-                        <p class="textOverlay">Steins;Gate</p>
-                        <div class="videoLinks">
-                            <a href="https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-                        </div>
-                    </div>
-                </li>
-                <li class="thin"><p class="textOverlay">
-                    <a href="https://docs.google.com/spreadsheets/d/1ITQm2xYrVj7sycFsjwPSe8bbCFu3OJmPSGtzm3ZImRE/" title="Spreadsheet for comprehensive stream history">
-                        Ancient history
-                    </a>
-                </li>
-                <button onclick="toggleCollapsed(this)">See More</button>         
-            </ul>
-        </div>
-        <h2>Unordered planned games</h2>
-        <p>These games will probably be played in some order, at some point.</p>
-        <div>
-            <li id="D4" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">D4 - Dark Dreams Don't Die</p>
-                </div>
-            </li>
-            <li id="Eternights" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Eternights</p>
-                </div>
-            </li>
-            <li id="NeonWhiteAgain" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Neon White (Again)</p>
-                </div>
-            </li>
-            <li id="Pathologic1" class="thin">
-                <div class="card">
-                    <p class="textOverlay">Pathologic</p>
-                </div>
-            </li>
-            <li id="Pathologic2" class="thin">
-                <div class="card">
-                    <p class="textOverlay">Pathologic 2</p>
-                </div>
-            </li>
-            <li id="Persona5Royal" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Persona 5 Royal</p>
-                </div>
-            </li>
-            <li id="Persona5Strikers" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Persona 5 Strikers</p>
-                </div>
-            </li>
-            <li id="PizzaTower" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Pizza Tower</p>
-                </div>
-            </li>
-            <li id="Returnal" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Returnal</p>
-                </div>
-            </li>
-            <li id="Signalis" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Signalis</p>
-                </div>
-            </li>
-            <li id="StrangerOfParadise" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">STRANGER OF PARADISE FINAL FANTASY ORIGIN</p>
-                </div>
-            </li>
-            <li id="WantedDead" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Wanted: Dead</p>
-                </div>
-            </li>
-            <li id="XenobladeChronicles" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Xenoblade Chronicles</p>
-                </div>
-            </li>
-            <li id="YIIK" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">YIIK - A Post Modern RPG</p>
-                </div>
-            </li>
-            <li id="YakuzaKiwami" class="thin planned">
-                <div class="card">
-                    <p class="textOverlay">Yakuza Kiwami</p>
-                </div>
-            </li>
-        </div>
-
-        <footer>
-            <p>This website covers games Joe has played since the end of the voting game™, starting with Steins;Gate</p>
-            <p>Website by Bulder, Joe pointing icon by jelly386, other assets sourced from SteamDB and/or respective games.</p>
-            <a href="https://github.com/JokelaR/schedujoe">Hosted on Github Pages</a>
-        </footer>
-    </body>
-    <link rel="stylesheet" disabled="true" id="hypnospaceStyle" href="hypnospace.css">
-    <script src="main.js"></script>
-
-    <template id="videoLinkTemplate">
-        <div class="videoLinks">
-            <a href="" title="YouTube"><img src="img/youtube-fill.svg" alt="YouTube"></a>
-            <a href="" title="NodjaTube"><img src="img/server-fill.svg" alt="NodjaTube"></a>
-        </div>
-    </template>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Schedujoe - The Joseph Schedule
+  </title>
+  <meta content="The (non-)authoritative source for the next planned Joseph Anderson stream games." name="description"/>
+  <meta content="Joseph Anderson Stream Schedule" property="og:title">
+   <meta content="What (not *exactly* when) is the next Joe Stream?" property="og:description">
+    <meta content="https://schedujoe.bulder.fi" property="og:url">
+     <meta content="https://schedujoe.bulder.fi/img/thumb.png" property="og:imgage">
+      <meta content="https://schedujoe.bulder.fi/img/thumb.png" name="twitter:image"/>
+      <meta content="#43B581" data-react-helmet="true" name="theme-color">
+       <link href="/img/thumb.png" rel="shortcut icon" type="image/png"/>
+       <link as="style" href="normalize.css" rel="preload"/>
+       <link as="style" href="style.css" rel="preload"/>
+       <link href="https://fonts.googleapis.com" rel="preconnect"/>
+       <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue" rel="stylesheet"/>
+       <link href="normalize.css" rel="stylesheet"/>
+       <link href="style.css" rel="stylesheet"/>
+       <link href="images.css" rel="stylesheet"/>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <h1>
+   Joseph Anderson Stream Schedule
+  </h1>
+  <span style="font-size: 1.25rem;">
+   Stream probabilities - Updated 15.12.24
+  </span>
+  <div id="scheduleContainer">
+   <div id="weekSchedule">
+    <div title="No stream">
+     ???
+    </div>
+    <div title="No stream">
+     ???
+    </div>
+    <div title="No stream">
+     ???
+    </div>
+    <div title="No stream">
+     ???
+    </div>
+    <div title="No stream">
+     ???
+    </div>
+    <div title="No stream">
+     ???
+    </div>
+    <div title="No stream">
+     ???
+    </div>
+   </div>
+   <div class="hidden" id="dateRange">
+    <p class="undernote">
+     16.12.2024
+    </p>
+    <p class="undernote">
+     16.12.2024
+    </p>
+   </div>
+  </div>
+  <h2>
+   Current games
+  </h2>
+  <p>
+   These are the current games Joe is streaming.
+  </p>
+  <div id="present">
+   <ul>
+    <li class="" none="">
+     <div class="card">
+      <div class="textOverlay">
+       Joe Break 2 - Still Joewol
+      </div>
+     </div>
+    </li>
+   </ul>
+   <div class="horizontal-pair">
+    <div class="hidden" id="uminekoSecret">
+     <h3>
+      Leap Days
+     </h3>
+     <ul>
+      <li class="thin" id="Umineko">
+       <div class="card">
+        <p class="textOverlay">
+         Umineko
+        </p>
+       </div>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <p>
+    Legend
+   </p>
+   <div id="legend">
+    <div>
+     <div class="example votingGame">
+     </div>
+     <span>
+      Voted
+     </span>
+    </div>
+    <div>
+     <div class="example adHoc">
+     </div>
+     <span>
+      Ad Hoc
+     </span>
+    </div>
+    <div>
+     <div class="example seasonal" onclick="incrementUmineko();">
+     </div>
+     <span>
+      Seasonal
+     </span>
+    </div>
+    <div>
+     <div class="example planned">
+     </div>
+     <span>
+      Planned
+     </span>
+    </div>
+    <div>
+     <div class="example dropped">
+     </div>
+     <span>
+      Dropped
+     </span>
+    </div>
+   </div>
+   <h2>
+    Future games
+   </h2>
+   <p>
+    These are the Mainstream™ games that will be played roughly in order
+   </p>
+   <div id="future">
+    <ul class="collapsed">
+     <li class="adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1086940/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Baldur's Gate 3 (Not to completion) logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1086940/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="planned" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1205520/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Pentiment logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1205520/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2131630/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Metal Gear Solid logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2131630/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2131640/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Metal Gear Solid 2: Sons of Liberty logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2131640/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2131650/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Metal Gear Solid 3: Snake Eater logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2131650/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('img/mgs4.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Metal Gear Solid 4: Guns of the Patriots
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('img/mgspw.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Metal Gear Solid: Peace Walker
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('img/mgsgz.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Metal Gear Solid V: Ground Zeroes
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/287700/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Metal Gear Solid V: Phantom Pain logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/287700/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('img/papermario.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Paper Mario: The Thousand Year Door
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/247080/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Crypt of the Necrodancer logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/247080/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('img/3houses.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Fire Emblem Three Houses
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/868520/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Killer7 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/868520/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/502500/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Ace Combat 7: Skies Unknown logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/502500/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1113560/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="NieR Replicant ver.1.22474487139... logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1113560/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/37000/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="The Void logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/37000/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2521380/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Legacy of Kain: Soul Reaver
+       </div>
+      </div>
+     </li>
+     <button onclick="toggleCollapsed(this)">
+      See More
+     </button>
+    </ul>
+   </div>
+   <h2>
+    Lock It In!
+   </h2>
+   <p>
+    These are games that Joe has said he wants to play as they come out. (Dates are for release, not necessarily for when he'll stream them)
+   </p>
+   <div id="lockItIn">
+    <ul class="collapsed short">
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2161700/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Persona 3 Reload logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2161700/logo.png"/>
+        <span class="releaseDate">
+         February 2nd 2024
+        </span>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2187220/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Apollo Justice Trilogy logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2187220/logo.png"/>
+        <span class="releaseDate">
+         Early 2024
+        </span>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1281040/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Baby Steps logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1281040/logo.png"/>
+        <span class="releaseDate">
+         2024
+        </span>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2842040/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Star Wars Outlaws logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2842040/logo.png"/>
+        <span class="releaseDate">
+         2024
+        </span>
+       </div>
+      </div>
+     </li>
+     <li class="" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2017940/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Pony Island 2 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2017940/logo.png"/>
+        <span class="releaseDate">
+         ????
+        </span>
+       </div>
+      </div>
+     </li>
+     <button onclick="toggleCollapsed(this)">
+      See More
+     </button>
+    </ul>
+   </div>
+   <h2>
+    Past games
+   </h2>
+   <p>
+    These are the voted (and more) games Joe has finished, rated on a four point scale (😀😕😡🤬).
+   </p>
+   <p>
+    Note that the ratings are based off of the vibes Joe gives off, and not direct ratings he gives out. Subjectivity is implied.
+   </p>
+   <div id="past">
+    <ul class="collapsed">
+     <li class="divider">
+      2024
+     </li>
+     <li class="skip adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2379780/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Balatro logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2379780/logo.png"/>
+       </div>
+      </div>
+     </li>
+     <li class="mixed seasonal" id="umineko" style="background-image: url('img/umineko.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Umineko
+       </div>
+       <div class="videoLinks">
+        <a href="https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="divider">
+      2023
+     </li>
+     <li class="loved seasonal promoBanner" id="jadseya" none="">
+      <div class="card">
+       <div class="textOverlay">
+        JADSEYA Awards Stream
+       </div>
+       <div class="videoLinks">
+        <a href="https://peertube.nodja.com/w/1GNG9GFiN2jkTy2QafFMJE" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/447530/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="VA-11 Hall-A logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/447530/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYs-HXvLm--LlMf6_mhE5zVq" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/efy2USYLLsHWmHPLja82ho" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved planned" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1989270/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Slay the Princess logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1989270/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvvd82XUgqdK9z_XWqfhA6_" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/oUnwTuFmQPDAq7bhB7xjhF" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved planned" style="background-image: url('img/alanwake2.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Alan Wake 2
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvz4m3kmFkJ_eVHrF66zsWc" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP?playlistPosition=5" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/108710/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay" onclick="toggleHidden(['americanightmare', 'controlawe'])">
+        <img alt="Alan Wake logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/108710/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvCXhuIKjTaTbqmYOGo6dPj" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed thin adHoc indent" id="americanightmare" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/202750/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Alan Wake: American Nightmare
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/DBc9eMiJFJ4" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP?playlistPosition=4" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed thin adHoc indent" id="controlawe" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/870780/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Control: AWE (DLC)
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/DBc9eMiJFJ4?t=17177" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/9QvZ1HqrHyZnNtA4wsr3ZB?start=4h50m23s" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="skip adHoc" style="background-image: url('img/mariowonder.png')">
+      <div class="card">
+       <div class="textOverlay">
+        Super Mario Bros Wonder
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=i_UNkFiGw0M" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/ge4Vk8A4yCT8cbNQCz5LAs" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved planned" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1627720/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Lies of P logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1627720/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsaHQT41Qcm4iob5sGA4r45" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/8UTa92ajTLt6SLVpeDMZBw" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed planned" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1716740/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Starfield logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1716740/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjViqevncFeU0z3V7GamWoIsB" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/6hbbNJqj6CkwEYTDXvSqiN" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed planned" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1888160/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Armored Core 6 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1888160/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvdLr7M9pPg6M9lcdINNwVC" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/xyHR9DM6GiyvD4WU5NbBbN" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1092790/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Inscryption logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1092790/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVgFkoWFcWy_MfxseG_lqzhd" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/tg9SBNBDwU91rA13piCCqX" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1449200/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="AI: THE SOMNIUM FILES - nirvanA Initiative logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1449200/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYs3PYEXM2zS-Sykl1F6L6BN" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uegmMj2cTBwz3kqPJ4CQSS" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="hated adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1097200/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Twelve Minutes logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1097200/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=-BQzU3mZkkI" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/mZBMjFgGcsEoJEDXay4tkE" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/681240/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Dujanah logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/681240/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=DrKg819HZCU" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/8bPK9Kvm2XPxVSbqkNFthR" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/400910/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Rabi-Ribi logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/400910/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvvzhIsh8GCbfIKM5EaY7jF" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/fJRyEMD8MHYjecWNY5FZBu" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1967430/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Ghost Trick: Phantom Detective logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1967430/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjViOd7vw-8kdXjoP04zDwUm9" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/qqEeHAcv8KuvjoeXNm6zVu" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2515020/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Final Fantasy 16 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2515020/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYt1qOfs31CVh15hyG9IOv1w" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/3jhxV9vspFs9b8mNoAwz6D" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('img/gravityrush2.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Gravity Rush 2
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYuAd1GkWUX4UrzjjZCdJKgD" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/8ryNVT5EksDDPwT9Hfbyk3" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1944430/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Amnesia: The Bunker logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1944430/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=LQbQi9_UAR0" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/w97aNUTA2uP6cgsR75b6MD" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="hated adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1265780/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="The Lord of the Rings: Gollum logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1265780/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVi5Z0qbRCHNkY03vcHxJV8v" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/avBsMzS6MM4toB4G2PFNzN" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1817230/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Hi-Fi RUSH logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1817230/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVge_fL3wyzcqZjPVEAt7dns" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/k82KpEWfk5pDBr3mKrLwxe" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="skip adHoc" style="background-image: url('img/tearsofthekingdom.png')">
+      <div class="card">
+       <div class="textOverlay">
+        Legend of Zelda: Tears of the Kingdom
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=ciFe_yqRIfY&amp;list=PLtvGR9rxLjVhFxWNYjeUjP2rc3MAmLWLA" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/damJ3N5w2ZsQBqEfA8oU76" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1774580/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Jedi: Survivor logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1774580/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVit_46zrDXcoZb9AerkmzGG" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/tBp6EWPvnX49eWZ7y934V9" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2050650/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Resident Evil 4 Remake logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2050650/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVgKCbY9_pop2_Y5LVuqbJH7" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uQvpz7ENpJSWB93oRCBkCR" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="skip adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/668580/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Atomic Heart logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/668580/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=KMd_98rJiYI&amp;list=PLIUsXWF1inYvUwxZN89URnZ0lde4_-mPF&amp;index=1" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/5Y7swHhoDBMQsFH1tAgNqn" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" style="background-image: url('img/13s.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        13 Sentinels
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYveflhZCYtbkxsETI-zkq-0" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/7Fd5g4hsRy5ugercr3yjSB" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1680880/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Forspoken logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1680880/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYuYbk5YGccE5jQKWKgyAF_i" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/71axtKabZsprBY9z8J9iPQ" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed" style="background-image: url('img/gr.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Gravity Rush
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYv9rBZqGQBu6tGl5RvxbmLH" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/xm8EqXCg4rQHYWg3PTFiRy" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/247660/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Deadly Premonition logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/247660/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYtEdn8dVVrP01r3Q7EReYXT" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/rK9ozC1difNdHUukBqd5K9" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/362890/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Black Mesa logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/362890/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/7Yef-BSk48U" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=13" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="hated adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/723390/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Hunt Down The Freeman logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/723390/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/voFOaLDBk3k" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/5cg7hfNNEJDqo2xkXB8Xoa" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="trolley" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/220/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay" onclick="toggleHidden(['hl2ep1', 'hl2ep2'])">
+        <img alt="Half-Life 2 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/220/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=5" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed thin indent" id="hl2ep1" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/380/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Half-Life 2: Episode 1
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/zSFT9Udxz2g?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C&amp;t=12584" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/rSUJKQ6QJpzr4u8vmQojA8?start=3h29m44s" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved thin indent" id="hl2ep2" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/420/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Half-Life 2: Episode 2
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/GU4kXXksahI?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C&amp;t=5286" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/aEzMBHheDyWJdTX7k1rDeX?start=1h28m6s" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/70/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay" onclick="toggleHidden(['opposingforce', 'blueshift'])">
+        <img alt="Half-Life 1 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/70/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed thin indent" id="opposingforce" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/50/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Half-Life: Opposing Force
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/dRA1kIPbY9Y?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY&amp;t=8198" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=3" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="hated thin indent" id="blueshift" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/130/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Half-Life: Blue Shift
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/2BrQpwi-2XM?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY&amp;t=11070" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/eHocwGYgSn3YjdSrjZCJwF?start=3h4m32s" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" id="hypnospace" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/844590/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Hypnospace Outlaw logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/844590/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsCGg97AhZAD0GxJ7AFFSsF" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/3g6C8j9PEsrRQP7rL8Sjky" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="skip adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1693980/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Dead Space Remake logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1693980/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvGjLfejDxw1pgxkV7OJCi7" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/sjB7T65z2PFbiQUuG6SbSQ" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/948740/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="AI Somnium Files logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/948740/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYuYqyEVXydIYTo7NniH16hs" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/fVvbYsSXthUXRZ9yZrMbbp" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed seasonal" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/936790/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay" onclick="toggleHidden(['minehaunt', 'arkanoid'])">
+        <img alt="Life is Strange: True Colors logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/936790/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYu1bitjPiXHnqjbyEonXoHF" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=13" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved thin seasonal hidden indent" id="minehaunt" style="background-image: url('img/minehaunt.png')">
+      <div class="card">
+       <div class="textOverlay">
+        Mine Haunt
+       </div>
+      </div>
+     </li>
+     <li class="hated thin seasonal hidden indent" id="arkanoid" style="background-image: url('img/arkanoid.png')">
+      <div class="card">
+       <div class="textOverlay">
+        Arkanoid
+       </div>
+      </div>
+     </li>
+     <li class="divider">
+      2022
+     </li>
+     <li class="hated seasonal" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/532210/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Life is Strange 2 logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/532210/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/lcMi0oUfghs?list=PLIUsXWF1inYtFbazIzUhJpwpf4m4Qsngd&amp;t=7130" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=9" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed seasonal" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/845070/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="The Awesome Adventures of Captain Spirit logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/845070/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/watch?v=lcMi0oUfghs&amp;list=PLIUsXWF1inYtFbazIzUhJpwpf4m4Qsngd" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=9" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="atrocious seasonal" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/554620/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Life is Strange: Before the Storm logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/554620/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsIbIBOkdYEj4ri_WJcJDIV" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=6" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved seasonal" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/319630/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Life is Strange logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/319630/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYsBHjdDFPP5mKfD-8hFgnyk" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="skip adHoc" id="stray" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1332010/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Stray logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1332010/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/w6pzH0ts_s4" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/j7wc7wAR4cKvNA6kVf7HiF" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="God of War RagnarÃ¶k logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2322010/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLtvGR9rxLjVgDCDgHv5XXK36LmyVFRORO" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/ceYsfxt4ucDAfonprsMnti" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="skip adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1533420/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Neon White logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1533420/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYufwF6Rh5dDDQ4wQILhBeHv" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/7TUAijxCCTHaQ2GmbcTcRi" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/311240/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Zero Escape: Zero Time Dilemma logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/311240/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvUA9KH9wdgDvsbw0flqN51" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/9Fb13bkGyyotEjAQUDUfnh" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="hated" style="background-image: url('img/vlr.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Zero Escape: Virtue's Last Reward
+       </div>
+       <div class="videoLinks">
+        <a href="https://www.youtube.com/playlist?list=PLIUsXWF1inYvAGk5X5Cg7duEf39Y97p5X" title="YouTube (Unofficial)">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/jGNwQkPpY1o6ecLGY5QhFU" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="loved" style="background-image: url('img/999.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        Zero Escape: Nine Hours, Nine Persons, Nine Doors
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/xfbKZDhG8Wc" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/5bybRd9u6XVhvqkqoEtyJe" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/530320/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Wandersong logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/530320/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/Wf1BDf1loS4" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/4XzQVVSim7NUv5PiXtA82m" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="mixed adHoc" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1196590/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Resident Evil Village logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1196590/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://youtu.be/it7hOwWdC3Q" title="YouTube">
+         <img src="img/youtube-fill.svg"/>
+        </a>
+        <a href="https://peertube.nodja.com/w/p/ozBMSqngjBofAxBQn9useN" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="divider">
+      2021
+     </li>
+     <li class="loved" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1113000/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Persona 4 Golden logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1113000/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://peertube.nodja.com/w/p/tHS7eCjQjYbyLpVqdGKHAg" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="hated" style="background-image: url('https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/412830/library_hero.jpg')">
+      <div class="card">
+       <div class="textOverlay">
+        <img alt="Steins;Gate logo" class="gameLogo" src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/412830/logo.png"/>
+       </div>
+       <div class="videoLinks">
+        <a href="https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd" title="NodjaTube">
+         <img alt="NodjaTube" src="img/server-fill.svg"/>
+        </a>
+       </div>
+      </div>
+     </li>
+     <li class="thin">
+      <p class="textOverlay">
+       <a href="https://docs.google.com/spreadsheets/d/1ITQm2xYrVj7sycFsjwPSe8bbCFu3OJmPSGtzm3ZImRE/" title="Spreadsheet for comprehensive stream history">
+        Ancient history
+       </a>
+      </p>
+     </li>
+     <button onclick="toggleCollapsed(this)">
+      See More
+     </button>
+    </ul>
+   </div>
+   <h2>
+    Unordered planned games
+   </h2>
+   <p>
+    These games will probably be played in some order, at some point.
+   </p>
+   <div>
+    <ul>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        D4 - Dark Dreams Don't Die
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Eternights
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Neon White (Again)
+       </div>
+      </div>
+     </li>
+     <li class="thin" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Pathologic
+       </div>
+      </div>
+     </li>
+     <li class="thin" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Pathologic 2
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Persona 5 Royal
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Persona 5 Strikers
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" id="pizzatower" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Pizza Tower
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Returnal
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Signalis
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        STRANGER OF PARADISE FINAL FANTASY ORIGIN
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Wanted: Dead
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Xenoblade Chronicles
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        YIIK - A Post Modern RPG
+       </div>
+      </div>
+     </li>
+     <li class="thin planned" none="">
+      <div class="card">
+       <div class="textOverlay">
+        Yakuza Kiwami
+       </div>
+      </div>
+     </li>
+    </ul>
+   </div>
+   <footer>
+    <p>
+     This website covers games Joe has played since the end of the voting game™, starting with Steins;Gate
+    </p>
+    <p>
+     Website by Bulder, Joe pointing icon by jelly386, other assets sourced from SteamDB and/or respective games.
+    </p>
+    <a href="https://github.com/JokelaR/schedujoe">
+     Hosted on Github Pages
+    </a>
+   </footer>
+  </div>
+ </body>
+ <link disabled="true" href="hypnospace.css" id="hypnospaceStyle" rel="stylesheet"/>
+ <script src="main.js">
+ </script>
 </html>

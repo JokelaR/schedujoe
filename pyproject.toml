@@ -1,0 +1,9 @@
+[project]
+name = "schedujoe-generator"
+version = "0.1.0"
+description = "custom static site generator for schedujoe"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+]

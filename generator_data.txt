@@ -1,0 +1,525 @@
+Schedule:
+    s:16.12.2024
+    e:22.12.2024
+    Days:
+        ???, NO_STREAM
+        ???, NO_STREAM
+        ???, NO_STREAM
+        ???, NO_STREAM
+        ???, NO_STREAM
+        ???, NO_STREAM
+        ???, NO_STREAM
+    hide
+///
+
+Current:
+    Joe Break 2 - Still Joewol
+    
+///
+
+Future:
+    Baldur's Gate 3 (Not to completion)
+        r:ADHOC
+        sid:1086940
+    Pentiment
+        r:PLANNED
+        sid:1205520
+    Metal Gear Solid
+        sid:2131630
+    Metal Gear Solid 2: Sons of Liberty
+        sid:2131640
+    Metal Gear Solid 3: Snake Eater
+        sid:2131650
+    Metal Gear Solid 4: Guns of the Patriots
+        img:mgs4.jpg
+    Metal Gear Solid: Peace Walker
+        img:mgspw.jpg
+    Metal Gear Solid V: Ground Zeroes
+        img:mgsgz.jpg
+    Metal Gear Solid V: Phantom Pain
+        sid:287700
+    Paper Mario: The Thousand Year Door
+        img:papermario.jpg
+    Crypt of the Necrodancer
+        sid:247080
+    Fire Emblem Three Houses
+        img:3houses.jpg
+    Killer7
+        sid:868520
+    Ace Combat 7: Skies Unknown
+        sid:502500
+    NieR Replicant ver.1.22474487139...
+        sid:1113560
+    The Void
+        sid:37000
+    Legacy of Kain: Soul Reaver
+        sid:2521380
+        ignore_logo
+
+///
+
+Lock It In:
+    Persona 3 Reload
+        rd:February 2nd 2024
+        sid:2161700
+    Apollo Justice Trilogy
+        rd:Early 2024
+        sid:2187220
+    Baby Steps
+        rd:2024
+        sid:1281040
+    Star Wars Outlaws
+        rd:2024
+        sid:2842040
+    Pony Island 2
+        rd:????
+        sid:2017940
+
+///
+
+Past Games:
+    #2024
+    Balatro
+        r:ADHOC
+        rating:SKIP
+        sid:2379780
+    Umineko
+        r:SEASONAL
+        rating:MIXED
+        img:umineko.jpg
+        pt:https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk
+        id:umineko
+    #2023
+    JADSEYA Awards Stream
+        r:SEASONAL
+        rating:LOVED
+        id:jadseya
+        pt:https://peertube.nodja.com/w/1GNG9GFiN2jkTy2QafFMJE
+    VA-11 Hall-A
+        rating:MIXED
+        sid:447530
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYs-HXvLm--LlMf6_mhE5zVq
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/efy2USYLLsHWmHPLja82ho
+    Slay the Princess
+        r:PLANNED
+        rating:LOVED
+        sid:1989270
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvvd82XUgqdK9z_XWqfhA6_
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/oUnwTuFmQPDAq7bhB7xjhF
+    Alan Wake 2
+        r:PLANNED
+        rating:LOVED
+        img:alanwake2.jpg
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvz4m3kmFkJ_eVHrF66zsWc
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP?playlistPosition=5
+    Alan Wake
+        r:ADHOC
+        rating:LOVED
+        sid:108710
+        nest:americanightmare, controlawe
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvCXhuIKjTaTbqmYOGo6dPj
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP
+    Alan Wake: American Nightmare
+        r:ADHOC
+        rating:MIXED
+        sid:202750
+        id:americanightmare
+        yt:https://youtu.be/DBc9eMiJFJ4
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/ujvL6NJnKCwTLPiGyyM4rP?playlistPosition=4
+        thin
+    Control: AWE (DLC)
+        r:ADHOC
+        rating:MIXED
+        sid:870780
+        id:controlawe
+        yt:https://youtu.be/DBc9eMiJFJ4?t=17177
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/9QvZ1HqrHyZnNtA4wsr3ZB?start=4h50m23s
+        thin
+    Super Mario Bros Wonder
+        r:ADHOC
+        rating:SKIP
+        img:mariowonder.png
+        yt:https://www.youtube.com/watch?v=i_UNkFiGw0M
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/ge4Vk8A4yCT8cbNQCz5LAs
+    Lies of P
+        r:PLANNED
+        rating:LOVED
+        sid:1627720
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYsaHQT41Qcm4iob5sGA4r45
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/8UTa92ajTLt6SLVpeDMZBw
+    Starfield
+        rating:MIXED
+        r:PLANNED
+        sid:1716740
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjViqevncFeU0z3V7GamWoIsB
+        pt:https://peertube.nodja.com/w/p/6hbbNJqj6CkwEYTDXvSqiN
+    Armored Core 6
+        rating:MIXED
+        r:PLANNED
+        sid:1888160
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvdLr7M9pPg6M9lcdINNwVC
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/xyHR9DM6GiyvD4WU5NbBbN
+    Inscryption
+        r:ADHOC
+        rating:LOVED
+        sid:1092790
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjVgFkoWFcWy_MfxseG_lqzhd
+        pt:https://peertube.nodja.com/w/p/tg9SBNBDwU91rA13piCCqX
+    AI: THE SOMNIUM FILES - nirvanA Initiative
+        r:ADHOC
+        rating:MIXED
+        sid:1449200
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYs3PYEXM2zS-Sykl1F6L6BN
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/uegmMj2cTBwz3kqPJ4CQSS
+    Twelve Minutes
+        r:ADHOC
+        rating:HATED
+        sid:1097200
+        yt:https://www.youtube.com/watch?v=-BQzU3mZkkI
+        pt:https://peertube.nodja.com/w/p/mZBMjFgGcsEoJEDXay4tkE
+    Dujanah
+        rating:LOVED
+        sid:681240
+        yt:https://www.youtube.com/watch?v=DrKg819HZCU
+        pt:https://peertube.nodja.com/w/p/8bPK9Kvm2XPxVSbqkNFthR
+    Rabi-Ribi
+        rating:LOVED
+        sid:400910
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvvzhIsh8GCbfIKM5EaY7jF
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/fJRyEMD8MHYjecWNY5FZBu
+    Ghost Trick: Phantom Detective
+        r:ADHOC
+        rating:LOVED
+        sid:1967430
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjViOd7vw-8kdXjoP04zDwUm9
+        pt:https://peertube.nodja.com/w/p/qqEeHAcv8KuvjoeXNm6zVu
+    Final Fantasy 16
+        r:ADHOC
+        rating:MIXED
+        sid:2515020
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYt1qOfs31CVh15hyG9IOv1w
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/3jhxV9vspFs9b8mNoAwz6D
+    Gravity Rush 2
+        r:ADHOC
+        rating:MIXED
+        img:gravityrush2.jpg
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYuAd1GkWUX4UrzjjZCdJKgD
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/8ryNVT5EksDDPwT9Hfbyk3
+    Amnesia: The Bunker
+        r:ADHOC
+        rating:MIXED
+        sid:1944430
+        yt:https://www.youtube.com/watch?v=LQbQi9_UAR0
+        pt:https://peertube.nodja.com/w/p/w97aNUTA2uP6cgsR75b6MD
+    The Lord of the Rings: Gollum
+        r:ADHOC
+        rating:HATED
+        sid:1265780
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjVi5Z0qbRCHNkY03vcHxJV8v
+        pt:https://peertube.nodja.com/w/p/avBsMzS6MM4toB4G2PFNzN
+    Hi-Fi RUSH
+        r:ADHOC
+        rating:LOVED
+        sid:1817230
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjVge_fL3wyzcqZjPVEAt7dns
+        pt:https://peertube.nodja.com/w/p/k82KpEWfk5pDBr3mKrLwxe
+    Legend of Zelda: Tears of the Kingdom
+        r:ADHOC
+        rating:SKIP
+        img:tearsofthekingdom.png
+        yt:https://www.youtube.com/watch?v=ciFe_yqRIfY&list=PLtvGR9rxLjVhFxWNYjeUjP2rc3MAmLWLA
+        pt:https://peertube.nodja.com/w/p/damJ3N5w2ZsQBqEfA8oU76
+    Jedi: Survivor
+        r:ADHOC
+        rating:LOVED
+        sid:1774580
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjVit_46zrDXcoZb9AerkmzGG
+        pt:https://peertube.nodja.com/w/p/tBp6EWPvnX49eWZ7y934V9
+    Resident Evil 4 Remake
+        r:ADHOC
+        rating:LOVED
+        sid:2050650
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjVgKCbY9_pop2_Y5LVuqbJH7
+        pt:https://peertube.nodja.com/w/p/uQvpz7ENpJSWB93oRCBkCR
+    Atomic Heart
+        r:ADHOC
+        rating:SKIP
+        sid:668580
+        yt:https://www.youtube.com/watch?v=KMd_98rJiYI&list=PLIUsXWF1inYvUwxZN89URnZ0lde4_-mPF&index=1
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/5Y7swHhoDBMQsFH1tAgNqn
+    13 Sentinels
+        rating:LOVED
+        img:13s.jpg
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYveflhZCYtbkxsETI-zkq-0
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/7Fd5g4hsRy5ugercr3yjSB
+    Forspoken
+        r:ADHOC
+        rating:MIXED
+        sid:1680880
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYuYbk5YGccE5jQKWKgyAF_i
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/71axtKabZsprBY9z8J9iPQ
+    Gravity Rush
+        rating:MIXED
+        img:gr.jpg
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYv9rBZqGQBu6tGl5RvxbmLH
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/xm8EqXCg4rQHYWg3PTFiRy
+    Deadly Premonition
+        rating:LOVED
+        sid:247660
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYtEdn8dVVrP01r3Q7EReYXT
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/rK9ozC1difNdHUukBqd5K9
+    Black Mesa
+        r:ADHOC
+        rating:LOVED
+        sid:362890
+        yt:https://youtu.be/7Yef-BSk48U
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=13
+    Hunt Down The Freeman
+        r:ADHOC
+        rating:HATED
+        sid:723390
+        yt:https://youtu.be/voFOaLDBk3k
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/5cg7hfNNEJDqo2xkXB8Xoa
+    Half-Life 2
+        rating:TROLLEY
+        sid:220
+        nest:hl2ep1, hl2ep2
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=5
+    Half-Life 2: Episode 1
+        rating:MIXED
+        sid:380
+        id:hl2ep1
+        thin
+        yt:https://youtu.be/zSFT9Udxz2g?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C&t=12584
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/rSUJKQ6QJpzr4u8vmQojA8?start=3h29m44s
+    Half-Life 2: Episode 2
+        rating:LOVED
+        sid:420
+        id:hl2ep2
+        thin
+        yt:https://youtu.be/GU4kXXksahI?list=PLIUsXWF1inYtPhgHB3XmfWS96qtu9kq5C&t=5286
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/aEzMBHheDyWJdTX7k1rDeX?start=1h28m6s
+    Half-Life 1
+        rating:MIXED
+        sid:70
+        nest:opposingforce, blueshift
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc
+    Half-Life: Opposing Force
+        rating:MIXED
+        sid:50
+        id:opposingforce
+        thin
+        yt:https://youtu.be/dRA1kIPbY9Y?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY&t=8198
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/iyF5n5B7e7mQLdsH32XiSc?playlistPosition=3
+    Half-Life: Blue Shift
+        rating:HATED
+        sid:130
+        id:blueshift
+        thin
+        yt:https://youtu.be/2BrQpwi-2XM?list=PLIUsXWF1inYtpvgizKbmetKiva-whIwoY&t=11070
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/eHocwGYgSn3YjdSrjZCJwF?start=3h4m32s
+    Hypnospace Outlaw
+        rating:LOVED
+        id:hypnospace
+        sid:844590
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYsCGg97AhZAD0GxJ7AFFSsF
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/3g6C8j9PEsrRQP7rL8Sjky
+    Dead Space Remake
+        r:ADHOC
+        rating:SKIP
+        sid:1693980
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvGjLfejDxw1pgxkV7OJCi7
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/sjB7T65z2PFbiQUuG6SbSQ
+    AI Somnium Files
+        rating:LOVED
+        sid:948740
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYuYqyEVXydIYTo7NniH16hs
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/fVvbYsSXthUXRZ9yZrMbbp
+    Life is Strange: True Colors
+        r:SEASONAL
+        rating:MIXED
+        sid:936790
+        nest:minehaunt, arkanoid
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYu1bitjPiXHnqjbyEonXoHF
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=13
+    Mine Haunt
+        r:SEASONAL
+        rating:LOVED
+        img:minehaunt.png
+        id:minehaunt
+        thin
+        hidden
+    Arkanoid
+        r:SEASONAL
+        rating:HATED
+        img:arkanoid.png
+        id:arkanoid
+        thin
+        hidden
+    #2022
+    Life is Strange 2
+        r:SEASONAL
+        rating:HATED
+        sid:532210
+        yt:https://youtu.be/lcMi0oUfghs?list=PLIUsXWF1inYtFbazIzUhJpwpf4m4Qsngd&t=7130
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=9
+    The Awesome Adventures of Captain Spirit
+        r:SEASONAL
+        rating:MIXED
+        sid:845070
+        yt:https://www.youtube.com/watch?v=lcMi0oUfghs&list=PLIUsXWF1inYtFbazIzUhJpwpf4m4Qsngd
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=9
+    Life is Strange: Before the Storm
+        r:SEASONAL
+        rating:ATROCIOUS
+        sid:554620
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYsIbIBOkdYEj4ri_WJcJDIV
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp?playlistPosition=6
+    Life is Strange
+        r:SEASONAL
+        rating:LOVED
+        sid:319630
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYsBHjdDFPP5mKfD-8hFgnyk
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/uha8iCRT1gZ4fZu1w872Tp
+    Stray
+        r:ADHOC
+        rating:SKIP
+        sid:1332010
+        id:stray
+        yt:https://youtu.be/w6pzH0ts_s4
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/j7wc7wAR4cKvNA6kVf7HiF
+    God of War Ragnarök
+        r:ADHOC
+        rating:MIXED
+        sid:2322010
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjVgDCDgHv5XXK36LmyVFRORO
+        pt:https://peertube.nodja.com/w/p/ceYsfxt4ucDAfonprsMnti
+    Neon White
+        r:ADHOC
+        rating:SKIP
+        sid:1533420
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYufwF6Rh5dDDQ4wQILhBeHv
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/7TUAijxCCTHaQ2GmbcTcRi
+    Zero Escape: Zero Time Dilemma
+        rating:MIXED
+        sid:311240
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvUA9KH9wdgDvsbw0flqN51
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/9Fb13bkGyyotEjAQUDUfnh
+    Zero Escape: Virtue's Last Reward
+        rating:HATED
+        img:vlr.jpg
+        yt:https://www.youtube.com/playlist?list=PLIUsXWF1inYvAGk5X5Cg7duEf39Y97p5X
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/jGNwQkPpY1o6ecLGY5QhFU
+    Zero Escape: Nine Hours, Nine Persons, Nine Doors
+        rating:LOVED
+        img:999.jpg
+        yt:https://youtu.be/xfbKZDhG8Wc
+        pt:https://peertube.nodja.com/w/p/5bybRd9u6XVhvqkqoEtyJe
+    Wandersong
+        rating:MIXED
+        sid:530320
+        yt:https://youtu.be/Wf1BDf1loS4
+        pt:https://peertube.nodja.com/w/p/4XzQVVSim7NUv5PiXtA82m
+    Resident Evil Village
+        r:ADHOC
+        rating:MIXED
+        sid:1196590
+        yt:https://youtu.be/it7hOwWdC3Q
+        pt:https://peertube.nodja.com/w/p/ozBMSqngjBofAxBQn9useN
+    #2021
+    Persona 4 Golden
+        rating:LOVED
+        sid:1113000
+        pt:https://peertube.nodja.com/w/p/tHS7eCjQjYbyLpVqdGKHAg
+    Steins;Gate
+        rating:HATED
+        sid:412830
+        pt:https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd
+
+///
+    
+Unordered:
+    D4 - Dark Dreams Don't Die
+        r:PLANNED
+        thin
+    Eternights
+        r:PLANNED
+        thin
+    Neon White (Again)
+        r:PLANNED
+        thin
+    Pathologic
+        thin
+    Pathologic 2
+        thin
+    Persona 5 Royal
+        r:PLANNED
+        thin
+    Persona 5 Strikers
+        r:PLANNED
+        thin
+    Pizza Tower
+        r:PLANNED
+        thin
+        id:pizzatower
+    Returnal
+        r:PLANNED
+        thin
+    Signalis
+        r:PLANNED
+        thin
+    STRANGER OF PARADISE FINAL FANTASY ORIGIN
+        r:PLANNED
+        thin
+    Wanted: Dead
+        r:PLANNED
+        thin
+    Xenoblade Chronicles
+        r:PLANNED
+        thin
+    YIIK - A Post Modern RPG
+        r:PLANNED
+        thin
+    Yakuza Kiwami
+        r:PLANNED
+        thin

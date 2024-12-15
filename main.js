@@ -9,7 +9,7 @@ function toggleHidden(elementIDs) {
 }
 
 function toggleCollapsed(sourceElement) {
-    if(sourceElement.textContent == 'See More') {
+    if(sourceElement.textContent.trim() == 'See More') {
         sourceElement.textContent = 'See Less';
     }
     else {
@@ -21,6 +21,7 @@ function toggleCollapsed(sourceElement) {
 function toggleHypnospace() {
     hypnospaceStyle.disabled = !hypnospaceStyle.disabled;
 }
+document.querySelector('#hypnospace .textOverlay').addEventListener('click', toggleHypnospace);
 
 function incrementUmineko() {
     if(umiCounter >= 12 ) {
