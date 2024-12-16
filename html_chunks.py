@@ -11,7 +11,6 @@ html_start = """
 head = """
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Schedujoe - The Joseph Schedule</title>
         <meta name="description" content="The (non-)authoritative source for the next planned Joseph Anderson stream games.">
