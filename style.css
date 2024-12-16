@@ -286,7 +286,7 @@ button:hover {
     max-width: min(24rem, 50vw);
     width: fit-content;
     object-fit: contain;
-    margin: 0.5rem 1rem;
+    margin: 0px 1rem;
     overflow: hidden;
 }
 
