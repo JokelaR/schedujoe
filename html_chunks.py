@@ -70,11 +70,13 @@ def video_links(game: Game) -> str:
     return string
 
 def logo(game: Game) -> str:
-    if game.steam_id and not game.small_card and not game.ignore_logo:
-        return f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" alt="{game.name} logo" class="gameLogo">'
-    else:
-        return game.name
-    return ""
+    out: str = game.name
+    if not game.small_card and not game.ignore_logo:
+        if game.custom_logo:
+            out = f'<img src="img/{game.custom_logo}" alt="{game.name} logo" class="gameLogo">'
+        elif game.steam_id:
+            out = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" alt="{game.name} logo" class="gameLogo">'
+    return out
 
 def background_image(game: Game) -> str|None:
     url = None

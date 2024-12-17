@@ -1,23 +1,34 @@
 Schedule:
-    s:16.12.2024
-    e:22.12.2024
+    s:18.12.2024
+    e:24.12.2024
     Days:
-        ???, NO_STREAM
-        ???, NO_STREAM
-        ???, NO_STREAM
-        ???, NO_STREAM
-        ???, NO_STREAM
-        ???, NO_STREAM
-        ???, NO_STREAM
+        Wed, LIKELY
+        Thu, POSSIBLE
+        Fri, POSSIBLE
+        Sat, POSSIBLE
+        Sun, POSSIBLE
+        Mon, POSSIBLE
+        Tue, POSSIBLE
     hide
+
+##
 ///
 
 Current:
-    Joe Break 2 - Still Joewol
-    
+    Life is Strange: Double Exposure
+        r:SEASONAL
+        sid:1874000
+
 ///
 
 Future:
+    Astrobot
+        r:ADHOC
+        img:astrobot.jpg
+        logo:astrobot_logo.png
+    Persona 3 Reload
+        r:PLANNED
+        sid:2161700
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         sid:1086940
@@ -59,9 +70,6 @@ Future:
 ///
 
 Lock It In:
-    Persona 3 Reload
-        rd:February 2nd 2024
-        sid:2161700
     Apollo Justice Trilogy
         rd:Early 2024
         sid:2187220
