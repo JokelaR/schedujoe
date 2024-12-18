@@ -215,6 +215,11 @@ li::before {
 .thin {
     height: fit-content;
     min-height: 1.25rem;
+    line-height: initial;
+
+    .textOverlay {
+        padding-top: 0.2rem;
+    }
 }
 .hidden {
     display: none !important; 

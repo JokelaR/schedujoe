@@ -29,6 +29,12 @@ class Reason(Enum):
     PLANNED = 'planned'
     DROPPED = 'dropped'
 
+class Link:
+    def __init__(self, url: str, title: str|None = None, icon: str|None = None):
+        self.url = url
+        self.title = title
+        self.icon = icon
+
 class Game:
     """
     <li id="Wandersong" class="mixed">
@@ -57,6 +63,7 @@ class Game:
                  starts_hidden: bool = False,
                  nested: list[str]|None = None,
                  is_nested: bool = False,
+                 custom_link: Link|None = None,
                  is_divider: bool = False
                 ):
         self.name = name
@@ -75,6 +82,7 @@ class Game:
         self.is_divider = is_divider
         self.nested = nested
         self.is_nested = is_nested
+        self.custom_link = custom_link
         self.starts_hidden = starts_hidden
 
 def parse_games(games: re.Match[str]) -> list[Game]:
@@ -139,5 +147,16 @@ def parse_games(games: re.Match[str]) -> list[Game]:
         starts_hidden = re.search(r"\bhidden", game.group(2)) is not None
         ignore_logo = re.search(r"\bignore_logo", game.group(2)) is not None
 
-        o_games.append(Game(name, youtube, peertube, rating, steam_id, image, custom_logo, ignore_logo, customID, unofficial_vod, reason, small_card, release_date, starts_hidden, nested, is_nested))
+        custom_link = re.search(r"\blink:(.*)\n((?:            .*\n)*)", game.group(2))
+        if custom_link:
+            url = custom_link.group(1).strip()
+            title = re.search(r"\btitle:(.*)", custom_link.group(2))
+            if title:
+                title = title.group(1).strip()
+            icon = re.search(r"\bicon:(.*)", custom_link.group(2))
+            if icon:
+                icon = icon.group(1).strip()
+            custom_link = Link(url, title, icon)
+
+        o_games.append(Game(name, youtube, peertube, rating, steam_id, image, custom_logo, ignore_logo, customID, unofficial_vod, reason, small_card, release_date, starts_hidden, nested, is_nested, custom_link))
     return o_games

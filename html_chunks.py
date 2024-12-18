@@ -58,8 +58,10 @@ def body_start(schedule: Schedule) -> str:
     """
 
 def video_links(game: Game) -> str:
-    if game.youtube or game.peertube:
+    if game.youtube or game.peertube or game.custom_link:
         string = '<div class="videoLinks">'
+        if game.custom_link:
+            string += f'<a href="{game.custom_link.url}" title="{game.custom_link.title}"><img src="img/{game.custom_link.icon if game.custom_link.icon else "server-fill.svg"}" alt="{game.custom_link.title}"></a>'
         if game.youtube:
             string += f'<a href="{game.youtube}" title="YouTube{" (Unofficial)" if game.unofficial_vod else ""}"><img src="img/youtube-fill.svg"></a>'
         if game.peertube:

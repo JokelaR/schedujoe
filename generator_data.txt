@@ -1,23 +1,26 @@
 Schedule:
-    s:18.12.2024
-    e:24.12.2024
+    s:19.12.2024
+    e:25.12.2024
     Days:
-        Wed, LIKELY
-        Thu, POSSIBLE
+        Thu, LIKELY
         Fri, POSSIBLE
         Sat, POSSIBLE
         Sun, POSSIBLE
         Mon, POSSIBLE
         Tue, POSSIBLE
-    hide
+        Wed, POSSIBLE
 
-##
+## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
 
 Current:
     Life is Strange: Double Exposure
         r:SEASONAL
         sid:1874000
+    Balatro
+        r:ADHOC
+        sid:2379780
+        thin
 
 ///
 
@@ -42,15 +45,16 @@ Future:
     Metal Gear Solid 3: Snake Eater
         sid:2131650
     Metal Gear Solid 4: Guns of the Patriots
-        img:mgs4.jpg
+        img:mgs4.png
     Metal Gear Solid: Peace Walker
-        img:mgspw.jpg
+        img:mgspw.png
     Metal Gear Solid V: Ground Zeroes
         img:mgsgz.jpg
     Metal Gear Solid V: Phantom Pain
         sid:287700
     Paper Mario: The Thousand Year Door
         img:papermario.jpg
+        logo:papermario_logo.png
     Crypt of the Necrodancer
         sid:247080
     Fire Emblem Three Houses
@@ -91,6 +95,7 @@ Past Games:
         r:ADHOC
         rating:SKIP
         sid:2379780
+        pt:https://peertube.nodja.com/w/8tah2T4xqkdqhqy8cxn73W
     Umineko
         r:SEASONAL
         rating:MIXED
@@ -103,6 +108,9 @@ Past Games:
         rating:LOVED
         id:jadseya
         pt:https://peertube.nodja.com/w/1GNG9GFiN2jkTy2QafFMJE
+        link:https://jadseya.com/2023/results
+            title:JADSEYA 2023 Results
+            icon:jadseya-icon.png
     VA-11 Hall-A
         rating:MIXED
         sid:447530
@@ -144,6 +152,7 @@ Past Games:
         r:ADHOC
         rating:MIXED
         sid:870780
+        img:controlawe.png
         id:controlawe
         yt:https://youtu.be/DBc9eMiJFJ4?t=17177
         unofficial_vod
@@ -481,6 +490,7 @@ Past Games:
         pt:https://peertube.nodja.com/w/p/tHS7eCjQjYbyLpVqdGKHAg
     Steins;Gate
         rating:HATED
+        r:DROPPED
         sid:412830
         pt:https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd
 
