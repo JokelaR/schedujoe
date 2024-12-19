@@ -1,4 +1,5 @@
 Schedule:
+    extra:Late night streams Moncton Time (GMT-4)
     s:19.12.2024
     e:25.12.2024
     Days:
@@ -32,8 +33,12 @@ Future:
     Persona 3 Reload
         r:PLANNED
         sid:2161700
+    Nine Sols
+        r:ADHOC
+        sid:1809540
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
+        note:(Not to completion)
         sid:1086940
     Pentiment
         r:PLANNED
@@ -75,16 +80,16 @@ Future:
 
 Lock It In:
     Apollo Justice Trilogy
-        rd:Early 2024
+        note:Early 2024
         sid:2187220
     Baby Steps
-        rd:2024
+        note:2024
         sid:1281040
     Star Wars Outlaws
-        rd:2024
+        note:2024
         sid:2842040
     Pony Island 2
-        rd:????
+        note:????
         sid:2017940
 
 ///

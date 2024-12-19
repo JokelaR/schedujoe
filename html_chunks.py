@@ -40,7 +40,7 @@ def body_start(schedule: Schedule) -> str:
         <body>
             <h1>Joseph Anderson Stream Schedule</h1>
 
-            <span style="font-size: 1.25rem;">Stream probabilities - Updated {datetime.now().strftime('%d.%m.%y')}</span>
+            <span style="font-size: 1.25rem;">Stream probabilities - Updated {datetime.now().strftime('%d.%m.%y')}{f' - {schedule.extra}' if schedule.extra else ""}</span>
             <div id="scheduleContainer">
                 <div id="weekSchedule">
                     {
@@ -119,7 +119,7 @@ def game_card(game: Game) -> str:
     return f"""
         <li {f'id="{game.customID}"' if game.customID else ""} class="{card_class}" {background_image(game)}>
             <div class="card">
-                <div class="textOverlay" {nest if game.nested else ""}>{logo(game)}{f'<span class="releaseDate">{game.release_date}</span>' if game.release_date else ""}</div>
+                <div class="textOverlay" {nest if game.nested else ""}>{logo(game)}{f'<span class="note">{game.note}</span>' if game.note else ""}</div>
                 {video_links(game)}
             </div>
         </li>

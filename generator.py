@@ -20,7 +20,10 @@ if r_days:
             day = day.strip().split(',')
             days.append((day[0], Status[day[1].strip()]))
 hide = re.search(r'hide', data[0]) is not None
-schedule = Schedule(start, end, days, hide)
+extra = re.search(r'extra:(.*)', data[0])
+if extra:
+    extra = extra.group(1).strip()
+schedule = Schedule(start, end, days, extra, hide)
 
 html = html_start
 html += head

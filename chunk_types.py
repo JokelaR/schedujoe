@@ -9,10 +9,11 @@ class Status(Enum):
     NO_STREAM = 'No stream'
 
 class Schedule:
-    def __init__ (self, start: str, end: str, days: list[tuple[str, Status]], hide_date: bool = False):
+    def __init__ (self, start: str, end: str, days: list[tuple[str, Status]], extra: str|None = None, hide_date: bool = False):
         self.start = start
         self.end = end
         self.days = days
+        self.extra = extra
         self.hide_date = hide_date
 
 class Rating(Enum):
@@ -59,7 +60,7 @@ class Game:
                  unofficial_vod: bool = False, 
                  reason: Reason|None = None, 
                  small_card: bool = False, 
-                 release_date: str|None = None,
+                 note: str|None = None,
                  starts_hidden: bool = False,
                  nested: list[str]|None = None,
                  is_nested: bool = False,
@@ -78,7 +79,7 @@ class Game:
         self.customID = customID
         self.reason = reason
         self.small_card = small_card
-        self.release_date = release_date
+        self.note = note
         self.is_divider = is_divider
         self.nested = nested
         self.is_nested = is_nested
@@ -140,9 +141,9 @@ def parse_games(games: re.Match[str]) -> list[Game]:
 
         unofficial_vod = re.search(r"\bunofficial_vod", game.group(2)) is not None
         small_card = re.search(r"\bthin", game.group(2)) is not None
-        release_date = re.search(r"\brd:(.*)", game.group(2))
-        if release_date:
-            release_date = release_date.group(1).strip()
+        note = re.search(r"\bnote:(.*)", game.group(2))
+        if note:
+            note = note.group(1).strip()
 
         starts_hidden = re.search(r"\bhidden", game.group(2)) is not None
         ignore_logo = re.search(r"\bignore_logo", game.group(2)) is not None
@@ -158,5 +159,5 @@ def parse_games(games: re.Match[str]) -> list[Game]:
                 icon = icon.group(1).strip()
             custom_link = Link(url, title, icon)
 
-        o_games.append(Game(name, youtube, peertube, rating, steam_id, image, custom_logo, ignore_logo, customID, unofficial_vod, reason, small_card, release_date, starts_hidden, nested, is_nested, custom_link))
+        o_games.append(Game(name, youtube, peertube, rating, steam_id, image, custom_logo, ignore_logo, customID, unofficial_vod, reason, small_card, note, starts_hidden, nested, is_nested, custom_link))
     return o_games
