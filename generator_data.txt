@@ -1,15 +1,16 @@
 Schedule:
     extra:Late night streams Moncton Time (GMT-4)
-    s:19.12.2024
-    e:25.12.2024
+    s:20.12.2024
+    e:26.12.2024
     Days:
-        Thu, LIKELY
-        Fri, POSSIBLE
+        Fri, LIKELY
         Sat, POSSIBLE
         Sun, POSSIBLE
         Mon, POSSIBLE
         Tue, POSSIBLE
         Wed, POSSIBLE
+        Thu, POSSIBLE
+
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -98,7 +99,7 @@ Past Games:
     #2024
     Balatro
         r:ADHOC
-        rating:SKIP
+        rating:LOVED
         sid:2379780
         pt:https://peertube.nodja.com/w/8tah2T4xqkdqhqy8cxn73W
     Umineko
