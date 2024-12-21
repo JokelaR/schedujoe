@@ -8,8 +8,8 @@ with open('generator_data.txt', 'r') as f:
     # 0: schedule, 1: current games, 2: future games, 3: lock it in, 4: past games, 5: unordered games
 
 #schedule parsing
-start = re.search(r"s:(.*)", data[0]).group(1) #type: ignore
-end = re.search(r"s:(.*)", data[0]).group(1)   #type: ignore
+start = re.search(r"\bs:(.*)", data[0]).group(1) #type: ignore
+end = re.search(r"\be:(.*)", data[0]).group(1)   #type: ignore
 
 r_days = re.search(r"Days:\n((?:.*,.*\n)*)", data[0])
 if r_days:
