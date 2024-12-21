@@ -1,15 +1,8 @@
 
-#minehaunt, #arkanoid, #hypnospace {
+#minehaunt, #arkanoid, #hypnospace, #pizzatower {
     image-rendering: pixelated;
 }
 
-#pizzatower {
-    background-position: bottom -24px center !important;
-}
-#stray 
-{
-    background-position: bottom !important;
-}
-#umineko {
-    background-position: top -19px center !important;
+#umineko .gameImage {
+    object-position: 0px -10px;
 }

@@ -1,24 +1,23 @@
 Schedule:
-    extra:Late night streams Moncton Time (GMT-4)
-    s:20.12.2024
-    e:26.12.2024
+    s:21.12.2024
+    e:27.12.2024
     Days:
-        Fri, LIKELY
-        Sat, POSSIBLE
-        Sun, POSSIBLE
-        Mon, POSSIBLE
+        Sat, NO_STREAM
+        Sun, NO_STREAM
+        Mon, LIKELY
         Tue, POSSIBLE
-        Wed, POSSIBLE
+        Wed, NO_STREAM
         Thu, POSSIBLE
-
+        Fri, POSSIBLE
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
 
 Current:
-    Life is Strange: Double Exposure
-        r:SEASONAL
-        sid:1874000
+    Astro Bot
+        r:ADHOC
+        img:astrobot.jpg
+        logo:astrobot_logo.png
     Balatro
         r:ADHOC
         sid:2379780
@@ -27,10 +26,6 @@ Current:
 ///
 
 Future:
-    Astrobot
-        r:ADHOC
-        img:astrobot.jpg
-        logo:astrobot_logo.png
     Persona 3 Reload
         r:PLANNED
         sid:2161700
@@ -97,6 +92,11 @@ Lock It In:
 
 Past Games:
     #2024
+    Life is Strange: Double Exposure
+        r:SEASONAL
+        rating:MIXED
+        sid:1874000
+        pt:https://peertube.nodja.com/w/p/anXcx3eKvCLzZJrQnSwgvQ
     Balatro
         r:ADHOC
         rating:LOVED
@@ -503,47 +503,66 @@ Past Games:
 ///
     
 Unordered:
+    Metaphor: ReFantazio
+        r:PLANNED
+        thin
+        sid:2679460
     D4 - Dark Dreams Don't Die
         r:PLANNED
         thin
+        sid:358090
     Eternights
         r:PLANNED
         thin
+        sid:1402110
     Neon White (Again)
         r:PLANNED
         thin
+        sid:1533420
     Pathologic
         thin
+        sid:384110
     Pathologic 2
         thin
+        sid:505230
     Persona 5 Royal
         r:PLANNED
         thin
+        sid:1687950
     Persona 5 Strikers
         r:PLANNED
         thin
+        sid:1382330
     Pizza Tower
         r:PLANNED
         thin
+        sid:2231450
         id:pizzatower
     Returnal
         r:PLANNED
+        sid:1649240
         thin
     Signalis
         r:PLANNED
+        sid:1262350
         thin
     STRANGER OF PARADISE FINAL FANTASY ORIGIN
         r:PLANNED
+        sid:1358700
         thin
     Wanted: Dead
         r:PLANNED
+        sid:1981610
         thin
     Xenoblade Chronicles
         r:PLANNED
         thin
-    YIIK - A Post Modern RPG
+        img:xenoblade.jpg
+    YIIK - A Postmodern RPG
         r:PLANNED
+        sid:459080
         thin
     Yakuza Kiwami
         r:PLANNED
+        sid:834530
         thin

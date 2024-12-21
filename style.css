@@ -42,7 +42,10 @@ li {
     list-style: outside none;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(3px);
+}
+.cardContainer {
+    container-name: card;
+    position: relative;
 }
 .card {
     display: flex;
@@ -165,6 +168,9 @@ li::before {
     top: calc(50% - 1rem);
     position: absolute;
 }
+li.thin::before {
+    top: unset;
+}
 
 #future li:first-child::before {
     content: 'Next Up ';
@@ -216,10 +222,6 @@ li::before {
     height: fit-content;
     min-height: 1.25rem;
     line-height: initial;
-
-    .textOverlay {
-        padding-top: 0.2rem;
-    }
 }
 .hidden {
     display: none !important; 
@@ -286,6 +288,11 @@ button:hover {
     padding: 0.75rem 1rem;
     background-color: transparent;
 }
+.textOverlay:has(img)::after {
+    content: attr(data-name);
+    display: inline;
+    font-size: 0px;
+}
 .gameLogo {
     height: 100%;
     max-width: min(24rem, 50vw);
@@ -293,6 +300,23 @@ button:hover {
     object-fit: contain;
     margin: 0px 1rem;
     overflow: hidden;
+    user-select: none;
+}
+.gameLogo::after {
+    content: attr(data-name);
+    display: block;
+    font-size: 1.5rem;
+}
+.gameImage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: inherit;
+    user-select: none;
 }
 
 .note {

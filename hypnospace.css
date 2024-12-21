@@ -1,3 +1,4 @@
+
 body {
     background-image: url('hypnospace/brick-dark.png');
     font-family:'Courier New', Courier, monospace !important;
@@ -8,6 +9,10 @@ li:not(.divider) {
     outline-style: inset !important;
     outline-width: 5px !important;
     border-radius: 0px !important;
+}
+
+li::before {
+    display: none;
 }
 
 .divider {

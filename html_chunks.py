@@ -75,26 +75,32 @@ def logo(game: Game) -> str:
     out: str = game.name
     if not game.small_card and not game.ignore_logo:
         if game.custom_logo:
-            out = f'<img src="img/{game.custom_logo}" alt="{game.name} logo" class="gameLogo">'
+            out = f'<img src="img/{game.custom_logo}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
         elif game.steam_id:
-            out = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" alt="{game.name} logo" class="gameLogo">'
-    return out
+            out = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" alt="{game.name} logo" class="gameLogo" loading="lazy">'
+    
+    if game.nested:
+        nest = f"""onclick="toggleHidden([{", ".join([f"'{game}'" for game in game.nested])}])\""""
 
-def background_image(game: Game) -> str|None:
-    url = None
+    return f"""
+    <div class="textOverlay" {nest if game.nested else ""} data-name="{game.name}">
+        {out}{f'<span class="note">{game.note}</span>' if game.note else ""}
+    </div>
+    """
+
+def background_image(game: Game) -> str:
+    html = ""
     if game.steam_id:
-        url = f'https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/library_hero.jpg'
-    #override for custom images regardless of steam banner
+        html = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/library_hero.jpg" class="gameImage" loading="lazy">'
     if game.image:
-        url = f'img/{game.image}'
-    if url:
-        return f"""style="background-image: url('{url}')\""""
+        html = f'<img src="img/{game.image}" class="gameImage" loading="lazy">'
+    return html
 
 def game_card(game: Game) -> str:
     if game.is_divider:
         return f'<li class="divider">{game.name}</li>'
 
-    card_classes = []
+    card_classes = ["cardContainer"]
     if game.rating:
         card_classes.append(game.rating.value)
     if game.small_card:
@@ -110,16 +116,13 @@ def game_card(game: Game) -> str:
     if game.customID and game.customID == "jadseya":
         card_classes.append("promoBanner")
 
-    if game.nested:
-        nest = f"""onclick="toggleHidden([{", ".join([f"'{game}'" for game in game.nested])}])\""""
-
-
     card_class = " ".join(card_classes)
 
     return f"""
-        <li {f'id="{game.customID}"' if game.customID else ""} class="{card_class}" {background_image(game)}>
+        <li {f'id="{game.customID}"' if game.customID else ""} class="{card_class}">
+            {background_image(game)}
             <div class="card">
-                <div class="textOverlay" {nest if game.nested else ""}>{logo(game)}{f'<span class="note">{game.note}</span>' if game.note else ""}</div>
+                {logo(game)}
                 {video_links(game)}
             </div>
         </li>
@@ -223,7 +226,7 @@ def past_games(games: list[Game]) -> str:
                         for game in games]
                     )
                 }
-                <li class="thin"><p class="textOverlay">
+                <li class="cardContainer thin"><p class="textOverlay">
                     <a href="https://docs.google.com/spreadsheets/d/1ITQm2xYrVj7sycFsjwPSe8bbCFu3OJmPSGtzm3ZImRE/" title="Spreadsheet for comprehensive stream history">
                         Ancient history
                     </a>
