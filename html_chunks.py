@@ -91,9 +91,9 @@ def logo(game: Game) -> str:
 def background_image(game: Game) -> str:
     html = ""
     if game.steam_id:
-        html = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/library_hero.jpg" class="gameImage" loading="lazy">'
+        html = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/library_hero.jpg" class="gameImage" loading="lazy" alt="">'
     if game.image:
-        html = f'<img src="img/{game.image}" class="gameImage" loading="lazy">'
+        html = f'<img src="img/{game.image}" class="gameImage" loading="lazy" alt="">'
     return html
 
 def game_card(game: Game) -> str:
