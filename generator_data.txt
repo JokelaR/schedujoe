@@ -1,14 +1,15 @@
 Schedule:
-    s:24.12.2024
-    e:30.12.2024
+    s:27.12.2024
+    e:31.12.2024
     Days:
-        Tue, POSSIBLE
-        Wed, NO_STREAM
-        Thu, POSSIBLE
-        Fri, POSSIBLE
-        Sat, POSSIBLE
+        Fri, LIKELY
+        Sat, NO_STREAM
         Sun, POSSIBLE
         Mon, POSSIBLE
+        Tue, POSSIBLE
+        Wed, POSSIBLE
+        Thu, POSSIBLE
+
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
