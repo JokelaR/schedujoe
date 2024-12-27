@@ -3,6 +3,15 @@
     image-rendering: pixelated;
 }
 
+#returnal-hitman {
+    .card {
+        justify-content: center;;
+    }
+    .gameImage {
+        object-position: 0px -50px;
+    }
+}
+
 #umineko .gameImage {
     object-position: 0px -10px;
 }
