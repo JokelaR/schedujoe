@@ -1,24 +1,29 @@
 Schedule:
-    s:28.12.2024
-    e:3.1.2025
+    s:30.12.2024
+    e:5.1.2025
     Days:
-        Sat, NO_STREAM
-        Sun, POSSIBLE
         Mon, POSSIBLE
         Tue, POSSIBLE
         Wed, LIKELY
         Thu, POSSIBLE
         Fri, POSSIBLE
+        Sat, POSSIBLE
+        Sun, POSSIBLE
+
 
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
 
 Current:
-    Returnal OR HITMAN
+    Nine Sols
         r:ADHOC
-        img:returnal-hitman.png
-        id:returnal-hitman
+        sid:1809540
+
+#Returnal OR HITMAN
+r:ADHOC
+img:returnal-hitman.png
+id:returnal-hitman
 
 ///
 
@@ -26,9 +31,6 @@ Future:
     Persona 3 Reload
         r:PLANNED
         sid:2161700
-    Nine Sols
-        r:ADHOC
-        sid:1809540
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
