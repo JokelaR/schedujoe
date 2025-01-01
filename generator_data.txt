@@ -1,22 +1,24 @@
 Schedule:
-    s:30.12.2024
-    e:5.1.2025
+    s:1.1.2025
+    e:7.1.2025
     Days:
-        Mon, POSSIBLE
-        Tue, POSSIBLE
         Wed, LIKELY
         Thu, POSSIBLE
         Fri, POSSIBLE
         Sat, POSSIBLE
         Sun, POSSIBLE
-
-
+        Mon, POSSIBLE
+        Tue, POSSIBLE
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
 
 Current:
+    Persona 3 Reload
+        r:PLANNED
+        sid:2161700
     Nine Sols
+        thin
         r:ADHOC
         sid:1809540
 
@@ -28,9 +30,6 @@ id:returnal-hitman
 ///
 
 Future:
-    Persona 3 Reload
-        r:PLANNED
-        sid:2161700
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
@@ -508,6 +507,10 @@ Past Games:
 ///
     
 Unordered:
+    1000xRESIST:
+        sid:1675830
+        thin
+        r:PLANNED
     Metaphor: ReFantazio
         r:PLANNED
         thin
