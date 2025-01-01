@@ -1,14 +1,15 @@
 Schedule:
-    s:1.1.2025
-    e:7.1.2025
+    s:2.1.2025
+    e:8.1.2025
     Days:
-        Wed, LIKELY
-        Thu, POSSIBLE
+        Thu, LIKELY
         Fri, POSSIBLE
         Sat, POSSIBLE
         Sun, POSSIBLE
         Mon, POSSIBLE
         Tue, POSSIBLE
+        Wed, POSSIBLE
+
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -30,6 +31,10 @@ id:returnal-hitman
 ///
 
 Future:
+    Umineko
+        r:SEASONAL
+        img:umineko.jpg
+        id:umineko
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
