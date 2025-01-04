@@ -25,7 +25,7 @@ head = """
         <link rel="preload" href="style.css" as="style">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="images.css">
@@ -78,13 +78,14 @@ def logo(game: Game) -> str:
             out = f'<img src="img/{game.custom_logo}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
         elif game.steam_id:
             out = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" alt="{game.name} logo" class="gameLogo" loading="lazy">'
-    
+            
     if game.nested:
         nest = f"""onclick="toggleHidden([{", ".join([f"'{game}'" for game in game.nested])}])\""""
 
     return f"""
-    <div class="textOverlay" {nest if game.nested else ""} data-name="{game.name}">
+    <div class="textOverlay" {nest if game.nested else ""}>
         {out}{f'<span class="note">{game.note}</span>' if game.note else ""}
+        {f'<p class="searchableName">{game.name}</p>' if out is not game.name else ""}
     </div>
     """
 
