@@ -1,16 +1,14 @@
 Schedule:
-    s:4.1.2025
-    e:10.1.2025
+    s:7.1.2025
+    e:13.1.2025
     Days:
-        Sat, NO_STREAM
-        Sun, NO_STREAM
-        Mon, POSSIBLE
-        Tue, POSSIBLE
+        Tue, LIKELY
         Wed, POSSIBLE
         Thu, POSSIBLE
         Fri, POSSIBLE
-
-
+        Sat, POSSIBLE
+        Sun, NO_STREAM
+        Mon, POSSIBLE
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -47,6 +45,9 @@ Future:
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
         sid:2131640
+    Metal Gear 1&2
+        sid:2131680
+        thin
     Metal Gear Solid 3: Snake Eater
         sid:2131650
     Metal Gear Solid 4: Guns of the Patriots
@@ -79,15 +80,9 @@ Future:
 ///
 
 Lock It In:
-    Apollo Justice Trilogy
-        note:Early 2024
-        sid:2187220
     Baby Steps
-        note:2024
+        note:???
         sid:1281040
-    Star Wars Outlaws
-        note:2024
-        sid:2842040
     Pony Island 2
         note:????
         sid:2017940
@@ -505,7 +500,7 @@ Past Games:
         sid:1113000
         pt:https://peertube.nodja.com/w/p/tHS7eCjQjYbyLpVqdGKHAg
     Steins;Gate
-        rating:HATED
+        rating:ATROCIOUS
         r:DROPPED
         sid:412830
         pt:https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd
@@ -521,6 +516,12 @@ Unordered:
         r:PLANNED
         thin
         sid:2679460
+    Apollo Justice Trilogy
+        thin
+        sid:2187220
+    Star Wars Outlaws
+        thin
+        sid:2842040
     D4 - Dark Dreams Don't Die
         r:PLANNED
         thin

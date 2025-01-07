@@ -168,6 +168,7 @@ li::before {
     left: -3rem;
     top: calc(50% - 1rem);
     position: absolute;
+    font-size-adjust: 0.5;
 }
 li.thin::before {
     top: unset;
@@ -175,7 +176,8 @@ li.thin::before {
 
 #future li:first-child::before {
     content: 'Next Up ';
-    left: -6rem;
+    left: -5.5rem;
+    font-size-adjust: unset;
 }
 
 #legend {
