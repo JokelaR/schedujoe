@@ -1,15 +1,14 @@
 Schedule:
-    s:8.1.2025
-    e:14.1.2025
+    s:13.1.2025
+    e:19.1.2025
     Days:
-        Sun, VERY_UNLIKELY
-        Mon, POSSIBLE
-        Tue, POSSIBLE
+        Mon, UNLIKELY
+        Tue, LIKELY
         Wed, POSSIBLE
         Thu, POSSIBLE
         Fri, POSSIBLE
         Sat, POSSIBLE
-
+        Sun, NO_STREAM
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -18,10 +17,6 @@ Current:
     Persona 3 Reload
         r:PLANNED
         sid:2161700
-    Nine Sols
-        thin
-        r:ADHOC
-        sid:1809540
     Umineko
         thin
         r:SEASONAL
@@ -93,6 +88,12 @@ Lock It In:
 ///
 
 Past Games:
+    #2025
+    Nine Sols
+        r:ADHOC
+        rating:LOVED
+        sid:1809540
+        pt:https://peertube.nodja.com/w/p/grZkNVhLmbaoFiivg4BBcn?playlistPosition=1
     #2024
     Astro Bot
         r:ADHOC
