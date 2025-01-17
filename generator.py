@@ -5,7 +5,7 @@ import re
 
 with open('generator_data.txt', 'r') as f:
     data = f.read().split('///')
-    # 0: schedule, 1: current games, 2: future games, 3: lock it in, 4: past games, 5: unordered games
+    # 0: schedule, 1: current games, 2: future games, 3: lock it in, 4: past games, 5: unordered games, 6: secret
 
 #schedule parsing
 start = re.search(r"\bs:(.*)", data[0]).group(1) #type: ignore
@@ -33,7 +33,12 @@ html += body_start(schedule)
 current = re.search(r"Current:\n((?:.*\n)*)", data[1])
 if current:
     c_games = parse_games(current)
-    html += current_games(c_games)
+    secret = re.search(r"Secret:\n((?:.*\n)*)", data[6])
+    if secret:
+        s_games = parse_games(secret)
+        html += current_games(c_games, s_games)
+    else:
+        html += current_games(c_games)
 
 #future games parsing
 future = re.search(r"Future:\n((?:.*\n)*)", data[2])

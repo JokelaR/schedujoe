@@ -265,7 +265,7 @@ button:hover {
     justify-content: stretch;
     flex-wrap:wrap
 }
-.horizontal-pair div {
+.horizontal-pair > div {
     flex-grow: 1;
     min-width: 50%;
     max-width:100%;

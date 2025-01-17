@@ -594,3 +594,11 @@ Unordered:
         r:PLANNED
         sid:834530
         thin
+
+///
+
+Secret:
+    Homestuck
+        img:homestuck.png
+        r:SEASONAL
+        

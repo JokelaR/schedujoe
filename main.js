@@ -1,6 +1,6 @@
 const hypnospaceStyle = document.getElementById("hypnospaceStyle");
-const umineko = document.getElementById("uminekoSecret");
-let umiCounter = 1;
+const secret = document.getElementById("Secret");
+let secretCounter = 1;
 
 function toggleHidden(elementIDs) {
     elementIDs.forEach(elementID => {
@@ -23,11 +23,11 @@ function toggleHypnospace() {
 }
 document.querySelector('#hypnospace .textOverlay').addEventListener('click', toggleHypnospace);
 
-function incrementUmineko() {
-    if(umiCounter >= 12 ) {
-        umineko.classList.toggle('hidden');
+function incrementSecret() {
+    if(secretCounter >= 4 ) {
+        secret.classList.toggle('hidden');
     }
     else {
-        umiCounter = umiCounter + 1;
+        secretCounter = secretCounter + 1;
     }
 }

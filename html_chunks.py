@@ -129,7 +129,7 @@ def game_card(game: Game) -> str:
         </li>
     """
 
-def current_games(games: list[Game]) -> str:
+def current_games(games: list[Game], secret_games: list[Game]|None = None) -> str:
     return f"""
         <h2>Current games</h2>
         <p>These are the current games Joe is streaming. </p>
@@ -143,14 +143,15 @@ def current_games(games: list[Game]) -> str:
                 }
             </ul>
             <div class="horizontal-pair">
-                <div id="uminekoSecret" class="hidden">
-                    <h3>Leap Days</h3>
+                <div id="Secret" class="hidden">
+                    <h3>Seasonal Secret</h3>
                     <ul>
-                        <li id="Umineko" class="thin">
-                            <div class="card">
-                                <p class="textOverlay">Umineko</p>
-                            </div>
-                        </li>
+                        {
+                            "".join(
+                                [game_card(game)
+                                for game in secret_games]
+                            ) if secret_games else ""
+                        }
                     </ul>
                 </div>
             </div>
@@ -166,7 +167,7 @@ def current_games(games: list[Game]) -> str:
                     <span>Ad Hoc</span>
                 </div>
                 <div>
-                    <div class="example seasonal" onClick="incrementUmineko();"></div>
+                    <div class="example seasonal" onClick="incrementSecret();"></div>
                     <span>Seasonal</span>
                 </div>
                 <div>
