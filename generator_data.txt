@@ -1,14 +1,15 @@
 Schedule:
-    s:13.1.2025
-    e:19.1.2025
+    s:17.1.2025
+    e:23.1.2025
     Days:
-        Mon, UNLIKELY
-        Tue, LIKELY
-        Wed, POSSIBLE
-        Thu, POSSIBLE
-        Fri, POSSIBLE
+        Fri, LIKELY
         Sat, POSSIBLE
         Sun, NO_STREAM
+        Mon, NO_STREAM
+        Tue, POSSIBLE
+        Wed, POSSIBLE
+        Thu, POSSIBLE
+
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -512,6 +513,14 @@ Past Games:
 ///
     
 Unordered:
+    The Case of the Golden Idol
+        sid:1677770
+        thin
+        r:PLANNED
+    The Forgotten City
+        sid:874260
+        thin
+        r:PLANNED
     1000xRESIST:
         sid:1675830
         thin
