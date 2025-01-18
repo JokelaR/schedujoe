@@ -1,15 +1,14 @@
 Schedule:
-    s:17.1.2025
-    e:23.1.2025
+    s:18.1.2025
+    e:24.1.2025
     Days:
-        Fri, LIKELY
-        Sat, POSSIBLE
+        Sat, LIKELY
         Sun, NO_STREAM
         Mon, NO_STREAM
         Tue, POSSIBLE
         Wed, POSSIBLE
         Thu, POSSIBLE
-
+        Fri, POSSIBLE
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -79,6 +78,9 @@ Future:
 ///
 
 Lock It In:
+    Dreamsettler
+        note:2025?
+        sid:1931040
     Baby Steps
         note:???
         sid:1281040
