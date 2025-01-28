@@ -1,14 +1,14 @@
 Schedule:
-    s:26.1.2025
-    e:1.2.2025
+    s:29.1.2025
+    e:4.2.2025
     Days:
-        Sun, NO_STREAM
-        Mon, NO_STREAM
-        Tue, POSSIBLE
         Wed, POSSIBLE
         Thu, POSSIBLE
         Fri, LIKELY
         Sat, POSSIBLE
+        Sun, NO_STREAM
+        Mon, NO_STREAM
+        Tue, POSSIBLE
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -32,6 +32,9 @@ id:returnal-hitman
 ///
 
 Future:
+    Signalis
+        r:PLANNED
+        sid:1262350
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
@@ -571,10 +574,6 @@ Unordered:
     Returnal
         r:PLANNED
         sid:1649240
-        thin
-    Signalis
-        r:PLANNED
-        sid:1262350
         thin
     STRANGER OF PARADISE FINAL FANTASY ORIGIN
         r:PLANNED
