@@ -1,10 +1,10 @@
 Schedule:
-    s:29.1.2025
-    e:4.2.2025
+    s:5.2.2025
+    e:11.2.2025
     Days:
         Wed, POSSIBLE
         Thu, POSSIBLE
-        Fri, LIKELY
+        Fri, POSSIBLE
         Sat, POSSIBLE
         Sun, NO_STREAM
         Mon, NO_STREAM
