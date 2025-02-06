@@ -32,6 +32,9 @@ id:returnal-hitman
 ///
 
 Future:
+    Returnal
+        r:PLANNED
+        sid:1649240
     Signalis
         r:PLANNED
         sid:1262350
@@ -571,10 +574,6 @@ Unordered:
         thin
         sid:2231450
         id:pizzatower
-    Returnal
-        r:PLANNED
-        sid:1649240
-        thin
     STRANGER OF PARADISE FINAL FANTASY ORIGIN
         r:PLANNED
         sid:1358700
