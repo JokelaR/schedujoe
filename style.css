@@ -295,6 +295,7 @@ button:hover {
     position: absolute;
     opacity: 0;
     user-select: none;
+    pointer-events: none;
 }
 .gameLogo {
     height: 100%;
