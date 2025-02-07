@@ -32,12 +32,12 @@ id:returnal-hitman
 ///
 
 Future:
-    Returnal
-        r:PLANNED
-        sid:1649240
     Signalis
         r:PLANNED
         sid:1262350
+    Returnal
+        r:PLANNED
+        sid:1649240
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
