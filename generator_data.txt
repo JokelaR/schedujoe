@@ -1,14 +1,14 @@
 Schedule:
-    s:13.2.2025
-    e:19.2.2025
+    s:14.2.2025
+    e:20.2.2025
     Days:
-        Thu, POSSIBLE
-        Fri, POSSIBLE
-        Sat, POSSIBLE
+        Fri, NO_STREAM
+        Sat, LIKELY
         Sun, NO_STREAM
         Mon, NO_STREAM
         Tue, POSSIBLE
         Wed, POSSIBLE
+        Thu, POSSIBLE
 
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
@@ -39,6 +39,10 @@ Future:
     Returnal
         r:PLANNED
         sid:1649240
+    Persona 3: The Answer
+        thin
+        r:PLANNED
+        sid:2161700
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
@@ -86,9 +90,8 @@ Future:
 
 Lock It In:
     Lies of P: Overture (DLC)
-        ignore_logo
         note:Summer 2025
-        sid:1627720
+        sid:2848330
     Dreamsettler
         note:2025?
         sid:1931040
