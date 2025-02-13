@@ -79,11 +79,12 @@ def logo(game: Game) -> str:
         elif game.steam_id:
             out = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
             
+    nest = ""
     if game.nested:
         nest = f"""onclick="toggleHidden([{", ".join([f"'{game}'" for game in game.nested])}])\""""
 
     return f"""
-    <div class="textOverlay" {nest if game.nested else ""}>
+    <div class="textOverlay" {nest}>
         {out}{f'<span class="note">{game.note}</span>' if game.note else ""}
         {f'<p class="searchableName">{game.name}</p>' if out is not game.name else ""}
     </div>
