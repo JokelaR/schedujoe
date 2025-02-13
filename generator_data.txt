@@ -1,14 +1,15 @@
 Schedule:
-    s:5.2.2025
-    e:11.2.2025
+    s:13.2.2025
+    e:19.2.2025
     Days:
-        Wed, POSSIBLE
         Thu, POSSIBLE
         Fri, POSSIBLE
         Sat, POSSIBLE
         Sun, NO_STREAM
         Mon, NO_STREAM
         Tue, POSSIBLE
+        Wed, POSSIBLE
+
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
@@ -84,6 +85,10 @@ Future:
 ///
 
 Lock It In:
+    Lies of P: Overture (DLC)
+        ignore_logo
+        note:Summer 2025
+        sid:1627720
     Dreamsettler
         note:2025?
         sid:1931040
