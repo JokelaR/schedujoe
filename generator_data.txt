@@ -1,8 +1,8 @@
 Schedule:
-    s:14.2.2025
-    e:20.2.2025
+    s:21.2.2025
+    e:27.2.2025
     Days:
-        Fri, NO_STREAM
+        Fri, LIKELY
         Sat, LIKELY
         Sun, NO_STREAM
         Mon, NO_STREAM
@@ -130,7 +130,7 @@ Past Games:
         pt:https://peertube.nodja.com/w/8tah2T4xqkdqhqy8cxn73W
     Umineko
         r:SEASONAL
-        rating:MIXED
+        rating:SKIP
         img:umineko.jpg
         pt:https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk
         id:umineko
