@@ -15,20 +15,11 @@ Schedule:
 ///
 
 Current:
-    Persona 3 Reload
-        r:PLANNED
-        sid:2161700
     Umineko
         thin
         r:SEASONAL
         img:umineko.jpg
         id:umineko
-
-
-#Returnal OR HITMAN
-r:ADHOC
-img:returnal-hitman.png
-id:returnal-hitman
 
 ///
 
@@ -106,11 +97,17 @@ Lock It In:
 
 Past Games:
     #2025
+    Persona 3 Reload
+        r:PLANNED
+        sid:2161700
+        rating:MIXED
+        pt:https://peertube.nodja.com/w/p/nXvEd19zV3yqQr6Xi1Jrsd
+        yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hw4baR9lIGLwq3kNR4aDFsD
     Nine Sols
         r:ADHOC
         rating:LOVED
         sid:1809540
-        pt:https://peertube.nodja.com/w/p/grZkNVhLmbaoFiivg4BBcn?playlistPosition=1
+        pt:https://peertube.nodja.com/w/p/grZkNVhLmbaoFiivg4BBcn
     #2024
     Astro Bot
         r:ADHOC
