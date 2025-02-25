@@ -1,20 +1,24 @@
 Schedule:
-    s:21.2.2025
-    e:27.2.2025
+    s:26.2.2025
+    e:4.3.2025
     Days:
+        Wed, LIKELY
+        Thu, LIKELY
         Fri, LIKELY
         Sat, LIKELY
         Sun, NO_STREAM
         Mon, NO_STREAM
-        Tue, POSSIBLE
-        Wed, POSSIBLE
-        Thu, POSSIBLE
+        Tue, LIKELY
+
 
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
 
 Current:
+    Signalis
+        r:PLANNED
+        sid:1262350
     Umineko
         thin
         r:SEASONAL
@@ -24,16 +28,9 @@ Current:
 ///
 
 Future:
-    Signalis
-        r:PLANNED
-        sid:1262350
     Returnal
         r:PLANNED
         sid:1649240
-    Persona 3: The Answer
-        thin
-        r:PLANNED
-        sid:2161700
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
@@ -526,6 +523,10 @@ Past Games:
 ///
     
 Unordered:
+    Persona 3: The Answer
+        thin
+        r:PLANNED
+        sid:2161700
     The Case of the Golden Idol
         sid:1677770
         thin
