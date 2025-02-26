@@ -202,7 +202,7 @@ def future_games(games: list[Game]) -> str:
 def lock_it_in(games: list[Game]) -> str:
     return f"""
         <h2>Lock It In!</h2>
-        <p>These are games that Joe has said he wants to play as they come out. (Dates are for release, not necessarily for when he'll stream them)</p>
+        <p>These are games that Joe has said he wants to play once they come out. (Dates are for release, not necessarily for when he'll stream them)</p>
         <div id="lockItIn">
             <ul class="collapsed short">
                 {

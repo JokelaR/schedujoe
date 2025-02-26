@@ -31,6 +31,10 @@ Future:
     Returnal
         r:PLANNED
         sid:1649240
+    1000xRESIST:
+        sid:1675830
+        thin
+        r:PLANNED
     Baldur's Gate 3 (Not to completion)
         r:ADHOC
         note:(Not to completion)
@@ -77,12 +81,18 @@ Future:
 ///
 
 Lock It In:
+    DOOM: The Dark Ages
+        sid:3017860
+        note:15th May 2025
     Lies of P: Overture (DLC)
         note:Summer 2025
         sid:2848330
     Dreamsettler
         note:2025?
         sid:1931040
+    ULTRAKILL:
+        note:When it's out of EA
+        sid:1229490
     Baby Steps
         note:???
         sid:1281040
@@ -535,18 +545,16 @@ Unordered:
         sid:874260
         thin
         r:PLANNED
-    1000xRESIST:
-        sid:1675830
-        thin
-        r:PLANNED
     Metaphor: ReFantazio
         r:PLANNED
         thin
         sid:2679460
     Apollo Justice Trilogy
+        r:PLANNED
         thin
         sid:2187220
     Star Wars Outlaws
+        r:PLANNED
         thin
         sid:2842040
     D4 - Dark Dreams Don't Die
