@@ -1,14 +1,14 @@
 Schedule:
-    s:1.3.2025
-    e:7.3.2025
+    s:3.3.2025
+    e:9.3.2025
     Days:
-        Sat, LIKELY
-        Sun, NO_STREAM
         Mon, NO_STREAM
-        Tue, LIKELY
-        Wed, LIKELY
-        Thu, LIKELY
-        Fri, LIKELY
+        Tue, POSSIBLE
+        Wed, POSSIBLE
+        Thu, POSSIBLE
+        Fri, POSSIBLE
+        Sat, POSSIBLE
+        Sun, NO_STREAM
 
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
