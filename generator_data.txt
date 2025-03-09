@@ -1,13 +1,13 @@
 Schedule:
-    s:3.3.2025
-    e:9.3.2025
+    s:10.3.2025
+    e:16.3.2025
     Days:
         Mon, NO_STREAM
-        Tue, POSSIBLE
-        Wed, POSSIBLE
-        Thu, POSSIBLE
-        Fri, POSSIBLE
-        Sat, POSSIBLE
+        Tue, LIKELY
+        Wed, LIKELY
+        Thu, LIKELY
+        Fri, LIKELY
+        Sat, LIKELY
         Sun, NO_STREAM
 
 
@@ -30,13 +30,6 @@ Future:
     1000xRESIST:
         sid:1675830
         r:PLANNED
-    Baldur's Gate 3 (Not to completion)
-        r:ADHOC
-        note:(Not to completion)
-        sid:1086940
-    Pentiment
-        r:PLANNED
-        sid:1205520
     Metal Gear Solid
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
@@ -76,6 +69,10 @@ Future:
 ///
 
 Lock It In:
+    Baldur's Gate 3 (Not to completion)
+        r:ADHOC
+        note:Once the update comes out
+        sid:1086940
     DOOM: The Dark Ages
         sid:3017860
         note:15th May 2025
@@ -534,6 +531,10 @@ Past Games:
 ///
     
 Unordered:
+    Pentiment
+        thin
+        r:PLANNED
+        sid:1205520
     Persona 3: The Answer
         thin
         r:PLANNED
