@@ -2,13 +2,13 @@ Schedule:
     s:10.3.2025
     e:16.3.2025
     Days:
-        Mon, NO_STREAM
-        Tue, LIKELY
-        Wed, LIKELY
         Thu, LIKELY
         Fri, LIKELY
         Sat, LIKELY
         Sun, NO_STREAM
+        Mon, NO_STREAM
+        Tue, LIKELY
+        Wed, LIKELY
 
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
@@ -30,6 +30,9 @@ Future:
     1000xRESIST:
         sid:1675830
         r:PLANNED
+    Baldur's Gate 3 (Not to completion)
+        r:PLANNED
+        sid:1086940
     Metal Gear Solid
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
@@ -69,26 +72,33 @@ Future:
 ///
 
 Lock It In:
-    Baldur's Gate 3 (Not to completion)
-        r:ADHOC
-        note:Once the update comes out
-        sid:1086940
     DOOM: The Dark Ages
+        r:PLANNED
         sid:3017860
         note:15th May 2025
+    Death Stranding 2
+        r:PLANNED
+        note:26th June 2025
+        logo:ds2_logo.png
+        img:ds2.png
     Lies of P: Overture (DLC)
+        r:PLANNED    
         note:Summer 2025
         sid:2848330
     Dreamsettler
+        r:PLANNED
         note:2025?
         sid:1931040
     ULTRAKILL:
+        r:PLANNED
         note:When it's out of EA
         sid:1229490
     Baby Steps
+        r:ADHOC
         note:???
         sid:1281040
     Pony Island 2
+        r:PLANNED
         note:????
         sid:2017940
 
