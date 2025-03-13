@@ -541,34 +541,10 @@ Past Games:
 ///
     
 Unordered:
-    Pentiment
-        thin
-        r:PLANNED
-        sid:1205520
-    Persona 3: The Answer
-        thin
-        r:PLANNED
-        sid:2161700
-    The Case of the Golden Idol
-        sid:1677770
-        thin
-        r:PLANNED
-    The Forgotten City
-        sid:874260
-        thin
-        r:PLANNED
-    Metaphor: ReFantazio
-        r:PLANNED
-        thin
-        sid:2679460
     Apollo Justice Trilogy
         r:PLANNED
         thin
         sid:2187220
-    Star Wars Outlaws
-        r:PLANNED
-        thin
-        sid:2842040
     D4 - Dark Dreams Don't Die
         r:PLANNED
         thin
@@ -577,10 +553,18 @@ Unordered:
         r:PLANNED
         thin
         sid:1402110
-    Neon White (Again)
+    Metaphor: ReFantazio
         r:PLANNED
         thin
-        sid:1533420
+        sid:2679460
+    Pentiment
+        thin
+        r:PLANNED
+        sid:1205520
+    Persona 3: The Answer
+        thin
+        r:PLANNED
+        sid:2161700
     Pathologic
         thin
         sid:384110
@@ -604,6 +588,26 @@ Unordered:
         r:PLANNED
         sid:1358700
         thin
+    Star Wars Outlaws
+        r:PLANNED
+        thin
+        sid:2842040
+    Sifu
+        r:PLANNED
+        sid:2138710
+        thin
+    The Case of the Golden Idol
+        sid:1677770
+        thin
+        r:PLANNED
+    The Forgotten City
+        sid:874260
+        thin
+        r:PLANNED
+    Neon White (Again)
+        r:PLANNED
+        thin
+        sid:1533420
     Wanted: Dead
         r:PLANNED
         sid:1981610
