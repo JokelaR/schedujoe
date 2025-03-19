@@ -1,6 +1,6 @@
 Schedule:
-    s:10.3.2025
-    e:16.3.2025
+    s:20.3.2025
+    e:26.3.2025
     Days:
         Thu, LIKELY
         Fri, LIKELY
@@ -15,9 +15,9 @@ Schedule:
 ///
 
 Current:
-    Returnal
+    1000xRESIST:
+        sid:1675830
         r:PLANNED
-        sid:1649240
     Umineko
         thin
         r:SEASONAL
@@ -27,9 +27,6 @@ Current:
 ///
 
 Future:
-    1000xRESIST:
-        sid:1675830
-        r:PLANNED
     Baldur's Gate 3 (Not to completion)
         r:PLANNED
         sid:1086940
@@ -106,23 +103,38 @@ Lock It In:
 
 Past Games:
     #2025
+    The Looker:
+        r:ADHOC
+        rating:LOVED
+        sid:1985690
+    Returnal
+        r:PLANNED
+        sid:1649240
+        rating:LOVED
+        pt:https://peertube.nodja.com/w/p/jDgJpGWhkh6ECAeiCUaGPm?playlistPosition=1
+        yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hx4kX4MiOG335vJtmvnyuF8
+        unofficial_vod
     Signalis
         r:PLANNED
         sid:1262350
         rating:LOVED
         pt:https://peertube.nodja.com/w/p/bvcLi2xxYpdtPKwwFqNH3k?playlistPosition=1
         yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hwX4FG1eqTWppHo8DcQXmZb
+        unofficial_vod
     Persona 3 Reload
         r:PLANNED
         sid:2161700
         rating:MIXED
         pt:https://peertube.nodja.com/w/p/nXvEd19zV3yqQr6Xi1Jrsd
         yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hw4baR9lIGLwq3kNR4aDFsD
+        unofficial_vod
     Nine Sols
         r:ADHOC
         rating:LOVED
         sid:1809540
         pt:https://peertube.nodja.com/w/p/grZkNVhLmbaoFiivg4BBcn
+        yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hz9qoJnquz6cCchVtHKbtGu
+        unofficial_vod
     #2024
     Astro Bot
         r:ADHOC
@@ -130,16 +142,22 @@ Past Games:
         img:astrobot.jpg
         logo:astrobot_logo.png
         pt:https://peertube.nodja.com/w/p/1JwHsnTjW2nTpxqTt84tQB
+        https://www.youtube.com/playlist?list=PLQnzq4WSk8hxweevlrSKutfmhrYU3yv4X
+        unofficial_vod
     Life is Strange: Double Exposure
         r:SEASONAL
         rating:MIXED
         sid:1874000
         pt:https://peertube.nodja.com/w/p/anXcx3eKvCLzZJrQnSwgvQ
+        yt:https://www.youtube.com/watch?v=QPIqY2DimzA
+        unofficial_vod
     Balatro
         r:ADHOC
         rating:LOVED
         sid:2379780
         pt:https://peertube.nodja.com/w/8tah2T4xqkdqhqy8cxn73W
+        yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hyljli9wdC84BtiGcpZ6FGb
+        unofficial_vod
     Umineko
         r:SEASONAL
         rating:SKIP
