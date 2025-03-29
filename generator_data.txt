@@ -1,23 +1,23 @@
 Schedule:
+    hide
     s:20.3.2025
     e:26.3.2025
     Days:
+        Mon, NO_STREAM
+        Tue, LIKELY
+        Wed, LIKELY
         Thu, LIKELY
         Fri, LIKELY
         Sat, LIKELY
         Sun, NO_STREAM
-        Mon, NO_STREAM
-        Tue, LIKELY
-        Wed, LIKELY
-
 
 ## LIKELY, POSSIBLE, UNLIKELY, VERY_UNLIKELY, NO_STREAM
 ///
 
 Current:
-    1000xRESIST:
-        sid:1675830
+    Baldur's Gate 3 (Not to completion)
         r:PLANNED
+        sid:1086940
     Umineko
         thin
         r:SEASONAL
@@ -27,9 +27,6 @@ Current:
 ///
 
 Future:
-    Baldur's Gate 3 (Not to completion)
-        r:PLANNED
-        sid:1086940
     Metal Gear Solid
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
@@ -73,6 +70,9 @@ Lock It In:
         r:PLANNED
         sid:3017860
         note:15th May 2025
+    No Sleep for Kaname Date
+        r:PLANNED
+        note:25th July 2025
     Death Stranding 2
         r:PLANNED
         note:26th June 2025
@@ -103,10 +103,16 @@ Lock It In:
 
 Past Games:
     #2025
+    1000xRESIST:
+        sid:1675830
+        r:PLANNED
+        rating:LOVED
+        pt:https://peertube.nodja.com/w/p/fj77tNu6cyJR9CFDbbexSj?playlistPosition=1
     The Looker:
         r:ADHOC
         rating:LOVED
         sid:1985690
+        pt:https://peertube.nodja.com/w/juGsUzZR9x4ot6CVGqRPCG?start=4h6m19s
     Returnal
         r:PLANNED
         sid:1649240

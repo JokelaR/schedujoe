@@ -12,9 +12,9 @@ start = re.search(r"\bs:(.*)", data[0]).group(1) #type: ignore
 end = re.search(r"\be:(.*)", data[0]).group(1)   #type: ignore
 
 r_days = re.search(r"Days:\n((?:.*,.*\n)*)", data[0])
+days: list[tuple[str, Status]] = []
 if r_days:
     r_days = r_days.group(1).split('\n')
-    days: list[tuple[str, Status]] = []
     for day in r_days:
         if len(day) > 0:
             day = day.strip().split(',')
