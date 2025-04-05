@@ -18,15 +18,14 @@ Current:
     Baldur's Gate 3 (Not to completion)
         r:PLANNED
         sid:1086940
-    Umineko
-        thin
-        r:SEASONAL
-        img:umineko.jpg
-        id:umineko
 
 ///
 
 Future:
+    Umineko - Answer Arcs:
+        r:PLANNED
+        img:umineko_answers.png
+        logo:umineko_answers_logo.png
     Metal Gear Solid
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
@@ -103,16 +102,28 @@ Lock It In:
 
 Past Games:
     #2025
+    Umineko - Question Arcs:
+        r:SEASONAL
+        img:umineko_questions.jpg
+        logo:umineko_questions_logo.png
+        rating:LOVED
+        pt:https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk?playlistPosition=2
+        yt:https://www.youtube.com/watch?v=OG1nm227KdU&list=PLQnzq4WSk8hx8EUMmHRvFt2sYtvkorTgJ&index=2
+        unofficial_vod
     1000xRESIST:
         sid:1675830
         r:PLANNED
         rating:LOVED
         pt:https://peertube.nodja.com/w/p/fj77tNu6cyJR9CFDbbexSj?playlistPosition=1
+        yt:https://www.youtube.com/playlist?list=PLQnzq4WSk8hw4djJBfhK8oHJ1pBlLB0D7
+        unofficial_vod
     The Looker:
         r:ADHOC
         rating:LOVED
         sid:1985690
         pt:https://peertube.nodja.com/w/juGsUzZR9x4ot6CVGqRPCG?start=4h6m19s
+        yt:https://youtu.be/A8a-xUERIDY?t=14643
+        unofficial_vod
     Returnal
         r:PLANNED
         sid:1649240
@@ -169,7 +180,9 @@ Past Games:
         rating:SKIP
         img:umineko.jpg
         pt:https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk
+        yt:https://youtu.be/Nt7kdKeTwrc
         id:umineko
+        unofficial_vod
     #2023
     JADSEYA Awards Stream
         r:SEASONAL
