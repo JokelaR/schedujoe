@@ -22,6 +22,9 @@ Current:
 ///
 
 Future:
+    Indiana Jones and the Great Circle:
+        r:ADHOC
+        sid:2677660
     Umineko - Answer Arcs:
         r:PLANNED
         img:umineko_answers.png
