@@ -15,16 +15,16 @@ Schedule:
 ///
 
 Current:
-    Baldur's Gate 3 (Not to completion)
+    Indiana Jones and the Great Circle:
+        r:ADHOC
+        sid:2677660
+    Baldur's Gate 3
         r:PLANNED
         sid:1086940
 
 ///
 
 Future:
-    Indiana Jones and the Great Circle:
-        r:ADHOC
-        sid:2677660
     Umineko - Answer Arcs:
         r:PLANNED
         img:umineko_answers.png
