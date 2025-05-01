@@ -15,13 +15,12 @@ Schedule:
 ///
 
 Current:
-    Indiana Jones and the Great Circle:
+    Blue Prince
         r:ADHOC
-        sid:2677660
+        sid:1569580
     Baldur's Gate 3
         r:PLANNED
         sid:1086940
-
 ///
 
 Future:
@@ -106,6 +105,12 @@ Lock It In:
 
 Past Games:
     #2025
+    Indiana Jones and the Great Circle:
+        r:ADHOC
+        sid:2677660
+        rating:LOVED
+        pt:https://peertube.nodja.com/w/p/fmYYqi1Ld5BnfQrm1kA5hy
+        yt:https://www.youtube.com/watch?v=OEMmYqHFwAk&list=PLQnzq4WSk8hzO9nQWfpyXVwFp00sefRb3&index=1
     Umineko - Question Arcs:
         r:SEASONAL
         img:umineko_questions.jpg
