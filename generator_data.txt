@@ -15,9 +15,6 @@ Schedule:
 ///
 
 Current:
-    Blue Prince
-        r:ADHOC
-        sid:1569580
     Baldur's Gate 3
         r:PLANNED
         sid:1086940
@@ -105,6 +102,11 @@ Lock It In:
 
 Past Games:
     #2025
+    Blue Prince
+        r:ADHOC
+        sid:1569580
+        rating:LOVED
+        yt:https://www.youtube.com/watch?v=ThnoIbdHV4E&list=PLQnzq4WSk8hylJLz_I2ldevqG0UQdzUbH&index=1
     Indiana Jones and the Great Circle:
         r:ADHOC
         sid:2677660
