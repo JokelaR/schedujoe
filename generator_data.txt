@@ -18,13 +18,14 @@ Current:
     Baldur's Gate 3
         r:PLANNED
         sid:1086940
-///
-
-Future:
     Umineko - Answer Arcs:
         r:PLANNED
         img:umineko_answers.png
         logo:umineko_answers_logo.png
+        
+///
+
+Future:
     Metal Gear Solid
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
@@ -589,6 +590,10 @@ Past Games:
 ///
     
 Unordered:
+    Clair Obscur: Expedition 33
+        r:PLANNED
+        thin
+        sid:1903340
     Apollo Justice Trilogy
         r:PLANNED
         thin
