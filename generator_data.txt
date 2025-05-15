@@ -15,6 +15,9 @@ Schedule:
 ///
 
 Current:
+    DOOM: The Dark Ages
+        r:PLANNED
+        sid:3017860
     Baldur's Gate 3
         r:PLANNED
         sid:1086940
@@ -65,10 +68,6 @@ Future:
 ///
 
 Lock It In:
-    DOOM: The Dark Ages
-        r:PLANNED
-        sid:3017860
-        note:15th May 2025
     No Sleep for Kaname Date
         sid:2752180
         r:PLANNED
