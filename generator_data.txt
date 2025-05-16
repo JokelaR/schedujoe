@@ -29,13 +29,12 @@ Current:
 ///
 
 Future:
+    Metal Gear 1&2
+        sid:2131680
     Metal Gear Solid
         sid:2131630
     Metal Gear Solid 2: Sons of Liberty
         sid:2131640
-    Metal Gear 1&2
-        sid:2131680
-        thin
     Metal Gear Solid 3: Snake Eater
         sid:2131650
     Metal Gear Solid 4: Guns of the Patriots
@@ -46,6 +45,10 @@ Future:
         img:mgsgz.jpg
     Metal Gear Solid V: Phantom Pain
         sid:287700
+    Ace Combat 7: Skies Unknown
+        note:June 30th
+        sid:502500
+
     Paper Mario: The Thousand Year Door
         img:papermario.jpg
         logo:papermario_logo.png
@@ -55,8 +58,6 @@ Future:
         img:3houses.jpg
     Killer7
         sid:868520
-    Ace Combat 7: Skies Unknown
-        sid:502500
     NieR Replicant ver.1.22474487139...
         sid:1113560
     The Void
