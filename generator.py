@@ -5,7 +5,7 @@ import re
 
 with open('generator_data.txt', 'r') as f:
     data = f.read().split('///')
-    # 0: schedule, 1: current games, 2: future games, 3: lock it in, 4: past games, 5: unordered games, 6: secret
+    # 0: schedule, 1: current games, 2: dated, 3: future games, 4: lock it in, 5: past games, 6: unordered games, 7: secret, 
 
 #schedule parsing
 start = re.search(r"\bs:(.*)", data[0]).group(1) #type: ignore
@@ -33,34 +33,52 @@ html += body_start(schedule)
 current = re.search(r"Current:\n((?:.*\n)*)", data[1])
 if current:
     c_games = parse_games(current)
-    secret = re.search(r"Secret:\n((?:.*\n)*)", data[6])
+    secret = re.search(r"Secret:\n((?:.*\n)*)", data[7])
     if secret:
         s_games = parse_games(secret)
         html += current_games(c_games, s_games)
     else:
         html += current_games(c_games)
 
+#date games parsing
+dated = re.search(r"Dated:\n((?:.*\n)*)", data[2])
+if dated:
+    d_games = parse_games(dated)
+    html += games_category(
+        d_games, 
+        title="Dated games", 
+        description="These streams are set for a specific date",
+        id="dated"
+    )
+
 #future games parsing
-future = re.search(r"Future:\n((?:.*\n)*)", data[2])
+future = re.search(r"Future:\n((?:.*\n)*)", data[3])
 if future:
     f_games = parse_games(future)
-    html += future_games(f_games)
+    html += games_category(
+        f_games, 
+        title="Future games", 
+        description="These are the Mainstream™ games that will be played roughly in order.",
+        id="future"
+    )
 
 #lock it in parsing
-lock = re.search(r"Lock It In:\n((?:.*\n)*)", data[3])
+lock = re.search(r"Lock It In:\n((?:.*\n)*)", data[4])
 if lock:
     l_games = parse_games(lock)
-    html += lock_it_in(l_games)
+    html += games_category(
+        l_games, 
+        title="Lock It In!", 
+        description="These are games that Joe has said he wants to play once they come out. (Dates are for release, not necessarily for when he'll stream them).")
 
 #past games parsing
-#TODO year separators
-past = re.search(r"Past Games:\n((?:.*\n)*)", data[4])
+past = re.search(r"Past Games:\n((?:.*\n)*)", data[5])
 if past:
     p_games = parse_games(past)
     html += past_games(p_games)
 
 #unordered games parsing
-unordered = re.search(r"Unordered:\n((?:.*\n)*)", data[5])
+unordered = re.search(r"Unordered:\n((?:.*\n)*)", data[6])
 if unordered:
     u_games = parse_games(unordered)
     html += unordered_planned(u_games)

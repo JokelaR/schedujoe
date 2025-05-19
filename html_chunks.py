@@ -182,29 +182,13 @@ def current_games(games: list[Game], secret_games: list[Game]|None = None) -> st
             </div>
     """
 
-def future_games(games: list[Game]) -> str:
+def games_category(games: list[Game], title: str, description: str, id: str|None = None, short: bool = True) -> str:
+    id = id if id else title.lower().replace(" ", "-").strip(' !?.\n')
     return f"""
-        <h2>Future games</h2>
-        <p>These are the Mainstream™ games that will be played roughly in order</p>
-        <div id="future">
-            <ul class="collapsed">
-                {
-                    "".join(
-                        [game_card(game)
-                        for game in games]
-                    )
-                }
-                <button onclick="toggleCollapsed(this)">See More</button>
-            </ul>
-        </div>
-    """
-
-def lock_it_in(games: list[Game]) -> str:
-    return f"""
-        <h2>Lock It In!</h2>
-        <p>These are games that Joe has said he wants to play once they come out. (Dates are for release, not necessarily for when he'll stream them)</p>
-        <div id="lockItIn">
-            <ul class="collapsed short">
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <div id="{id}">
+            <ul class="collapsed {"short" if short else ""}">
                 {
                     "".join(
                         [game_card(game)
