@@ -15,9 +15,6 @@ Schedule:
 ///
 
 Current:
-    DOOM: The Dark Ages
-        r:PLANNED
-        sid:3017860
     Baldur's Gate 3
         r:PLANNED
         sid:1086940
@@ -112,17 +109,25 @@ Lock It In:
 
 Past Games:
     #2025
+    DOOM: The Dark Ages
+        r:PLANNED
+        rating:LOVED
+        sid:3017860
+        yt:https://www.youtube.com/playlist?list=PLtvGR9rxLjViwhpSAC7Fls5gxOvfq0FJz
     Blue Prince
         r:ADHOC
         sid:1569580
         rating:LOVED
         yt:https://www.youtube.com/watch?v=ThnoIbdHV4E&list=PLQnzq4WSk8hylJLz_I2ldevqG0UQdzUbH&index=1
+        unofficial_vod
+        pt:https://peertube.nodja.com/w/p/siXhbdU77DbUTUdkaEAXL2?playlistPosition=1
     Indiana Jones and the Great Circle:
         r:ADHOC
         sid:2677660
         rating:LOVED
         pt:https://peertube.nodja.com/w/p/fmYYqi1Ld5BnfQrm1kA5hy
         yt:https://www.youtube.com/watch?v=OEMmYqHFwAk&list=PLQnzq4WSk8hzO9nQWfpyXVwFp00sefRb3&index=1
+        unofficial_vod
     Umineko - Question Arcs:
         r:SEASONAL
         img:umineko_questions.jpg
