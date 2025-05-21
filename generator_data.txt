@@ -35,6 +35,10 @@ Dated:
     Ace Combat 7: Skies Unknown
         note:June 30th
         sid:502500
+    YIIK - A Postmodern RPG
+        note:Yiikmas
+        r:SEASONAL
+        sid:459080
 
 ///
 
@@ -55,6 +59,10 @@ Future:
         img:mgsgz.jpg
     Metal Gear Solid V: Phantom Pain
         sid:287700
+    Clair Obscur: Expedition 33
+        r:PLANNED
+        thin
+        sid:1903340
     Paper Mario: The Thousand Year Door
         img:papermario.jpg
         logo:papermario_logo.png
@@ -604,10 +612,6 @@ Past Games:
 ///
     
 Unordered:
-    Clair Obscur: Expedition 33
-        r:PLANNED
-        thin
-        sid:1903340
     Apollo Justice Trilogy
         r:PLANNED
         thin
@@ -683,10 +687,6 @@ Unordered:
         r:PLANNED
         thin
         img:xenoblade.jpg
-    YIIK - A Postmodern RPG
-        r:PLANNED
-        sid:459080
-        thin
     Yakuza Kiwami
         r:PLANNED
         sid:834530
