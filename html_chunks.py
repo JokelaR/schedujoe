@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from models import GameReason, ScheduleDayStatus
+from models import ScheduleDayStatus
 from chunk_types import Schedule, Game
 
 

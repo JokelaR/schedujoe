@@ -74,15 +74,15 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    No Sleep for Kaname Date:
-        sid: 2752180
-        reason: PLANNED
-        note: 25th July 2025
     Death Stranding 2:
         reason: PLANNED
         note: 26th June 2025
         logo: ds2_logo.png
         img: ds2.png
+    No Sleep for Kaname Date:
+        sid: 2752180
+        reason: PLANNED
+        note: 25th July 2025
     "Lies of P: Overture (DLC)":
         reason: PLANNED    
         note: Summer 2025
@@ -107,6 +107,7 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+
     "DOOM: The Dark Ages":
         reason: PLANNED
         rating: LOVED
@@ -179,6 +180,7 @@ past_games:
 
     "2024":
         divider: true
+        
     Astro Bot:
         reason: ADHOC
         rating: LOVED
@@ -212,6 +214,7 @@ past_games:
 
     "2023":
         divider: true
+
     JADSEYA Awards Stream:
         reason: SEASONAL
         rating: LOVED
@@ -517,6 +520,7 @@ past_games:
 
     "2022":
         divider: true
+
     Life is Strange 2:
         reason: SEASONAL
         rating: HATED
@@ -597,6 +601,7 @@ past_games:
 
     "2021":
         divider: true
+
     Persona 4 Golden:
         rating: LOVED
         sid: 1113000

@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from datetime import date
 from enum import Enum
-from io import StringIO
+from io import IOBase
 from pprint import pprint
 from sys import stdin
-from typing import Annotated, Optional, TypeAlias, assert_never
-from pydantic import BaseModel, ConfigDict, Field
+from typing import Optional, TypeAlias, assert_never
+from pydantic import BaseModel, ConfigDict
 import yaml
 
 class Model(BaseModel):
@@ -126,7 +126,7 @@ class Game(Model):
     link: Optional[str] = None
     divider: bool = False
 
-def load_config(data: StringIO) -> Config:
+def load_config(data: IOBase) -> Config:
     """
     Load the configuration from a StringIO object containing YAML data.
     """
@@ -134,7 +134,7 @@ def load_config(data: StringIO) -> Config:
     return Config.model_validate(unparsed_config)
 
 def main():
-    pprint(load_config(stdin.read()))
+    pprint(load_config(stdin.read())) # type: ignore
 
 if __name__ == "__main__":
     main()

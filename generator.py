@@ -1,7 +1,6 @@
 from html_chunks import body_start, html_start, head, body_end, current_games, games_category, past_games, unordered_planned
 from chunk_types import parse_games, Schedule
 from bs4 import BeautifulSoup
-import re
 
 from models import load_config
 

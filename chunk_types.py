@@ -1,10 +1,8 @@
-from enum import Enum
-import re
-
-from models import GameRating, GameReason, GamesMapping, ScheduleDayStatus
+from models import GameRating, GameReason, GamesMapping, ScheduleDays
+from datetime import date
 
 class Schedule:
-    def __init__ (self, start: str, end: str, days: list[tuple[str, ScheduleDayStatus]], extra: str|None = None, hide_date: bool = False):
+    def __init__ (self, start: date, end: date, days: ScheduleDays, extra: str|None = None, hide_date: bool = False):
         self.start = start
         self.end = end
         self.days = days
@@ -33,7 +31,7 @@ class Game:
                  youtube: str|None = None, 
                  peertube: str|None = None, 
                  rating: GameRating|None = None, 
-                 steam_id: str|None = None, 
+                 steam_id: int|None = None, 
                  image: str|None = None, 
                  custom_logo: str|None = None,
                  ignore_logo: bool = False,
@@ -68,8 +66,8 @@ class Game:
         self.starts_hidden = starts_hidden
 
 def parse_games(games: GamesMapping) -> list[Game]:
-    o_games = []
-    nesting_ids = set()
+    o_games: list[Game] = []
+    nesting_ids: set[str] = set()
     for name, game in games.items():
         if game.divider:
             o_games.append(Game(name, is_divider=True))

@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "Generator Data Schema",
+    "type": "object",
+    "properties": {
+        "schedule": {
+            "type": "object",
+            "properties": {
+                "hide": { "type": "boolean" },
+                "start": { "type": "string", "format": "date" },
+                "end": { "type": "string", "format": "date" },
+                "days": {
+                    "type": "object",
+                    "properties": {
+                        "mon": { "$ref": "#/definitions/schedule_day_status" },
+                        "tue": { "$ref": "#/definitions/schedule_day_status" },
+                        "wed": { "$ref": "#/definitions/schedule_day_status" },
+                        "thu": { "$ref": "#/definitions/schedule_day_status" },
+                        "fri": { "$ref": "#/definitions/schedule_day_status" },
+                        "sat": { "$ref": "#/definitions/schedule_day_status" },
+                        "sun": { "$ref": "#/definitions/schedule_day_status" }
+                    },
+                    "required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+                    "additionalProperties": false
+                },
+                "extra": { "type": "string" }
+            },
+            "required": ["hide", "start", "end", "days"],
+            "additionalProperties": false
+        },
+        "current": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": { "$ref": "#/definitions/game" }
+            },
+            "additionalProperties": false
+        },
+        "dated": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": { "$ref": "#/definitions/game" }
+            },
+            "additionalProperties": false
+        },
+        "future": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": { "$ref": "#/definitions/game" }
+            },
+            "additionalProperties": false
+        },
+        "lock_it_in": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": { "$ref": "#/definitions/game" }
+            },
+            "additionalProperties": false
+        },
+        "past_games": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "oneOf": [
+                        { "type": "object", "properties": { "divider": { "type": "boolean" } }, "required": ["divider"], "additionalProperties": false },
+                        { "$ref": "#/definitions/game" }
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "unordered": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": { "$ref": "#/definitions/game" }
+            },
+            "additionalProperties": false
+        },
+        "secret": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": { "$ref": "#/definitions/game" }
+            },
+            "additionalProperties": false
+        }
+    },
+    "required": ["schedule"],
+    "additionalProperties": false,
+    "definitions": {
+        "game": {
+            "type": "object",
+            "properties": {
+                "title": { "type": "string" },
+                "icon": { "type": "string" },
+                "reason": { "type": "string", "enum": ["PLANNED", "ADHOC", "SEASONAL", "DROPPED"] },
+                "rating": { "type": "string", "enum": ["ATROCIOUS", "HATED", "MIXED", "LOVED", "SKIP", "DROPPED", "TROLLEY"] },
+                "id": { "type": "string" },
+                "sid": { "type": "integer" },
+                "note": { "type": "string" },
+                "img": { "type": "string" },
+                "logo": { "type": "string" },
+                "thin": { "type": "boolean", "default": false },
+                "ignore_logo": { "type": "boolean", "default": false },
+                "yt": { "type": "string" },
+                "pt": { "type": "string" },
+                "unofficial_vod": { "type": "boolean", "default": false },
+                "hidden": { "type": "boolean", "default": false },
+                "nest": {
+                    "type": "array",
+                    "items": { "type": "string" },
+                    "default": []
+                },
+                "link": { "type": "string" }
+            },
+            "additionalProperties": false
+        },
+        "schedule_day_status": {
+            "type": "string",
+            "enum": ["LIKELY", "POSSIBLE", "UNLIKELY", "VERY_UNLIKELY", "NO_STREAM"]
+        }
+    }
+}
