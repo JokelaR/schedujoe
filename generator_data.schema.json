@@ -27,36 +27,17 @@
             },
             "required": ["hide", "start", "end", "days"],
             "additionalProperties": false
-        },
-        "current": {
-            "type": "object",
-            "patternProperties": {
-                "^.*$": { "$ref": "#/definitions/game" }
-            },
-            "additionalProperties": false
-        },
-        "dated": {
-            "type": "object",
-            "patternProperties": {
-                "^.*$": { "$ref": "#/definitions/game" }
-            },
-            "additionalProperties": false
-        },
-        "future": {
-            "type": "object",
-            "patternProperties": {
-                "^.*$": { "$ref": "#/definitions/game" }
-            },
-            "additionalProperties": false
-        },
-        "lock_it_in": {
-            "type": "object",
-            "patternProperties": {
-                "^.*$": { "$ref": "#/definitions/game" }
-            },
-            "additionalProperties": false
-        },
-        "past_games": {
+        }
+    },
+    "patternProperties": {
+        "^.*$": {
+            "$ref": "#/definitions/category"
+        }
+    },
+    "required": ["schedule"],
+    "additionalProperties": false,
+    "definitions": {
+        "category": {
             "type": "object",
             "patternProperties": {
                 "^.*$": {
@@ -68,24 +49,6 @@
             },
             "additionalProperties": false
         },
-        "unordered": {
-            "type": "object",
-            "patternProperties": {
-                "^.*$": { "$ref": "#/definitions/game" }
-            },
-            "additionalProperties": false
-        },
-        "secret": {
-            "type": "object",
-            "patternProperties": {
-                "^.*$": { "$ref": "#/definitions/game" }
-            },
-            "additionalProperties": false
-        }
-    },
-    "required": ["schedule"],
-    "additionalProperties": false,
-    "definitions": {
         "game": {
             "type": "object",
             "properties": {

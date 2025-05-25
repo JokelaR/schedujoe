@@ -5,7 +5,7 @@ from enum import Enum
 from io import IOBase
 from pprint import pprint
 from sys import stdin
-from typing import Optional, TypeAlias, assert_never
+from typing import TypeAlias, assert_never
 from pydantic import BaseModel, ConfigDict
 import yaml
 
@@ -16,13 +16,13 @@ GamesMapping: TypeAlias = dict[str, "Game"]
 
 class Config(Model):
     schedule: Schedule
-    current: Optional[GamesMapping] = None
-    dated: Optional[GamesMapping] = None
-    future: Optional[GamesMapping] = None
-    lock_it_in: Optional[GamesMapping] = None
-    past_games: Optional[GamesMapping] = None
-    unordered: Optional[GamesMapping] = None
-    secret: Optional[GamesMapping] = None
+    current: GamesMapping|None = None
+    dated: GamesMapping|None = None
+    future: GamesMapping|None = None
+    lock_it_in: GamesMapping|None = None
+    past_games: GamesMapping|None = None
+    unordered: GamesMapping|None = None
+    secret: GamesMapping|None = None
 
 
 class Schedule(Model):
@@ -30,7 +30,7 @@ class Schedule(Model):
     start: date
     end: date
     days: ScheduleDays
-    extra: Optional[str] = None
+    extra: str|None = None
 
 
 class ScheduleDayStatus(Enum):
@@ -107,23 +107,23 @@ class GameRating(str, Enum):
         assert_never(self)
 
 class Game(Model):
-    title: Optional[str] = None
-    icon: Optional[str] = None
-    reason: Optional[GameReason] = None
-    rating: Optional[GameRating] = None
-    id: Optional[str] = None
-    sid: Optional[int] = None
-    note: Optional[str] = None
-    img: Optional[str] = None
-    logo: Optional[str] = None
+    title: str|None = None
+    icon: str|None = None
+    reason: GameReason|None = None
+    rating: GameRating|None = None
+    id: str|None = None
+    sid: int|None = None
+    note: str|None = None
+    img: str|None = None
+    logo: str|None = None
     thin: bool = False
     ignore_logo: bool = False
-    yt: Optional[str] = None
-    pt: Optional[str] = None
+    yt: str|None = None
+    pt: str|None = None
     unofficial_vod: bool = False
     hidden: bool = False
     nest: list[str] = []
-    link: Optional[str] = None
+    link: str|None = None
     divider: bool = False
 
 def load_config(data: IOBase) -> Config:
