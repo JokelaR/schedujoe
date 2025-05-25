@@ -1,6 +1,7 @@
 from datetime import datetime
 
-from chunk_types import Game, Schedule, Status
+from models import GameReason, ScheduleDayStatus
+from chunk_types import Schedule, Game
 
 
 html_start = """
@@ -32,8 +33,8 @@ head = """
     </head>
 """
 
-def schedule_html(schedule: tuple[str, Status]) -> str:
-    return f'<div title="{schedule[1].value}">{schedule[0]}</div>\n'
+def schedule_html(schedule: tuple[str, ScheduleDayStatus]) -> str:
+    return f'<div title="{schedule[1].to_html_title()}">{schedule[0].capitalize()}</div>\n'
 
 def body_start(schedule: Schedule) -> str:
     return f"""
@@ -104,11 +105,11 @@ def game_card(game: Game) -> str:
 
     card_classes = ["cardContainer"]
     if game.rating:
-        card_classes.append(game.rating.value)
+        card_classes.append(game.rating.to_html_class())
     if game.small_card:
         card_classes.append("thin")
     if game.reason:
-        card_classes.append(game.reason.value)
+        card_classes.append(game.reason.to_html_class())
     if game.starts_hidden:
         card_classes.append("hidden")
     if game.is_nested:
