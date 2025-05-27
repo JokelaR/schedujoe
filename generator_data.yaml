@@ -27,6 +27,11 @@ dated:
         reason: PLANNED
         img: summer_game.png
         logo: summer_game_logo.png
+    Death Stranding 2:
+        reason: PLANNED
+        note: Launch (26th June 2025)
+        logo: ds2_logo.png
+        img: ds2.png
     "Ace Combat 7: Skies Unknown":
         note: June 30th
         sid: 502500
@@ -74,11 +79,6 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    Death Stranding 2:
-        reason: PLANNED
-        note: 26th June 2025
-        logo: ds2_logo.png
-        img: ds2.png
     No Sleep for Kaname Date:
         sid: 2752180
         reason: PLANNED
