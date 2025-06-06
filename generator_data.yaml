@@ -12,6 +12,11 @@ schedule:
         sun: NO_STREAM
 
 current:
+    Summer Game Fest 2025:
+        sid: 2131680
+        reason: PLANNED
+        img: summer_game.png
+        logo: summer_game_logo.png
     Baldur's Gate 3:
         reason: PLANNED
         sid: 1086940
@@ -21,12 +26,6 @@ current:
         logo: umineko_answers_logo.png
 
 dated:
-    Summer Game Fest 2025:
-        note: June 6th
-        sid: 2131680
-        reason: PLANNED
-        img: summer_game.png
-        logo: summer_game_logo.png
     Death Stranding 2:
         reason: PLANNED
         note: Launch (26th June 2025)
