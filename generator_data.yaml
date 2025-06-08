@@ -19,12 +19,12 @@ current:
         reason: PLANNED
         img: umineko_answers.png
         logo: umineko_answers_logo.png
+    "Lies of P: Overture":
+        reason: PLANNED
+        thin: true
+        sid: 2848330
 
 dated:
-    "Lies of P: Overture (DLC)":
-        reason: PLANNED    
-        note: It's out
-        sid: 2848330
     Death Stranding 2:
         reason: PLANNED
         note: Launch (26th June 2025)
@@ -118,6 +118,8 @@ past_games:
         reason: PLANNED
         img: summer_game.png
         logo: summer_game_logo.png
+        yt: https://www.youtube.com/watch?v=X2g_3k2-92Y&t=13578s
+        unofficial_vod: true
     "DOOM: The Dark Ages":
         reason: PLANNED
         rating: LOVED
