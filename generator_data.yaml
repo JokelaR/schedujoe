@@ -3,13 +3,13 @@ schedule:
     start: 2025-03-20
     end: 2025-03-26
     days:
-        mon: NO_STREAM
+        mon: VERY_UNLIKELY
         tue: LIKELY
         wed: LIKELY
         thu: LIKELY
         fri: LIKELY
         sat: LIKELY
-        sun: NO_STREAM
+        sun: VERY_UNLIKELY
 
 current:
     Baldur's Gate 3:
@@ -96,6 +96,18 @@ lock_it_in:
     Resident Evil Requiem:
         reason: PLANNED
         note: 27th February 2026
+        sid: 3764200
+        ignore_logo: true
+    Super Meat Boy 3D:
+        reason: PLANNED
+        note: Early 2026
+        sid: 3288210
+        ignore_logo: true
+    "007: First Light":
+        reason: PLANNED
+        note: '2026'
+        sid: 3768760
+        ignore_logo: true
     Code Vein 2:
         reason: PLANNED
         note: '2026'
