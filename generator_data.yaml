@@ -19,10 +19,6 @@ current:
         reason: PLANNED
         img: umineko_answers.png
         logo: umineko_answers_logo.png
-    "Lies of P: Overture":
-        reason: PLANNED
-        thin: true
-        sid: 2848330
 
 dated:
     Death Stranding 2:
@@ -30,9 +26,6 @@ dated:
         note: Launch (26th June 2025)
         logo: ds2_logo.png
         img: ds2.png
-    "Ace Combat 7: Skies Unknown":
-        note: June 30th
-        sid: 502500
     The Case of the Golden Idol:
         sid: 1677770
         reason: PLANNED
@@ -43,6 +36,8 @@ dated:
         sid: 459080
 
 future:
+    "Ace Combat 7: Skies Unknown":
+        sid: 502500
     Metal Gear 1&2:
         sid: 2131680
     Metal Gear Solid:
@@ -125,6 +120,13 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Lies of P: Overture":
+        reason: PLANNED
+        thin: true
+        rating: LOVED
+        sid: 2848330
+        yt: https://www.youtube.com/watch?v=pweHC0Ef5Zs&list=PLQnzq4WSk8hyhjQZsKk95gPn-ny_GCv22&index=10
+        unofficial_vod: true
     Summer Game Fest 2025:
         sid: 2131680
         reason: PLANNED
