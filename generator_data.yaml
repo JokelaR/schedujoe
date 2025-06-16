@@ -38,6 +38,10 @@ dated:
 future:
     "Ace Combat 7: Skies Unknown":
         sid: 502500
+    "Clair Obscur: Expedition 33":
+        reason: PLANNED
+        thin: true
+        sid: 1903340
     Metal Gear 1&2:
         sid: 2131680
     Metal Gear Solid:
@@ -54,10 +58,6 @@ future:
         img: mgsgz.jpg
     "Metal Gear Solid V: Phantom Pain":
         sid: 287700
-    "Clair Obscur: Expedition 33":
-        reason: PLANNED
-        thin: true
-        sid: 1903340
     "Paper Mario: The Thousand Year Door":
         img: papermario.jpg
         logo: papermario_logo.png
