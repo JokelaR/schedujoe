@@ -12,9 +12,8 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Baldur's Gate 3:
-        reason: PLANNED
-        sid: 1086940
+    "Ace Combat 7: Skies Unknown":
+        sid: 502500
     Umineko - Answer Arcs:
         reason: PLANNED
         img: umineko_answers.png
@@ -26,6 +25,10 @@ dated:
         note: Launch (26th June 2025)
         logo: ds2_logo.png
         img: ds2.png
+    "Clair Obscur: Expedition 33":
+        reason: PLANNED
+        note: After Death Stranding 2
+        sid: 1903340
     The Case of the Golden Idol:
         sid: 1677770
         reason: PLANNED
@@ -36,12 +39,6 @@ dated:
         sid: 459080
 
 future:
-    "Ace Combat 7: Skies Unknown":
-        sid: 502500
-    "Clair Obscur: Expedition 33":
-        reason: PLANNED
-        thin: true
-        sid: 1903340
     Metal Gear 1&2:
         sid: 2131680
     Metal Gear Solid:
@@ -120,6 +117,11 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Baldur's Gate 3:
+        reason: PLANNED
+        rating: LOVED
+        sid: 1086940
+        yt: https://www.youtube.com/watch?v=flgwhNWHXOA&list=PLQnzq4WSk8hzSglnB3uHVV0ObTmHAOz1-&index=2
     "Lies of P: Overture":
         reason: PLANNED
         thin: true
