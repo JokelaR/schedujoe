@@ -12,19 +12,16 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    "Ace Combat 7: Skies Unknown":
-        sid: 502500
+    Death Stranding 2:
+        reason: PLANNED
+        logo: ds2_logo.png
+        img: ds2.png
     Umineko - Answer Arcs:
         reason: PLANNED
         img: umineko_answers.png
         logo: umineko_answers_logo.png
 
 dated:
-    Death Stranding 2:
-        reason: PLANNED
-        note: Launch (26th June 2025)
-        logo: ds2_logo.png
-        img: ds2.png
     "Clair Obscur: Expedition 33":
         reason: PLANNED
         note: After Death Stranding 2
@@ -77,10 +74,6 @@ lock_it_in:
         sid: 2752180
         reason: PLANNED
         note: 25th July 2025
-    Dreamsettler:
-        reason: PLANNED
-        note: 2025?
-        sid: 1931040
     Baby Steps:
         reason: ADHOC
         note: 8th September 2025
@@ -117,11 +110,16 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Ace Combat 7: Skies Unknown":
+        sid: 502500
+        rating: LOVED
+        yt: https://www.youtube.com/watch?v=O7HKBBxZGI8&list=PLtvGR9rxLjVjZ_pbtftexcFKjg1GxH3VC&index=1
     Baldur's Gate 3:
         reason: PLANNED
         rating: LOVED
         sid: 1086940
         yt: https://www.youtube.com/watch?v=flgwhNWHXOA&list=PLQnzq4WSk8hzSglnB3uHVV0ObTmHAOz1-&index=2
+        unofficial_vod: true
     "Lies of P: Overture":
         reason: PLANNED
         thin: true
@@ -141,6 +139,7 @@ past_games:
         rating: LOVED
         sid: 3017860
         yt: https://www.youtube.com/playlist?list=PLtvGR9rxLjViwhpSAC7Fls5gxOvfq0FJz
+        pt: https://peertube.nodja.com/w/p/kZZDc1fqrVPvRBYWyrJcLv?playlistPosition=1
     Blue Prince:
         reason: ADHOC
         sid: 1569580
