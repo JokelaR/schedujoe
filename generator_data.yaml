@@ -22,10 +22,6 @@ current:
         logo: umineko_answers_logo.png
 
 dated:
-    "Clair Obscur: Expedition 33":
-        reason: PLANNED
-        note: After Death Stranding 2
-        sid: 1903340
     The Case of the Golden Idol:
         sid: 1677770
         reason: PLANNED
@@ -36,6 +32,11 @@ dated:
         sid: 459080
 
 future:
+    Chrono Trigger:
+        sid: 613830
+    "Clair Obscur: Expedition 33":
+        reason: PLANNED
+        sid: 1903340
     Metal Gear 1&2:
         sid: 2131680
     Metal Gear Solid:
