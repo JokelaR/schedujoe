@@ -33,9 +33,13 @@ dated:
 
 future:
     Chrono Trigger:
+        reason: ADHOC
         sid: 613830
+    Final Fantasy VI:
+        reason: ADHOC
+        sid: 1173820
     "Clair Obscur: Expedition 33":
-        reason: PLANNED
+        reason: ADHOC
         sid: 1903340
     Metal Gear 1&2:
         sid: 2131680
