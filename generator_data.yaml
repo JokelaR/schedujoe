@@ -12,10 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Death Stranding 2:
-        reason: PLANNED
-        logo: ds2_logo.png
-        img: ds2.png
+    Chrono Trigger:
+        reason: ADHOC
+        sid: 613830
     Umineko - Answer Arcs:
         reason: PLANNED
         img: umineko_answers.png
@@ -32,9 +31,6 @@ dated:
         sid: 459080
 
 future:
-    Chrono Trigger:
-        reason: ADHOC
-        sid: 613830
     Final Fantasy VI:
         reason: ADHOC
         sid: 1173820
@@ -115,6 +111,11 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Death Stranding 2:
+        rating: LOVED
+        reason: PLANNED
+        logo: ds2_logo.png
+        img: ds2.png
     "Ace Combat 7: Skies Unknown":
         sid: 502500
         rating: LOVED
