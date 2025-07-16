@@ -12,9 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Chrono Trigger:
+    Final Fantasy VI:
         reason: ADHOC
-        sid: 613830
+        sid: 1173820
     Umineko - Answer Arcs:
         reason: PLANNED
         img: umineko_answers.png
@@ -31,9 +31,6 @@ dated:
         sid: 459080
 
 future:
-    Final Fantasy VI:
-        reason: ADHOC
-        sid: 1173820
     "Clair Obscur: Expedition 33":
         reason: ADHOC
         sid: 1903340
@@ -111,20 +108,29 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Chrono Trigger:
+        reason: ADHOC
+        sid: 613830
+        rating: LOVED
+        yt: https://www.youtube.com/watch?v=cG3eXWpY-Tw&list=PLQnzq4WSk8hx77xZKBQaBF3XedJ8Vk0uY&index=1
+        unofficial_vod: true
     Death Stranding 2:
         rating: LOVED
         reason: PLANNED
         logo: ds2_logo.png
         img: ds2.png
+        pt: https://peertube.nodja.com/w/p/mAwKU636JkFQTrhMh17Chq?playlistPosition=1
     "Ace Combat 7: Skies Unknown":
         sid: 502500
         rating: LOVED
         yt: https://www.youtube.com/watch?v=O7HKBBxZGI8&list=PLtvGR9rxLjVjZ_pbtftexcFKjg1GxH3VC&index=1
+        pt: https://peertube.nodja.com/w/p/xocHxyW9VGG4hxujpidkx6?playlistPosition=1
     Baldur's Gate 3:
         reason: PLANNED
         rating: LOVED
         sid: 1086940
         yt: https://www.youtube.com/watch?v=flgwhNWHXOA&list=PLQnzq4WSk8hzSglnB3uHVV0ObTmHAOz1-&index=2
+        pt: https://peertube.nodja.com/w/p/f4egwFRwzj9EHsjZu4JVjE?playlistPosition=1
         unofficial_vod: true
     "Lies of P: Overture":
         reason: PLANNED
@@ -132,6 +138,7 @@ past_games:
         rating: LOVED
         sid: 2848330
         yt: https://www.youtube.com/watch?v=pweHC0Ef5Zs&list=PLQnzq4WSk8hyhjQZsKk95gPn-ny_GCv22&index=10
+        pt: https://peertube.nodja.com/w/p/6nYrwuY1k3L5tFk2jLEAwg?playlistPosition=1
         unofficial_vod: true
     Summer Game Fest 2025:
         sid: 2131680
@@ -139,6 +146,7 @@ past_games:
         img: summer_game.png
         logo: summer_game_logo.png
         yt: https://www.youtube.com/watch?v=X2g_3k2-92Y&t=13578s
+        pt: https://peertube.nodja.com/w/66GdSwTxN2xiouS9mFxvWw?start=3h37m30s
         unofficial_vod: true
     "DOOM: The Dark Ages":
         reason: PLANNED

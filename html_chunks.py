@@ -78,7 +78,7 @@ def logo(game: Game) -> str:
         if game.custom_logo:
             out = f'<img src="img/{game.custom_logo}" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
         elif game.steam_id:
-            out = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
+            out = f'<img src="https://shared.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
             
     nest = ""
     if game.nested:
