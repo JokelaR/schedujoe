@@ -77,8 +77,8 @@ def logo(game: Game) -> str:
     if not game.small_card and not game.ignore_logo:
         if game.custom_logo:
             out = f'<img src="img/{game.custom_logo}" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
-        elif game.steam_id:
-            out = f'<img src="https://shared.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/logo.png" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
+        elif game.steam_logo:
+            out = f'<img src="https://shared.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/{game.steam_logo}" title="{game.name}" alt="{game.name} logo" class="gameLogo" loading="lazy">'
             
     nest = ""
     if game.nested:
@@ -93,8 +93,8 @@ def logo(game: Game) -> str:
 
 def background_image(game: Game) -> str:
     html = ""
-    if game.steam_id:
-        html = f'<img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/library_hero.jpg" class="gameImage" loading="lazy" alt="">'
+    if game.steam_hero:
+        html = f'<img src="https://shared.steamstatic.com/store_item_assets/steam/apps/{game.steam_id}/{game.steam_hero}" class="gameImage" loading="lazy" alt="">'
     if game.image:
         html = f'<img src="img/{game.image}" class="gameImage" loading="lazy" alt="">'
     return html

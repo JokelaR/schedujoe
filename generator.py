@@ -71,4 +71,4 @@ html += body_end()
 
 soup = BeautifulSoup(html, 'html.parser')
 with open('index.html', 'w', encoding="utf-8") as f:
-    f.write(soup.prettify())
+    f.write(str(soup.prettify()))

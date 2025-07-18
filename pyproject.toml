@@ -6,6 +6,12 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.12.3",
+    "eventemitter>=0.2.0",
+    "gevent>=25.5.1",
     "pydantic>=2.11.5",
     "pyyaml>=6.0.2",
+    "steam[client]==1.6.1",
 ]
+
+[tool.uv.sources]
+steam = { git = "https://github.com/solsticegamestudios/steam", rev = "v1.6.1" }
