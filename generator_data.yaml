@@ -25,6 +25,9 @@ dated:
         sid: 1677770
         reason: PLANNED
         note: '2025'
+    FNAFTOBER:
+        reason: SEASONAL
+        note: 'October 2025'
     YIIK - A Postmodern RPG:
         note: Yiikmas
         reason: SEASONAL
