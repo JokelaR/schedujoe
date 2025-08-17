@@ -15,10 +15,6 @@ current:
     "Clair Obscur: Expedition 33":
         reason: ADHOC
         sid: 1903340
-    Umineko - Answer Arcs:
-        reason: PLANNED
-        img: umineko_answers.png
-        logo: umineko_answers_logo.png
 
 dated:
     The Case of the Golden Idol:
@@ -112,17 +108,25 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Umineko - Answer Arcs:
+        reason: PLANNED
+        rating: LOVED
+        img: umineko_answers.png
+        logo: umineko_answers_logo.png
+        pt: https://peertube.nodja.com/w/p/xc5UXV1ZRj4fSE4c7KLJhk?playlistPosition=23
     Final Fantasy VI:
         reason: ADHOC
         rating: LOVED
         sid: 1173820
         yt: https://www.youtube.com/watch?v=JOI8JJDihpI&list=PLQnzq4WSk8hx--ydOKXcU6HXNLbe3nUvo&index=1
+        pt: https://peertube.nodja.com/w/p/7tCcBAxiUzhCz6ia4eiuUN?playlistPosition=1
         unofficial_vod: true
     Chrono Trigger:
         reason: ADHOC
         sid: 613830
         rating: LOVED
         yt: https://www.youtube.com/watch?v=cG3eXWpY-Tw&list=PLQnzq4WSk8hx77xZKBQaBF3XedJ8Vk0uY&index=1
+        pt: https://peertube.nodja.com/w/p/iFWUXFp2diBHotLwtRRcxG?playlistPosition=1
         unofficial_vod: true
     Death Stranding 2:
         rating: LOVED
