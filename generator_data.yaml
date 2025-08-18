@@ -1,21 +1,19 @@
 schedule:
-    hide: true
-    start: 2025-03-20
-    end: 2025-03-26
+    hide: false
+    start: 2025-08-17
+    end: 2025-08-24
     days:
         mon: VERY_UNLIKELY
         tue: LIKELY
-        wed: LIKELY
-        thu: LIKELY
-        fri: LIKELY
-        sat: LIKELY
+        wed: VERY_UNLIKELY
+        thu: VERY_UNLIKELY
+        fri: VERY_UNLIKELY
+        sat: VERY_UNLIKELY
         sun: VERY_UNLIKELY
 
 current:
-    "Clair Obscur: Expedition 33":
-        reason: ADHOC
-        sid: 1903340
-
+    "Break week for Joe":
+        note: ''
 dated:
     The Case of the Golden Idol:
         sid: 1677770
@@ -34,6 +32,8 @@ dated:
         sid: 459080
 
 future:
+    "Pentiment, Sifu, or Something":
+        reason: ADHOC
     Donkey Kong Bananza:
         reason: ADHOC
         logo: dk_logo.png
@@ -108,6 +108,13 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Clair Obscur: Expedition 33":
+        reason: ADHOC
+        sid: 1903340
+        rating: LOVED
+        pt: https://peertube.nodja.com/w/p/juCnxnsSo6x6JLCA9XqeHR?playlistPosition=1
+        yt: https://www.youtube.com/watch?v=nXxeBLesOZk&list=PLQnzq4WSk8hynEpcTCH7jqxFuI9fNAyTb
+        unofficial_vod: true
     Umineko - Answer Arcs:
         reason: PLANNED
         rating: LOVED
