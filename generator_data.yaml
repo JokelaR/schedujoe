@@ -32,12 +32,13 @@ dated:
         sid: 459080
 
 future:
-    "Pentiment, Sifu, or Something":
-        reason: ADHOC
     Donkey Kong Bananza:
         reason: ADHOC
         logo: dk_logo.png
         img: dk_hero.jpg
+    Hollow Knight Silksong:
+        reason: ADHOC
+        sid: 1030300
     Metal Gear 1&2:
         sid: 2131680
     Metal Gear Solid:
