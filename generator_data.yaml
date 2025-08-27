@@ -1,19 +1,27 @@
 schedule:
-    hide: false
+    hide: true
     start: 2025-08-17
     end: 2025-08-24
     days:
         mon: VERY_UNLIKELY
         tue: LIKELY
-        wed: VERY_UNLIKELY
-        thu: VERY_UNLIKELY
-        fri: VERY_UNLIKELY
-        sat: VERY_UNLIKELY
+        wed: LIKELY
+        thu: LIKELY
+        fri: LIKELY
+        sat: LIKELY
         sun: VERY_UNLIKELY
 
 current:
-    "Break week for Joe":
-        note: ''
+    Donkey Kong Bananza:
+        reason: ADHOC
+        logo: dk_logo.png
+        img: dk_hero.jpg
+    Pentiment:
+        note: Saturdays
+        reason: PLANNED
+        sid: 1205520
+
+
 dated:
     The Case of the Golden Idol:
         sid: 1677770
@@ -32,10 +40,6 @@ dated:
         sid: 459080
 
 future:
-    Donkey Kong Bananza:
-        reason: ADHOC
-        logo: dk_logo.png
-        img: dk_hero.jpg
     Hollow Knight Silksong:
         reason: ADHOC
         sid: 1030300
@@ -692,10 +696,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2679460
-    Pentiment:
-        thin: true
-        reason: PLANNED
-        sid: 1205520
     "Persona 3: The Answer":
         thin: true
         reason: PLANNED
