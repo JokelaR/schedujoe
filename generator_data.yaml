@@ -12,10 +12,10 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Donkey Kong Bananza:
+    Hollow Knight Silksong:
+        note: Base game before launch
         reason: ADHOC
-        logo: dk_logo.png
-        img: dk_hero.jpg
+        sid: 1030300
     Pentiment:
         note: Saturdays
         reason: PLANNED
@@ -40,9 +40,6 @@ dated:
         sid: 459080
 
 future:
-    Hollow Knight Silksong:
-        reason: ADHOC
-        sid: 1030300
     Metal Gear 1&2:
         sid: 2131680
     Metal Gear Solid:
@@ -113,6 +110,12 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Donkey Kong Bananza:
+        reason: ADHOC
+        logo: dk_logo.png
+        rating: LOVED
+        img: dk_hero.jpg
+        yt: https://www.youtube.com/watch?v=40G9iPFdNwQ&list=PLtvGR9rxLjVhoOvHzh7dVN_NraT_zWB6S
     "Clair Obscur: Expedition 33":
         reason: ADHOC
         sid: 1903340
