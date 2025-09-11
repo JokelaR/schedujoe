@@ -12,13 +12,11 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Hollow Knight Silksong:
-        reason: ADHOC
-        sid: 1030300
     Pentiment:
         note: Saturdays
         reason: PLANNED
         sid: 1205520
+        pt: https://peertube.nodja.com/w/p/t6zmSxkshz3YZAZcNwcxp1?playlistPosition=1
 
 
 dated:
@@ -107,12 +105,19 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Hollow Knight Silksong:
+        reason: ADHOC
+        rating: LOVED
+        sid: 1030300
+        yt: https://www.youtube.com/watch?v=Yot_4WVZIx8&list=PLtvGR9rxLjVjXY1HEbPe8Nnm0zuFHnGxX&index=1
+
     Donkey Kong Bananza:
         reason: ADHOC
         logo: dk_logo.png
         rating: LOVED
         img: dk_hero.jpg
         yt: https://www.youtube.com/watch?v=40G9iPFdNwQ&list=PLtvGR9rxLjVhoOvHzh7dVN_NraT_zWB6S
+        pt: https://peertube.nodja.com/w/p/mteCef69D3cXUPCUCYPNV6?playlistPosition=1
     "Clair Obscur: Expedition 33":
         reason: ADHOC
         sid: 1903340
