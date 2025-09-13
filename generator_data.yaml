@@ -37,6 +37,8 @@ dated:
         sid: 459080
 
 future:
+    Metal Gear 1&2:
+        sid: 2131680
     Metal Gear Solid:
         sid: 2131630
     "Metal Gear Solid 2: Sons of Liberty":
@@ -697,9 +699,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 1402110
-    Metal Gear 1&2:
-        sid: 2131680
-        thin: true
     "Metaphor: ReFantazio":
         reason: PLANNED
         thin: true
