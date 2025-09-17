@@ -12,6 +12,8 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
+    Metal Gear 1&2:
+        sid: 2131680
     Pentiment:
         note: Saturdays
         reason: PLANNED
@@ -37,8 +39,6 @@ dated:
         sid: 459080
 
 future:
-    Metal Gear 1&2:
-        sid: 2131680
     Metal Gear Solid:
         sid: 2131630
     "Metal Gear Solid 2: Sons of Liberty":
