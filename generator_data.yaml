@@ -12,8 +12,8 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Metal Gear 1&2:
-        sid: 2131680
+    Metal Gear Solid:
+        sid: 2131630
     Pentiment:
         note: Saturdays
         reason: PLANNED
@@ -39,8 +39,6 @@ dated:
         sid: 459080
 
 future:
-    Metal Gear Solid:
-        sid: 2131630
     "Metal Gear Solid 2: Sons of Liberty":
         sid: 2131640
     "Metal Gear Solid 3: Snake Eater":
@@ -107,12 +105,17 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Metal Gear 1&2:
+        sid: 2131680
+        rating: LOVED
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hwvIlih_LlLdi-wFLkbdk2x
+        unofficial_vod: true
     Hollow Knight Silksong:
         reason: ADHOC
         rating: LOVED
         sid: 1030300
         yt: https://www.youtube.com/watch?v=Yot_4WVZIx8&list=PLtvGR9rxLjVjXY1HEbPe8Nnm0zuFHnGxX&index=1
-
+        pt: https://peertube.nodja.com/w/p/32LkDxZ3vHRhVMVHoDMN2i?playlistPosition=1
     Donkey Kong Bananza:
         reason: ADHOC
         logo: dk_logo.png

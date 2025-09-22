@@ -24,14 +24,17 @@ class ImageData(TypedDict):
     library_logo: str|None
 
 
-
+client: SteamClient|None = None
 
 def get_app_images(app_ids: list[int]):
     """Generate app info json files"""
-    print('[Steam Images] Warming up steam client...')
-    client = SteamClient()
-    client.anonymous_login()
-    print('[Steam Images] Steam client loaded.')
+    global client
+
+    if not client:
+        print('[Steam Images] Warming up steam client...')
+        client = SteamClient()
+        client.anonymous_login()
+        print('[Steam Images] Steam client loaded.')
 
     print(f"[Steam Images] Fetching app images for {app_ids}...")
     infos = client.get_product_info(app_ids)
