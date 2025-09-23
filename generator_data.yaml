@@ -39,6 +39,9 @@ dated:
         sid: 459080
 
 future:
+    "Metal Gear Solid: Twin Snakes":
+        img: mgsts.png
+        logo: mgsts_logo.png
     "Metal Gear Solid 2: Sons of Liberty":
         sid: 2131640
     "Metal Gear Solid 3: Snake Eater":
