@@ -12,13 +12,12 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Metal Gear Solid:
-        sid: 2131630
     Pentiment:
-        note: Saturdays
         reason: PLANNED
         sid: 1205520
         pt: https://peertube.nodja.com/w/p/t6zmSxkshz3YZAZcNwcxp1?playlistPosition=1
+    "Metal Gear Solid 2: Sons of Liberty":
+        sid: 2131640
 
 
 dated:
@@ -39,11 +38,6 @@ dated:
         sid: 459080
 
 future:
-    "Metal Gear Solid: Twin Snakes":
-        img: mgsts.png
-        logo: mgsts_logo.png
-    "Metal Gear Solid 2: Sons of Liberty":
-        sid: 2131640
     "Metal Gear Solid 3: Snake Eater":
         sid: 2131650
     "Metal Gear Solid 4: Guns of the Patriots":
@@ -108,11 +102,17 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Metal Gear Solid: Twin Snakes":
+        img: mgsts.png
+        logo: mgsts_logo.png
+        rating: LOVED
+    Metal Gear Solid:
+        sid: 2131630
+        rating: LOVED
     Metal Gear 1&2:
         sid: 2131680
         rating: LOVED
-        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hwvIlih_LlLdi-wFLkbdk2x
-        unofficial_vod: true
+        yt: https://www.youtube.com/watch?v=qXIv-93o504&list=PLtvGR9rxLjViDvMsVt-W9vtF5f08Dg_3_&index=1
     Hollow Knight Silksong:
         reason: ADHOC
         rating: LOVED
