@@ -8,7 +8,7 @@ schedule:
         wed: LIKELY
         thu: LIKELY
         fri: LIKELY
-        sat: LIKELY
+        sat: VERY_UNLIKELY
         sun: VERY_UNLIKELY
 
 current:
@@ -16,9 +16,6 @@ current:
         reason: PLANNED
         sid: 1205520
         pt: https://peertube.nodja.com/w/p/t6zmSxkshz3YZAZcNwcxp1?playlistPosition=1
-    "Metal Gear Solid 2: Sons of Liberty":
-        sid: 2131640
-
 
 dated:
     The Case of the Golden Idol:
@@ -102,6 +99,9 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Metal Gear Solid 2: Sons of Liberty":
+        sid: 2131640
+        rating: LOVED
     "Metal Gear Solid: Twin Snakes":
         img: mgsts.png
         logo: mgsts_logo.png
