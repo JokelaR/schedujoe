@@ -12,11 +12,8 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Pentiment:
-        reason: PLANNED
-        sid: 1205520
-        pt: https://peertube.nodja.com/w/p/t6zmSxkshz3YZAZcNwcxp1?playlistPosition=1
-
+    "Metal Gear Solid 3: Snake Eater":
+        sid: 2131650
 dated:
     The Case of the Golden Idol:
         sid: 1677770
@@ -35,8 +32,6 @@ dated:
         sid: 459080
 
 future:
-    "Metal Gear Solid 3: Snake Eater":
-        sid: 2131650
     "Metal Gear Solid 4: Guns of the Patriots":
         img: mgs4.png
     "Metal Gear Solid: Peace Walker":
@@ -99,6 +94,11 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Pentiment:
+        reason: PLANNED
+        sid: 1205520
+        rating: LOVED
+        pt: https://peertube.nodja.com/w/p/t6zmSxkshz3YZAZcNwcxp1?playlistPosition=1
     "Metal Gear Solid 2: Sons of Liberty":
         sid: 2131640
         rating: LOVED
