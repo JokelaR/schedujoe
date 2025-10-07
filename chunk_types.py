@@ -83,7 +83,10 @@ class Game:
 def parse_games(games: GamesMapping) -> list[Game]:
     o_games: list[Game] = []
     nesting_ids: set[str] = set()
-    steam_ids = [game.sid for game in games.values() if game.sid is not None]
+    steam_ids = [
+        game.sid for game in games.values() 
+        if game.sid is not None and not game.ignore_logo
+    ]
     steam_images = steam_img.get_app_images_cached(steam_ids)
 
     for name, game in games.items():
@@ -108,7 +111,7 @@ def parse_games(games: GamesMapping) -> list[Game]:
         
         steam_hero: str|None = None
         steam_logo: str|None = None
-        if game.sid and steam_images[game.sid]:
+        if not game.ignore_logo and game.sid and steam_images.get(game.sid):
             steam_hero = steam_images[game.sid]['library_hero']
             steam_logo = steam_images[game.sid]['library_logo']
 

@@ -14,6 +14,9 @@ schedule:
 current:
     "Metal Gear Solid 3: Snake Eater":
         sid: 2131650
+    Five Nights at Freddy's:
+        sid: 319510
+        ignore_logo: true
 dated:
     The Case of the Golden Idol:
         sid: 1677770
