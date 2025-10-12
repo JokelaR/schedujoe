@@ -12,23 +12,19 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    "Metal Gear Solid 3: Snake Eater":
-        sid: 2131650
+    SILENT HILL f:
+        reason: PLANNED
+        sid: 2947440
     Five Nights at Freddy's:
         sid: 319510
+        note: Fridays
         ignore_logo: true
+
 dated:
     The Case of the Golden Idol:
         sid: 1677770
         reason: PLANNED
         note: '2025'
-    SILENT HILL f:
-        reason: PLANNED
-        note: October 2025
-        sid: 2947440
-    FNAFTOBER:
-        reason: SEASONAL
-        note: 'October 2025'
     YIIK - A Postmodern RPG:
         note: Yiikmas
         reason: SEASONAL
@@ -97,6 +93,9 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Metal Gear Solid 3: Snake Eater":
+        sid: 2131650
+        rating: LOVED
     Pentiment:
         reason: PLANNED
         sid: 1205520
