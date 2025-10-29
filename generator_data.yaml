@@ -12,12 +12,8 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    SILENT HILL f:
-        reason: PLANNED
-        sid: 2947440
     Five Nights at Freddy's:
         sid: 319510
-        note: Fridays
         ignore_logo: true
 
 dated:
@@ -93,24 +89,38 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    SILENT HILL f:
+        rating: MIXED
+        reason: PLANNED
+        sid: 2947440
+        unofficial_vod: true
+        yt: https://www.youtube.com/watch?v=3iLEy6HroB0&list=PLQnzq4WSk8hx7YiZikx7BvBGX4cpU6R3-&index=1
     "Metal Gear Solid 3: Snake Eater":
         sid: 2131650
         rating: LOVED
+        unofficial_vod: true
+        yt: https://www.youtube.com/watch?v=8_SWb_pgkDE&list=PLQnzq4WSk8hwvIlih_LlLdi-wFLkbdk2x&index=10
     Pentiment:
         reason: PLANNED
         sid: 1205520
         rating: LOVED
+        unofficial_vod: true
+        yt: https://www.youtube.com/watch?v=7aGe9aYq6Xs&list=PLQnzq4WSk8hx_mtvuJKJlBY7sxYcIPhJc&index=1
         pt: https://peertube.nodja.com/w/p/t6zmSxkshz3YZAZcNwcxp1?playlistPosition=1
     "Metal Gear Solid 2: Sons of Liberty":
         sid: 2131640
         rating: LOVED
+        unofficial_vod: true
+        yt: https://www.youtube.com/watch?v=KixDkmgGyFU&list=PLQnzq4WSk8hwvIlih_LlLdi-wFLkbdk2x&index=7
     "Metal Gear Solid: Twin Snakes":
         img: mgsts.png
         logo: mgsts_logo.png
         rating: LOVED
+        yt: https://youtu.be/atNcj_Usw9c
     Metal Gear Solid:
         sid: 2131630
         rating: LOVED
+        yt: https://www.youtube.com/watch?v=9PuCjz_-jUU&list=PLtvGR9rxLjViDvMsVt-W9vtF5f08Dg_3_&index=3
     Metal Gear 1&2:
         sid: 2131680
         rating: LOVED
