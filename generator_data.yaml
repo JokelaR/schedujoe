@@ -12,10 +12,12 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Five Nights at Freddy's:
-        sid: 319510
-        ignore_logo: true
-
+    "Metal Gear Solid 4: Guns of the Patriots":
+        img: mgs4.png
+    Pathologic:
+        thin: true
+        sid: 384110
+    
 dated:
     The Case of the Golden Idol:
         sid: 1677770
@@ -27,8 +29,6 @@ dated:
         sid: 459080
 
 future:
-    "Metal Gear Solid 4: Guns of the Patriots":
-        img: mgs4.png
     "Metal Gear Solid: Peace Walker":
         img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
@@ -89,6 +89,15 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "No I'm Not a Human":
+        reason: ADHOC
+        sid: 3180070
+        rating: LOVED
+        yt: https://www.youtube.com/watch?v=MEdNEh_hYOc
+        unofficial_vod: true
+    Five Nights at Freddy's 1-3:
+        reason: SEASONAL
+        rating: MIXED
     SILENT HILL f:
         rating: MIXED
         reason: PLANNED
@@ -725,9 +734,6 @@ unordered:
         thin: true
         reason: PLANNED
         sid: 2161700
-    Pathologic:
-        thin: true
-        sid: 384110
     Pathologic 2:
         thin: true
         sid: 505230
@@ -764,10 +770,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 1533420
-    "No I'm Not a Human":
-        reason: ADHOC
-        sid: 3180070
-        thin: true
     "Wanted: Dead":
         reason: PLANNED
         sid: 1981610
