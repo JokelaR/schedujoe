@@ -12,11 +12,12 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    "Metal Gear Solid 4: Guns of the Patriots":
-        img: mgs4.png
     Pathologic:
         thin: true
         sid: 384110
+    No Sleep for Kaname Date:
+        sid: 2752180
+        reason: PLANNED
     
 dated:
     The Case of the Golden Idol:
@@ -53,10 +54,6 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    No Sleep for Kaname Date:
-        sid: 2752180
-        reason: PLANNED
-        note: 25th July 2025
     Baby Steps:
         reason: ADHOC
         note: 8th September 2025
@@ -89,6 +86,11 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    "Metal Gear Solid 4: Guns of the Patriots":
+        img: mgs4.png
+        rating: LOVED
+        yt: https://www.youtube.com/watch?v=5e55RZ3iiaQ&list=PLQnzq4WSk8hwvIlih_LlLdi-wFLkbdk2x&index=13
+        unofficial_vod: true
     "No I'm Not a Human":
         reason: ADHOC
         sid: 3180070
@@ -98,6 +100,8 @@ past_games:
     Five Nights at Freddy's 1-3:
         reason: SEASONAL
         rating: MIXED
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hw453Fdv0KP4vQxejgBm3Sz
+        unofficial_vod: true
     SILENT HILL f:
         rating: MIXED
         reason: PLANNED
@@ -109,6 +113,7 @@ past_games:
         rating: LOVED
         unofficial_vod: true
         yt: https://www.youtube.com/watch?v=8_SWb_pgkDE&list=PLQnzq4WSk8hwvIlih_LlLdi-wFLkbdk2x&index=10
+        pt: https://peertube.nodja.com/w/p/6qjJi3P2jVmgg3WKpGMHt8?playlistPosition=10
     Pentiment:
         reason: PLANNED
         sid: 1205520
@@ -722,10 +727,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 358090
-    Eternights:
-        reason: PLANNED
-        thin: true
-        sid: 1402110
     "Metaphor: ReFantazio":
         reason: PLANNED
         thin: true
