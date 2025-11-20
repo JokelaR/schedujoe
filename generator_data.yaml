@@ -15,8 +15,8 @@ current:
     Pathologic:
         thin: true
         sid: 384110
-    No Sleep for Kaname Date:
-        sid: 2752180
+    Hades II:
+        sid: 1145350
         reason: PLANNED
     
 dated:
@@ -30,6 +30,9 @@ dated:
         sid: 459080
 
 future:
+    Kingdom Come Deliverance 2":
+        sid: 1771300
+        reason: PLANNED
     "Metal Gear Solid: Peace Walker":
         img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
@@ -86,6 +89,10 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    No Sleep for Kaname Date:
+        sid: 2752180
+        reason: PLANNED
+        rating: LOVED
     "Metal Gear Solid 4: Guns of the Patriots":
         img: mgs4.png
         rating: LOVED
