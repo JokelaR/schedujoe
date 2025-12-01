@@ -15,9 +15,10 @@ current:
     Pathologic:
         thin: true
         sid: 384110
-    Hades II:
-        sid: 1145350
+    Kingdom Come Deliverance 2":
+        sid: 1771300
         reason: PLANNED
+
     
 dated:
     The Case of the Golden Idol:
@@ -30,9 +31,6 @@ dated:
         sid: 459080
 
 future:
-    Kingdom Come Deliverance 2":
-        sid: 1771300
-        reason: PLANNED
     "Metal Gear Solid: Peace Walker":
         img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
@@ -57,10 +55,6 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    Baby Steps:
-        reason: ADHOC
-        note: 8th September 2025
-        sid: 1281040
     Resident Evil Requiem:
         reason: PLANNED
         note: 27th February 2026
@@ -89,10 +83,18 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Hades II:
+        sid: 1145350
+        reason: PLANNED
+        rating: LOVED
+        unofficial_vod: true
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hyI3QCD5DHF7A3LQg6OXvJj
     No Sleep for Kaname Date:
         sid: 2752180
         reason: PLANNED
         rating: LOVED
+        unofficial_vod: true
+        yt: https://www.youtube.com/watch?v=7SjaNulTtB4&list=PLQnzq4WSk8hzgmSz2UAEVrkn2U_-LmmvW&index=20
     "Metal Gear Solid 4: Guns of the Patriots":
         img: mgs4.png
         rating: LOVED
@@ -730,6 +732,10 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2187220
+    Baby Steps:
+        reason: ADHOC
+        thin: true
+        sid: 1281040
     D4 - Dark Dreams Don't Die:
         reason: PLANNED
         thin: true
@@ -786,6 +792,9 @@ unordered:
         reason: PLANNED
         thin: true
         img: xenoblade.jpg
+    Xenoblade Chronicles 3:
+        reason: PLANNED
+        thin: true
     Yakuza Kiwami:
         reason: PLANNED
         sid: 834530
