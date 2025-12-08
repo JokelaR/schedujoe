@@ -25,12 +25,15 @@ dated:
         sid: 1677770
         reason: PLANNED
         note: '2025'
+
+future:
     YIIK - A Postmodern RPG:
         note: Yiikmas
         reason: SEASONAL
         sid: 459080
-
-future:
+    NieR Replicant ver.1.22474487139...:
+        note: And a happy new Nier
+        sid: 1113560
     "Metal Gear Solid: Peace Walker":
         img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
@@ -46,8 +49,6 @@ future:
         img: 3houses.jpg
     Killer7:
         sid: 868520
-    NieR Replicant ver.1.22474487139...:
-        sid: 1113560
     The Void:
         sid: 37000
     "Legacy of Kain: Soul Reaver":
@@ -740,6 +741,11 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 358090
+    Dead Mountaineer's Hotel:
+        reason: PLANNED
+        thin: true
+        sid: 10230
+        ignore_logo: true
     "Metaphor: ReFantazio":
         reason: PLANNED
         thin: true
