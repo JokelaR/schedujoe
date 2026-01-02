@@ -16,13 +16,10 @@ current:
         thin: true
         sid: 384110
     YIIK - A Postmodern RPG:
-        note: Yiikmas
         reason: SEASONAL
         sid: 459080
-    Kingdom Come Deliverance 2:
-        thin: true
-        sid: 1771300
-        reason: PLANNED
+    NieR Replicant ver.1.22474487139...:
+        sid: 1113560
     
 dated:
     The Case of the Golden Idol:
@@ -31,9 +28,6 @@ dated:
         note: '2025'
 
 future:
-    NieR Replicant ver.1.22474487139...:
-        note: And a happy new Nier
-        sid: 1113560
     "Metal Gear Solid: Peace Walker":
         img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
@@ -91,6 +85,10 @@ lock_it_in:
 past_games:
     "2025":
         divider: true
+    Kingdom Come Deliverance 2:
+        sid: 1771300
+        reason: PLANNED
+        rating: SKIP
     Hades II:
         sid: 1145350
         reason: PLANNED
