@@ -15,17 +15,14 @@ current:
     Pathologic:
         thin: true
         sid: 384110
-    YIIK - A Postmodern RPG:
-        reason: SEASONAL
-        sid: 459080
     NieR Replicant ver.1.22474487139...:
         sid: 1113560
     
 dated:
-    The Case of the Golden Idol:
-        sid: 1677770
+    "Life is Strange: Reunion":
         reason: PLANNED
-        note: '2025'
+        note: "26 March, 2026"
+        sid: 2624870
 
 future:
     "Metal Gear Solid: Peace Walker":
@@ -83,12 +80,18 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    YIIK - A Postmodern RPG:
+        reason: SEASONAL
+        sid: 459080
+        rating: HATED
+        pt: https://peertube.nodja.com/w/p/qeuCrpAhUjk4ghJVHdd3Kn?playlistPosition=1
     "2025":
         divider: true
     Kingdom Come Deliverance 2:
         sid: 1771300
         reason: PLANNED
         rating: SKIP
+        pt: https://peertube.nodja.com/w/p/1Mhev8dTWPEGm299U7bhrN?playlistPosition=1
     Hades II:
         sid: 1145350
         reason: PLANNED
@@ -761,6 +764,14 @@ unordered:
         thin: true
         sid: 10230
         ignore_logo: true
+    Dispatch:
+        reason: PLANNED
+        thin: true
+        sid: 2592160
+    The Case of the Golden Idol:
+        sid: 1677770
+        reason: PLANNED
+        note: '2025'
     "Metaphor: ReFantazio":
         reason: PLANNED
         thin: true
