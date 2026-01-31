@@ -8,15 +8,16 @@ schedule:
         wed: LIKELY
         thu: LIKELY
         fri: LIKELY
-        sat: VERY_UNLIKELY
+        sat: POSSIBLE
         sun: VERY_UNLIKELY
 
 current:
     Pathologic:
         thin: true
         sid: 384110
-    NieR Replicant ver.1.22474487139...:
-        sid: 1113560
+    "Metaphor: ReFantazio":
+        reason: PLANNED
+        sid: 2679460
     
 dated:
     "Life is Strange: Reunion":
@@ -80,6 +81,9 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    NieR Replicant ver.1.22474487139...:
+        sid: 1113560
+        rating: MIXED
     YIIK - A Postmodern RPG:
         reason: SEASONAL
         sid: 459080
@@ -772,10 +776,6 @@ unordered:
         sid: 1677770
         reason: PLANNED
         note: '2025'
-    "Metaphor: ReFantazio":
-        reason: PLANNED
-        thin: true
-        sid: 2679460
     "Persona 3: The Answer":
         thin: true
         reason: PLANNED
