@@ -24,9 +24,14 @@ dated:
         reason: PLANNED
         note: "26 March, 2026"
         sid: 2624870
+    "Danganronpa 2x2":
+        reason: PLANNED
+        note: "2026"
+        sid: 3751230
 
 future:
     "Metal Gear Solid: Peace Walker":
+        note: 27th August
         img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
         img: mgsgz.jpg
@@ -773,9 +778,9 @@ unordered:
         thin: true
         sid: 2592160
     The Case of the Golden Idol:
+        thin: true
         sid: 1677770
         reason: PLANNED
-        note: '2025'
     "Persona 3: The Answer":
         thin: true
         reason: PLANNED
