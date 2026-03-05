@@ -3,7 +3,7 @@ schedule:
     start: 2025-08-17
     end: 2025-08-24
     days:
-        mon: VERY_UNLIKELY
+        mon: POSSIBLE
         tue: LIKELY
         wed: LIKELY
         thu: LIKELY
@@ -18,6 +18,10 @@ current:
     "Metaphor: ReFantazio":
         reason: PLANNED
         sid: 2679460
+    "Mewgenics":
+        reason: ADHOC
+        note: "Mondays"
+        sid: 686060
     
 dated:
     "Life is Strange: Reunion":
