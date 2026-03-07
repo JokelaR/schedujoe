@@ -24,26 +24,39 @@ current:
         sid: 686060
     
 dated:
-    "Life is Strange: Reunion":
-        reason: PLANNED
-        note: "26 March, 2026"
-        sid: 2624870
+    "Metal Gear Solid: Peace Walker":
+        note: 27th August
+        img: mgspw.png
     "Danganronpa 2x2":
         reason: PLANNED
         note: "2026"
         sid: 3751230
+    
 
 future:
-    "Metal Gear Solid: Peace Walker":
-        note: 27th August
-        img: mgspw.png
+    Resident Evil Requiem:
+        reason: PLANNED
+        sid: 3764200
+    "Life is Strange: Reunion":
+        reason: PLANNED
+        note: "26 March, 2026"
+        sid: 2624870
+    The Great Ace Attorney Chronicles:
+        reason: PLANNED
+        sid: 1158850
+    The Case of the Golden Idol:
+        sid: 1677770
+        reason: PLANNED
+    The Forgotten City:
+        sid: 874260
+        reason: PLANNED
+    "Paper Mario: The Thousand Year Door":
+        img: papermario.jpg
+        logo: papermario_logo.png
     "Metal Gear Solid V: Ground Zeroes":
         img: mgsgz.jpg
     "Metal Gear Solid V: Phantom Pain":
         sid: 287700
-    "Paper Mario: The Thousand Year Door":
-        img: papermario.jpg
-        logo: papermario_logo.png
     Crypt of the Necrodancer:
         sid: 247080
     Fire Emblem Three Houses:
@@ -57,10 +70,6 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    Resident Evil Requiem:
-        reason: PLANNED
-        note: 27th February 2026
-        sid: 3764200
     Super Meat Boy 3D:
         reason: PLANNED
         note: Early 2026
@@ -93,10 +102,15 @@ past_games:
     NieR Replicant ver.1.22474487139...:
         sid: 1113560
         rating: MIXED
+        unofficial_vod: true
+        yt: https://www.youtube.com/playlist?list=PLIUsXWF1inYt9hJQWjBvF9_cwTEbXJbw7
+        pt: https://peertube.nodja.com/w/p/mm4377kM12VogmoctYuNxW?playlistPosition=1
     YIIK - A Postmodern RPG:
         reason: SEASONAL
         sid: 459080
         rating: HATED
+        unofficial_vod: true
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hyZdNgGDOaA1wg44XL1-mFX
         pt: https://peertube.nodja.com/w/p/qeuCrpAhUjk4ghJVHdd3Kn?playlistPosition=1
     "2025":
         divider: true
@@ -104,6 +118,8 @@ past_games:
         sid: 1771300
         reason: PLANNED
         rating: SKIP
+        unofficial_vod: true
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hz8Rr6a-h-bbMSWOTu7yiwH
         pt: https://peertube.nodja.com/w/p/1Mhev8dTWPEGm299U7bhrN?playlistPosition=1
     Hades II:
         sid: 1145350
@@ -781,10 +797,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2592160
-    The Case of the Golden Idol:
-        thin: true
-        sid: 1677770
-        reason: PLANNED
     "Persona 3: The Answer":
         thin: true
         reason: PLANNED
@@ -817,10 +829,6 @@ unordered:
         reason: PLANNED
         sid: 2138710
         thin: true
-    The Forgotten City:
-        sid: 874260
-        thin: true
-        reason: PLANNED
     Neon White (Again):
         reason: PLANNED
         thin: true
