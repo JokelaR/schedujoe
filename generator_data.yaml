@@ -3,8 +3,8 @@ schedule:
     start: 2025-08-17
     end: 2025-08-24
     days:
-        mon: POSSIBLE
-        tue: LIKELY
+        mon: LIKELY
+        tue: NO_STREAM
         wed: LIKELY
         thu: LIKELY
         fri: LIKELY
@@ -12,12 +12,12 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
+    Resident Evil Requiem:
+        reason: PLANNED
+        sid: 3764200
     Pathologic:
         thin: true
         sid: 384110
-    "Metaphor: ReFantazio":
-        reason: PLANNED
-        sid: 2679460
     "Mewgenics":
         reason: ADHOC
         note: "Mondays"
@@ -34,9 +34,6 @@ dated:
     
 
 future:
-    Resident Evil Requiem:
-        reason: PLANNED
-        sid: 3764200
     "Life is Strange: Reunion":
         reason: PLANNED
         note: "26 March, 2026"
@@ -99,6 +96,10 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    "Metaphor: ReFantazio":
+        reason: PLANNED
+        rating: HATED
+        sid: 2679460
     NieR Replicant ver.1.22474487139...:
         sid: 1113560
         rating: MIXED
