@@ -4,7 +4,7 @@ schedule:
     end: 2025-08-24
     days:
         mon: LIKELY
-        tue: NO_STREAM
+        tue: LIKELY
         wed: LIKELY
         thu: LIKELY
         fri: LIKELY
