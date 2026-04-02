@@ -12,8 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    "???":
-        reason: ADHOC
+    The Case of the Golden Idol:
+        sid: 1677770
+        reason: PLANNED
     Pathologic:
         thin: true
         sid: 384110
@@ -33,9 +34,6 @@ future:
     The Great Ace Attorney Chronicles:
         reason: PLANNED
         sid: 1158850
-    The Case of the Golden Idol:
-        sid: 1677770
-        reason: PLANNED
     The Forgotten City:
         sid: 874260
         reason: PLANNED
@@ -88,18 +86,25 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Baby Steps:
+        reason: ADHOC
+        rating: SKIP
+        sid: 1281040
     "Life is Strange: Reunion":
         reason: PLANNED
         rating: MIXED
         sid: 2624870
+        pt: https://peertube.nodja.com/w/p/94y2AEREKH5rvGZHz98AUb?playlistPosition=1
     Slay the Spire 2:
         reason: ADHOC
         rating: SKIP
         sid: 2868840
+        pt: https://peertube.nodja.com/w/p/jMokzHCdCQoQ9yVanweXqn?playlistPosition=1
     "Mewgenics":
         reason: ADHOC
         rating: SKIP
         sid: 686060
+        pt: https://peertube.nodja.com/w/p/kYe1Kn2CexRfpDupC5NnV8?playlistPosition=1
     Resident Evil Requiem:
         reason: PLANNED
         rating: MIXED
@@ -125,8 +130,10 @@ past_games:
         unofficial_vod: true
         yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hyZdNgGDOaA1wg44XL1-mFX
         pt: https://peertube.nodja.com/w/p/qeuCrpAhUjk4ghJVHdd3Kn?playlistPosition=1
+
     "2025":
         divider: true
+
     Kingdom Come Deliverance 2:
         sid: 1771300
         reason: PLANNED
@@ -793,10 +800,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2187220
-    Baby Steps:
-        reason: ADHOC
-        thin: true
-        sid: 1281040
     D4 - Dark Dreams Don't Die:
         reason: PLANNED
         thin: true
