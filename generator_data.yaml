@@ -12,9 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    The Case of the Golden Idol:
-        sid: 1677770
+    The Great Ace Attorney Chronicles:
         reason: PLANNED
+        sid: 1158850
     Pathologic:
         thin: true
         sid: 384110
@@ -31,9 +31,6 @@ dated:
     
 
 future:
-    The Great Ace Attorney Chronicles:
-        reason: PLANNED
-        sid: 1158850
     The Forgotten City:
         sid: 874260
         reason: PLANNED
@@ -86,6 +83,10 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    The Case of the Golden Idol:
+        sid: 1677770
+        reason: PLANNED
+        rating: LOVED
     Baby Steps:
         reason: ADHOC
         rating: SKIP
