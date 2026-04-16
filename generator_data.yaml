@@ -15,9 +15,6 @@ current:
     The Great Ace Attorney Chronicles:
         reason: PLANNED
         sid: 1158850
-    Pathologic:
-        thin: true
-        sid: 384110
     
     
 dated:
@@ -83,6 +80,9 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Pathologic:
+        rating: LOVED
+        sid: 384110
     The Case of the Golden Idol:
         sid: 1677770
         reason: PLANNED
