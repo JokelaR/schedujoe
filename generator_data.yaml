@@ -15,7 +15,9 @@ current:
     The Great Ace Attorney Chronicles:
         reason: PLANNED
         sid: 1158850
-    
+    Pathologic 2:
+        sid: 505230
+
     
 dated:
     "Metal Gear Solid: Peace Walker":
@@ -818,9 +820,6 @@ unordered:
         thin: true
         reason: PLANNED
         sid: 2161700
-    Pathologic 2:
-        thin: true
-        sid: 505230
     Persona 5 Royal:
         reason: PLANNED
         thin: true
