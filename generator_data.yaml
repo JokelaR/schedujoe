@@ -12,11 +12,16 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
+    PRAGMATA:
+        reason: ADHOC
+        sid: 3357650
+    Pathologic 2:
+        thin: true
+        sid: 505230
     The Great Ace Attorney Chronicles:
+        thin: true
         reason: PLANNED
         sid: 1158850
-    Pathologic 2:
-        sid: 505230
 
     
 dated:
