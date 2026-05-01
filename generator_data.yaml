@@ -12,16 +12,12 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    PRAGMATA:
-        reason: ADHOC
-        sid: 3357650
+    Sifu:
+        reason: PLANNED
+        sid: 2138710
     Pathologic 2:
         thin: true
         sid: 505230
-    The Great Ace Attorney Chronicles:
-        thin: true
-        reason: PLANNED
-        sid: 1158850
 
     
 dated:
@@ -35,6 +31,18 @@ dated:
     
 
 future:
+    Neon White (Again):
+        note: Again!
+        reason: PLANNED
+        sid: 1533420
+    Stellar Blade:
+        reason: ADHOC
+        sid: 3489700
+    The Great Ace Attorney Chronicles:
+        note: Second game of two
+        reason: PLANNED
+        sid: 1158850
+
     The Forgotten City:
         sid: 874260
         reason: PLANNED
@@ -87,6 +95,14 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Vampire Crawlers:
+        rating: SKIP
+        reason: ADHOC
+        sid: 3265700
+    PRAGMATA:
+        reason: ADHOC
+        rating: MIXED
+        sid: 3357650
     Pathologic:
         rating: LOVED
         sid: 384110
@@ -846,14 +862,6 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2842040
-    Sifu:
-        reason: PLANNED
-        sid: 2138710
-        thin: true
-    Neon White (Again):
-        reason: PLANNED
-        thin: true
-        sid: 1533420
     "Wanted: Dead":
         reason: PLANNED
         sid: 1981610
