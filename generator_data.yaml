@@ -12,6 +12,10 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
+    Neon White (Again):
+        note: Again!
+        reason: PLANNED
+        sid: 1533420
     Sifu:
         reason: PLANNED
         sid: 2138710
@@ -31,10 +35,6 @@ dated:
     
 
 future:
-    Neon White (Again):
-        note: Again!
-        reason: PLANNED
-        sid: 1533420
     Stellar Blade:
         reason: ADHOC
         sid: 3489700
