@@ -25,6 +25,10 @@ current:
 
     
 dated:
+    Dispatch:
+        reason: PLANNED
+        note: June?
+        sid: 2592160
     "Metal Gear Solid: Peace Walker":
         note: 27th August
         img: mgspw.png
@@ -833,10 +837,6 @@ unordered:
         thin: true
         sid: 10230
         ignore_logo: true
-    Dispatch:
-        reason: PLANNED
-        thin: true
-        sid: 2592160
     "Persona 3: The Answer":
         thin: true
         reason: PLANNED
