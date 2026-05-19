@@ -12,13 +12,13 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
+    Stellar Blade:
+        reason: ADHOC
+        sid: 3489700
     Neon White (Again):
         note: Again!
         reason: PLANNED
         sid: 1533420
-    Sifu:
-        reason: PLANNED
-        sid: 2138710
     Pathologic 2:
         thin: true
         sid: 505230
@@ -39,9 +39,6 @@ dated:
     
 
 future:
-    Stellar Blade:
-        reason: ADHOC
-        sid: 3489700
     The Great Ace Attorney Chronicles:
         note: Second game of two
         reason: PLANNED
@@ -99,6 +96,10 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Sifu:
+        reason: PLANNED
+        rating: SKIP
+        sid: 2138710
     Vampire Crawlers:
         rating: SKIP
         reason: ADHOC
