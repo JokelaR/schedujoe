@@ -43,7 +43,9 @@ future:
         note: Second game of two
         reason: PLANNED
         sid: 1158850
-
+    Mina the Hollower:
+        reason: ADHOC
+        sid: 1875580
     The Forgotten City:
         sid: 874260
         reason: PLANNED
@@ -100,25 +102,37 @@ past_games:
         reason: PLANNED
         rating: SKIP
         sid: 2138710
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hwi4l7SRpk5oNE7oeNig6NY
+        unofficial_vod: true
     Vampire Crawlers:
         rating: SKIP
         reason: ADHOC
         sid: 3265700
+        yt: https://www.youtube.com/watch?v=5Fyv-tppIxQ
+        unofficial_vod: true
     PRAGMATA:
         reason: ADHOC
         rating: MIXED
         sid: 3357650
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hwcnYTyRfQDOSb10JkrgE0r
+        unofficial_vod: true
     Pathologic:
         rating: LOVED
         sid: 384110
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hyKgQJcsYG-7SAY4GUYlC-M
+        unofficial_vod: true
     The Case of the Golden Idol:
         sid: 1677770
         reason: PLANNED
         rating: LOVED
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hwIt0VsyecY36mc4PIlofID
+        unofficial_vod: true
     Baby Steps:
         reason: ADHOC
         rating: SKIP
         sid: 1281040
+        yt: https://www.youtube.com/watch?v=MlRtVng5nSs
+        unofficial_vod: true
     "Life is Strange: Reunion":
         reason: PLANNED
         rating: MIXED
@@ -129,16 +143,22 @@ past_games:
         rating: SKIP
         sid: 2868840
         pt: https://peertube.nodja.com/w/p/jMokzHCdCQoQ9yVanweXqn?playlistPosition=1
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hySdZuQD_yY8TjN61lWzbbk
+        unofficial_vod: true
     "Mewgenics":
         reason: ADHOC
         rating: SKIP
         sid: 686060
         pt: https://peertube.nodja.com/w/p/kYe1Kn2CexRfpDupC5NnV8?playlistPosition=1
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hwMCjrPy484k5meyToMXK5g
+        unofficial_vod: true
     Resident Evil Requiem:
         reason: PLANNED
         rating: MIXED
         sid: 3764200
         pt: https://peertube.nodja.com/w/p/fummmHdfgpYREk8wg4GTue?playlistPosition=1
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hybz_lOVurQsUiitVgP3U1l
+        unofficial_vod: true
     "Metaphor: ReFantazio":
         reason: PLANNED
         rating: HATED
