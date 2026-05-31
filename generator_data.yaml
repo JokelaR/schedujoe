@@ -25,10 +25,6 @@ current:
 
     
 dated:
-    Dispatch:
-        reason: PLANNED
-        note: June?
-        sid: 2592160
     "Metal Gear Solid: Peace Walker":
         note: 27th August
         img: mgspw.png
@@ -40,12 +36,22 @@ dated:
 
 future:
     The Great Ace Attorney Chronicles:
-        note: Second game of two
+        note: June
         reason: PLANNED
         sid: 1158850
     Mina the Hollower:
+        note: June
         reason: ADHOC
         sid: 1875580
+    Dispatch:
+        reason: PLANNED
+        note: June
+        sid: 2592160
+    "007: First Light":
+        reason: PLANNED
+        note: 'June'
+        sid: 3768760
+
     The Forgotten City:
         sid: 874260
         reason: PLANNED
@@ -80,10 +86,6 @@ lock_it_in:
     Saros:
         reason: PLANNED
         note: '2026'
-    "007: First Light":
-        reason: PLANNED
-        note: '2026'
-        sid: 3768760
     Code Vein 2:
         reason: PLANNED
         note: '2026'
