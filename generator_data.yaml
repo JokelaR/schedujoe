@@ -15,14 +15,9 @@ current:
     Stellar Blade:
         reason: ADHOC
         sid: 3489700
-    Neon White (Again):
-        note: Again!
-        reason: PLANNED
-        sid: 1533420
     Pathologic 2:
         thin: true
         sid: 505230
-
     
 dated:
     "Metal Gear Solid: Peace Walker":
@@ -32,7 +27,6 @@ dated:
         reason: PLANNED
         note: "2026"
         sid: 3751230
-    
 
 future:
     The Great Ace Attorney Chronicles:
@@ -100,6 +94,11 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Neon White (Again):
+        note: Again!
+        reason: PLANNED
+        sid: 1533420
+        rating: LOVED
     Sifu:
         reason: PLANNED
         rating: SKIP
