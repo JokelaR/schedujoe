@@ -12,9 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Stellar Blade:
-        reason: ADHOC
-        sid: 3489700
+    The Great Ace Attorney Chronicles:
+        reason: PLANNED
+        sid: 1158850
     Pathologic 2:
         thin: true
         sid: 505230
@@ -29,10 +29,6 @@ dated:
         sid: 3751230
 
 future:
-    The Great Ace Attorney Chronicles:
-        note: June
-        reason: PLANNED
-        sid: 1158850
     Mina the Hollower:
         note: June
         reason: ADHOC
@@ -69,31 +65,43 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    Super Meat Boy 3D:
+    Wolverine:
         reason: PLANNED
-        note: Early 2026
-        sid: 3288210
+        note: September 15
     Control Resonant:
         reason: PLANNED
-        note: '2026'
+        note: 'September 24th'
         sid: 3669870
-    Saros:
+    Silent Hill Townfall:
         reason: PLANNED
-        note: '2026'
-    Code Vein 2:
+        note: September 24
+    Rayman Legends Retold:
         reason: PLANNED
-        note: '2026'
-        sid: 2362060
+        note: October 1st
+    Ace Combat 8:
+        reason: PLANNED
+        note: October 2nd
+    Until Dawn 2:
+        reason: PLANNED
+        note: "2027"
+    God of War Laufey:
+        reason: PLANNED
+        note: "tbd"
+
     ULTRAKILL:
         reason: PLANNED
         note: When it's out of EA
         sid: 1229490
     Pony Island 2:
         reason: PLANNED
-        note: ????
+        note: "????"
         sid: 2017940
 
 past_games:
+    Stellar Blade:
+        reason: ADHOC
+        sid: 3489700
+        rating: MIXED
     Neon White (Again):
         note: Again!
         reason: PLANNED
@@ -849,7 +857,11 @@ unordered:
     Apollo Justice Trilogy:
         reason: PLANNED
         thin: true
-        sid: 2187220
+        sid: 2187220    
+    Code Vein 2:
+        reason: PLANNED
+        thin: true
+        sid: 2362060
     D4 - Dark Dreams Don't Die:
         reason: PLANNED
         thin: true
@@ -876,6 +888,9 @@ unordered:
         thin: true
         sid: 2231450
         id: pizzatower
+    Saros:
+        reason: PLANNED
+        thin: true
     STRANGER OF PARADISE FINAL FANTASY ORIGIN:
         reason: PLANNED
         sid: 1358700
@@ -884,6 +899,10 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2842040
+    Super Meat Boy 3D:
+        reason: PLANNED
+        sid: 3288210
+        thin: true
     "Wanted: Dead":
         reason: PLANNED
         sid: 1981610
