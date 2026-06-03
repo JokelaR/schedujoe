@@ -29,6 +29,11 @@ dated:
         sid: 3751230
 
 future:
+    "007: First Light":
+        reason: PLANNED
+        note: 'June'
+        sid: 3768760
+
     Mina the Hollower:
         note: June
         reason: ADHOC
@@ -37,10 +42,6 @@ future:
         reason: PLANNED
         note: June
         sid: 2592160
-    "007: First Light":
-        reason: PLANNED
-        note: 'June'
-        sid: 3768760
 
     The Forgotten City:
         sid: 874260
@@ -101,7 +102,7 @@ past_games:
     Stellar Blade:
         reason: ADHOC
         sid: 3489700
-        rating: MIXED
+        rating: LOVED
     Neon White (Again):
         note: Again!
         reason: PLANNED
