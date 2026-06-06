@@ -18,7 +18,7 @@ current:
     Pathologic 2:
         thin: true
         sid: 505230
-    
+
 dated:
     "Metal Gear Solid: Peace Walker":
         note: 27th August
@@ -27,11 +27,14 @@ dated:
         reason: PLANNED
         note: "2026"
         sid: 3751230
+    Telltalemas:
+        reason: SEASONAL
+        note: October 2026
 
 future:
     "007: First Light":
         reason: PLANNED
-        note: 'June'
+        note: "June"
         sid: 3768760
 
     Mina the Hollower:
@@ -71,24 +74,41 @@ lock_it_in:
         note: September 15
     Control Resonant:
         reason: PLANNED
-        note: 'September 24th'
+        note: "September 24th"
         sid: 3669870
     Silent Hill Townfall:
         reason: PLANNED
         note: September 24
+        sid: 1636440
     Rayman Legends Retold:
         reason: PLANNED
         note: October 1st
+        sid: 4084710
     Ace Combat 8:
         reason: PLANNED
         note: October 2nd
+        sid: 2288340
     Until Dawn 2:
         reason: PLANNED
         note: "2027"
     God of War Laufey:
         reason: PLANNED
         note: "tbd"
-
+    Stellar Blade Blood Rain:
+        reason: PLANNED
+        note: tbd
+    Crossfire:
+        reason: PLANNED
+        note: tbd
+        sid: 4687500
+    Alien Isolation 2:
+        reason: PLANNED
+        note: "tbd"
+        sid: 4665290
+    Prove You're Human:
+        reason: PLANNED
+        note: tbd
+        sid: 4533950
     ULTRAKILL:
         reason: PLANNED
         note: When it's out of EA
@@ -853,12 +873,12 @@ past_games:
         reason: DROPPED
         sid: 412830
         pt: https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd
-    
+
 unordered:
     Apollo Justice Trilogy:
         reason: PLANNED
         thin: true
-        sid: 2187220    
+        sid: 2187220
     Code Vein 2:
         reason: PLANNED
         thin: true
