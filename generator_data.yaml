@@ -18,6 +18,10 @@ current:
     Pathologic 2:
         thin: true
         sid: 505230
+    Mina the Hollower:
+        thin: true
+        reason: ADHOC
+        sid: 1875580
 
 dated:
     "Metal Gear Solid: Peace Walker":
@@ -37,10 +41,6 @@ future:
         note: "June"
         sid: 3768760
 
-    Mina the Hollower:
-        note: June
-        reason: ADHOC
-        sid: 1875580
     Dispatch:
         reason: PLANNED
         note: June
