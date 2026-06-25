@@ -4,11 +4,11 @@ schedule:
     end: 2025-08-24
     days:
         mon: VERY_UNLIKELY
-        tue: LIKELY
-        wed: LIKELY
-        thu: LIKELY
-        fri: LIKELY
-        sat: POSSIBLE
+        tue: VERY_UNLIKELY
+        wed: VERY_UNLIKELY
+        thu: VERY_UNLIKELY
+        fri: VERY_UNLIKELY
+        sat: VERY_UNLIKELY
         sun: VERY_UNLIKELY
 
 current:
