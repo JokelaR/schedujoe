@@ -5,7 +5,7 @@ description = "custom static site generator for schedujoe"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "beautifulsoup4>=4.12.3",
+    "beautifulsoup4>=4.15.0",
     "eventemitter>=0.2.0",
     "gevent>=26.5.0",
     "pydantic>=2.13.4",
