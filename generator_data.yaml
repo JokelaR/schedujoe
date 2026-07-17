@@ -4,20 +4,25 @@ schedule:
     end: 2025-08-24
     days:
         mon: VERY_UNLIKELY
-        tue: VERY_UNLIKELY
-        wed: VERY_UNLIKELY
-        thu: VERY_UNLIKELY
-        fri: VERY_UNLIKELY
-        sat: VERY_UNLIKELY
+        tue: POSSIBLE
+        wed: POSSIBLE
+        thu: POSSIBLE
+        fri: POSSIBLE
+        sat: POSSIBLE
         sun: VERY_UNLIKELY
 
 current:
-    The Great Ace Attorney Chronicles:
-        reason: PLANNED
-        sid: 1158850
+    "Wuchang: Falling Feathers":
+        sid: 2277560
+        reason: ADHOC
     The Forgotten City:
         sid: 874260
         reason: PLANNED
+    The Great Ace Attorney Chronicles:
+        note: Paused
+        thin: true
+        reason: PLANNED
+        sid: 1158850
 
 dated:
     "Metal Gear Solid: Peace Walker":
