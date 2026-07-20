@@ -12,9 +12,6 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    "Wuchang: Falling Feathers":
-        sid: 2277560
-        reason: ADHOC
     The Forgotten City:
         sid: 874260
         reason: PLANNED
@@ -117,16 +114,17 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    "Wuchang: Falling Feathers":
+        sid: 2277560
+        reason: ADHOC
+        rating: LOVED
     Pathologic 2:
         sid: 505230
         rating: MIXED
-
     Mina the Hollower:
-        thin: true
         reason: ADHOC
         sid: 1875580
         rating: LOVED
-
     Stellar Blade:
         reason: ADHOC
         sid: 3489700
