@@ -12,9 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    The Forgotten City:
-        sid: 874260
+    "007: First Light":
         reason: PLANNED
+        sid: 3768760
     The Great Ace Attorney Chronicles:
         note: Paused
         thin: true
@@ -34,11 +34,6 @@ dated:
         note: December 2026
 
 future:
-    "007: First Light":
-        reason: PLANNED
-        note: "June"
-        sid: 3768760
-
     Dispatch:
         reason: PLANNED
         note: June
@@ -83,12 +78,12 @@ lock_it_in:
         reason: PLANNED
         note: October 2nd
         sid: 2288340
+    God of War Laufey:
+        reason: PLANNED
+        note: "February 16 2028"
     Until Dawn 2:
         reason: PLANNED
         note: "2027"
-    God of War Laufey:
-        reason: PLANNED
-        note: "tbd"
     Stellar Blade Blood Rain:
         reason: PLANNED
         note: tbd
@@ -114,6 +109,10 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    The Forgotten City:
+        sid: 874260
+        reason: PLANNED
+        rating: LOVED
     "Wuchang: Falling Feathers":
         sid: 2277560
         reason: ADHOC
