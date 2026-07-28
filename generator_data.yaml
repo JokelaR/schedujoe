@@ -12,9 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    "007: First Light":
-        reason: PLANNED
-        sid: 3768760
+    Palworld:
+        reason: ADHOC
+        sid: 1623730
     The Great Ace Attorney Chronicles:
         note: Paused
         thin: true
@@ -109,6 +109,10 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    "007: First Light":
+        reason: PLANNED
+        sid: 3768760
+        rating: LOVED
     The Forgotten City:
         sid: 874260
         reason: PLANNED
