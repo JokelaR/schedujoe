@@ -12,6 +12,10 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
+    STRANGER OF PARADISE FINAL FANTASY ORIGIN:
+        reason: PLANNED
+        sid: 1358700
+
     Palworld:
         reason: ADHOC
         sid: 1623730
@@ -920,10 +924,6 @@ unordered:
         id: pizzatower
     Saros:
         reason: PLANNED
-        thin: true
-    STRANGER OF PARADISE FINAL FANTASY ORIGIN:
-        reason: PLANNED
-        sid: 1358700
         thin: true
     Star Wars Outlaws:
         reason: PLANNED
