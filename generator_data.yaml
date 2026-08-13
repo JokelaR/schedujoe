@@ -12,9 +12,9 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    STRANGER OF PARADISE FINAL FANTASY ORIGIN:
+    Dispatch:
         reason: PLANNED
-        sid: 1358700
+        sid: 2592160
 
     Palworld:
         reason: ADHOC
@@ -38,11 +38,6 @@ dated:
         note: December 2026
 
 future:
-    Dispatch:
-        reason: PLANNED
-        note: June
-        sid: 2592160
-
     "Paper Mario: The Thousand Year Door":
         img: papermario.jpg
         logo: papermario_logo.png
@@ -113,6 +108,11 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    STRANGER OF PARADISE FINAL FANTASY ORIGIN:
+        reason: PLANNED
+        rating: MIXED
+        sid: 1358700
+
     "007: First Light":
         reason: PLANNED
         sid: 3768760
