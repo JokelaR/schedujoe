@@ -12,18 +12,13 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    Dispatch:
+    The Great Ace Attorney Chronicles:
         reason: PLANNED
-        sid: 2592160
+        sid: 1158850
 
     Palworld:
         reason: ADHOC
         sid: 1623730
-    The Great Ace Attorney Chronicles:
-        note: Paused
-        thin: true
-        reason: PLANNED
-        sid: 1158850
 
 dated:
     "Metal Gear Solid: Peace Walker":
@@ -108,6 +103,11 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Dispatch:
+        reason: PLANNED
+        rating: LOVED
+        sid: 2592160
+
     STRANGER OF PARADISE FINAL FANTASY ORIGIN:
         reason: PLANNED
         rating: MIXED
