@@ -12,10 +12,6 @@ schedule:
         sun: VERY_UNLIKELY
 
 current:
-    The Great Ace Attorney Chronicles:
-        reason: PLANNED
-        sid: 1158850
-
     Palworld:
         reason: ADHOC
         sid: 1623730
@@ -103,16 +99,18 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    The Great Ace Attorney Chronicles:
+        reason: PLANNED
+        rating: LOVED
+        sid: 1158850
     Dispatch:
         reason: PLANNED
         rating: LOVED
         sid: 2592160
-
     STRANGER OF PARADISE FINAL FANTASY ORIGIN:
         reason: PLANNED
         rating: MIXED
         sid: 1358700
-
     "007: First Light":
         reason: PLANNED
         sid: 3768760
