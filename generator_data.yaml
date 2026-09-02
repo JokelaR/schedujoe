@@ -18,9 +18,9 @@ current:
         unofficial_vod: true
         yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hz8Rr6a-h-bbMSWOTu7yiwH
         pt: https://peertube.nodja.com/w/p/1Mhev8dTWPEGm299U7bhrN?playlistPosition=1
-    Palworld:
+    Final Fantasy 7:
         reason: ADHOC
-        sid: 1623730
+        sid: 3837340
 
 dated:
     "Metal Gear Solid: Peace Walker":
@@ -35,13 +35,13 @@ dated:
         note: December 2026
 
 future:
-    "Paper Mario: The Thousand Year Door":
-        img: papermario.jpg
-        logo: papermario_logo.png
     "Metal Gear Solid V: Ground Zeroes":
         img: mgsgz.jpg
     "Metal Gear Solid V: Phantom Pain":
         sid: 287700
+    "Paper Mario: The Thousand Year Door":
+        img: papermario.jpg
+        logo: papermario_logo.png
     Crypt of the Necrodancer:
         sid: 247080
     Fire Emblem Three Houses:
@@ -105,6 +105,10 @@ lock_it_in:
         sid: 2017940
 
 past_games:
+    Palworld:
+        reason: ADHOC
+        sid: 1623730
+        rating: SKIP
     Mega Man X:
         note: X1
         reason: ADHOC
