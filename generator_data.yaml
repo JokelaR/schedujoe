@@ -3,38 +3,32 @@ schedule:
     start: 2025-08-17
     end: 2025-08-24
     days:
-        mon: VERY_UNLIKELY
-        tue: POSSIBLE
-        wed: POSSIBLE
-        thu: POSSIBLE
-        fri: POSSIBLE
-        sat: POSSIBLE
-        sun: VERY_UNLIKELY
+        mon: LIKELY
+        tue: LIKELY
+        wed: VERY_UNLIKELY
+        thu: VERY_UNLIKELY
+        fri: VERY_UNLIKELY
+        sat: VERY_UNLIKELY
+        sun: LIKELY
 
 current:
-    Kingdom Come Deliverance 2:
-        sid: 1771300
-        reason: PLANNED
-        unofficial_vod: true
-        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hz8Rr6a-h-bbMSWOTu7yiwH
-        pt: https://peertube.nodja.com/w/p/1Mhev8dTWPEGm299U7bhrN?playlistPosition=1
+    God of War Ragnarök:
+        note: "Valhalla"
+        reason: ADHOC
+        sid: 2322010
     Final Fantasy 7:
         reason: ADHOC
         sid: 3837340
 
 dated:
-    "Metal Gear Solid: Peace Walker":
-        note: 27th August
-        img: mgspw.png
     "Danganronpa 2x2":
         reason: PLANNED
-        note: "2026"
+        note: "2027?"
         sid: 3751230
-    Telltalemas:
-        reason: SEASONAL
-        note: December 2026
 
 future:
+    "Metal Gear Solid: Peace Walker":
+        img: mgspw.png
     "Metal Gear Solid V: Ground Zeroes":
         img: mgsgz.jpg
     "Metal Gear Solid V: Phantom Pain":
@@ -55,31 +49,16 @@ future:
         ignore_logo: true
 
 lock_it_in:
-    Wolverine:
-        reason: PLANNED
-        note: September 15
-    Control Resonant:
-        reason: PLANNED
-        note: "September 24th"
-        sid: 3669870
-    Silent Hill Townfall:
-        reason: PLANNED
-        note: September 24
-        sid: 1636440
-    Rayman Legends Retold:
-        reason: PLANNED
-        note: October 1st
-        sid: 4084710
-    Ace Combat 8:
-        reason: PLANNED
-        note: October 2nd
-        sid: 2288340
-    God of War Laufey:
-        reason: PLANNED
-        note: "February 16 2028"
     Until Dawn 2:
         reason: PLANNED
         note: "2027"
+    Pony Island 2:
+        reason: PLANNED
+        note: "2027"
+        sid: 2017940
+    God of War Laufey:
+        reason: PLANNED
+        note: "February 16 2028"
     Stellar Blade Blood Rain:
         reason: PLANNED
         note: tbd
@@ -99,12 +78,15 @@ lock_it_in:
         reason: PLANNED
         note: When it's out of EA
         sid: 1229490
-    Pony Island 2:
-        reason: PLANNED
-        note: "2027"
-        sid: 2017940
 
 past_games:
+    Kingdom Come Deliverance 2:
+        sid: 1771300
+        reason: PLANNED
+        unofficial_vod: true
+        rating: MIXED
+        yt: https://www.youtube.com/playlist?list=PLQnzq4WSk8hz8Rr6a-h-bbMSWOTu7yiwH
+        pt: https://peertube.nodja.com/w/p/1Mhev8dTWPEGm299U7bhrN?playlistPosition=1
     Palworld:
         reason: ADHOC
         sid: 1623730
@@ -894,6 +876,10 @@ past_games:
         pt: https://peertube.nodja.com/w/p/eYb5vRRTy7jYA2UUhcRSSd
 
 unordered:
+    Ace Combat 8:
+        reason: PLANNED
+        sid: 2288340
+        thin: true
     Apollo Justice Trilogy:
         reason: PLANNED
         thin: true
@@ -902,6 +888,10 @@ unordered:
         reason: PLANNED
         thin: true
         sid: 2362060
+    Control Resonant:
+        reason: PLANNED
+        sid: 3669870
+        thin: true
     D4 - Dark Dreams Don't Die:
         reason: PLANNED
         thin: true
@@ -928,8 +918,16 @@ unordered:
         thin: true
         sid: 2231450
         id: pizzatower
+    Rayman Legends Retold:
+        reason: PLANNED
+        sid: 4084710
+        thin: true
     Saros:
         reason: PLANNED
+        thin: true
+    Silent Hill Townfall:
+        reason: PLANNED
+        sid: 1636440
         thin: true
     Star Wars Outlaws:
         reason: PLANNED
@@ -943,6 +941,10 @@ unordered:
         reason: PLANNED
         sid: 1981610
         thin: true
+    Marvel's Wolverine:
+        reason: PLANNED
+        thin: true
+
     Xenoblade Chronicles:
         reason: PLANNED
         thin: true
