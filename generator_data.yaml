@@ -12,6 +12,9 @@ schedule:
         sun: LIKELY
 
 current:
+    Queen's Domain:
+        reason: ADHOC
+        sid: 1799840
     God of War Ragnarök:
         note: "Valhalla"
         reason: ADHOC
