@@ -12,16 +12,8 @@ schedule:
         sun: LIKELY
 
 current:
-    Queen's Domain:
+    Grand Theft Auto VI:
         reason: ADHOC
-        sid: 1799840
-    God of War Ragnarök:
-        note: "Valhalla"
-        reason: ADHOC
-        sid: 2322010
-    Final Fantasy 7:
-        reason: ADHOC
-        sid: 3837340
 
 dated:
     "Danganronpa 2x2":
@@ -83,6 +75,22 @@ lock_it_in:
         sid: 1229490
 
 past_games:
+    Ocarina of Time (2026):
+        reason: ADHOC
+        rating: LOVED
+    Queen's Domain:
+        reason: ADHOC
+        sid: 1799840
+        rating: LOVED
+    God of War Ragnarök Valhalla:
+        note: "Valhalla"
+        reason: ADHOC
+        sid: 2322010
+        rating: SKIP
+    Final Fantasy 7:
+        reason: ADHOC
+        sid: 3837340
+        rating: SKIP
     Kingdom Come Deliverance 2:
         sid: 1771300
         reason: PLANNED
